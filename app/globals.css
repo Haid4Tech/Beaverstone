@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ink: #051b2e;
+  --color-ink-warm: #1a1208;
+  --color-gold: #c9a84c;
+  --color-gold-bright: #f9b418;
+  --color-tan: #b79b6f;
+  --color-cream: #f8f8f8;
+  --color-line: #e6e6e6;
+  --color-body: #666666;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--color-ink);
+  --color-ink-warm: var(--color-ink-warm);
+  --color-gold: var(--color-gold);
+  --color-gold-bright: var(--color-gold-bright);
+  --color-tan: var(--color-tan);
+  --color-cream: var(--color-cream);
+  --color-line: var(--color-line);
+  --color-body: var(--color-body);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-manrope);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-ink-warm);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Footer wordmark marquee.
+   Track holds two identical copies, so translating -50% lands exactly on the
+   start of the second copy and the loop is seamless. Transform-only, so it
+   stays on the compositor. Duration is a variable for easy tuning — the
+   reference drifts at roughly 13px/sec. */
+@keyframes pm-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.pm-marquee-track {
+  animation: pm-marquee var(--pm-marquee-duration, 150s) linear infinite;
+  will-change: transform;
+}
+
+.pm-marquee-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-tan);
+}
+
+/* Without text-stroke support transparent text would vanish entirely. */
+@supports not (-webkit-text-stroke: 1px currentColor) {
+  .pm-marquee-outline {
+    color: color-mix(in srgb, var(--color-tan) 35%, transparent);
+    -webkit-text-stroke: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pm-marquee-track {
+    animation: none;
+  }
 }
