@@ -1,7 +1,7 @@
-import Link from "next/link";
-import ImageReveal from "@/components/animation/ImageReveal";
-import Reveal from "@/components/animation/Reveal";
-import { articleHref, formatDate, type Article } from "@/data/news";
+import Link from 'next/link';
+import ImageReveal from '@/components/animation/ImageReveal';
+import Reveal from '@/components/animation/Reveal';
+import { articleHref, formatDate, type Article } from '@/data/news';
 
 export default function ArticleCard({
   article,
@@ -31,7 +31,7 @@ export default function ArticleCard({
           </time>
         </p>
 
-        <h2 className="font-display mt-2 text-2xl leading-snug text-ink-warm lg:text-3xl">
+        <h2 className="mt-2 font-display text-2xl leading-snug text-ink-warm lg:text-3xl">
           <Link
             href={articleHref(article)}
             className="transition-colors hover:text-gold"

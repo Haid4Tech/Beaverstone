@@ -1,39 +1,51 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import PageHero from "@/components/ui/PageHero";
-import Reveal from "@/components/animation/Reveal";
-import ImageReveal from "@/components/animation/ImageReveal";
-import { Stagger, StaggerItem } from "@/components/animation/Stagger";
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import PageHero from '@/components/ui/PageHero';
+import Reveal from '@/components/animation/Reveal';
+import ImageReveal from '@/components/animation/ImageReveal';
+import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 export const metadata: Metadata = {
-  title: "About Palton Morgan",
+  title: 'About Palton Morgan',
   description:
-    "Learn about Palton Morgan Holdings — our history, vision, mission and values as a luxury real estate group in Nigeria.",
+    'Learn about Palton Morgan Holdings — our history, vision, mission and values as a luxury real estate group in Nigeria.',
 };
 
 const values = [
   {
-    letter: "I",
-    title: "Integrity",
-    copy: "Transparent pricing, clear documentation and honest timelines on every transaction, from first enquiry to final title.",
+    letter: 'I',
+    title: 'Integrity',
+    copy: 'Transparent pricing, clear documentation and honest timelines on every transaction, from first enquiry to final title.',
   },
   {
-    letter: "C",
-    title: "Craft",
-    copy: "Specification and detailing are decided early and held to, because the quality of a home is settled long before handover.",
+    letter: 'C',
+    title: 'Craft',
+    copy: 'Specification and detailing are decided early and held to, because the quality of a home is settled long before handover.',
   },
   {
-    letter: "E",
-    title: "Excellence",
-    copy: "One standard of design and delivery across all six member companies, regardless of price point or address.",
+    letter: 'E',
+    title: 'Excellence',
+    copy: 'One standard of design and delivery across all six member companies, regardless of price point or address.',
   },
 ];
 
 const journey = [
-  { year: "2009", copy: "Founded with a single residential development in Lagos." },
-  { year: "2014", copy: "Expanded into brokerage with the launch of a dedicated sales arm." },
-  { year: "2018", copy: "Brought construction in-house to control quality end-to-end." },
-  { year: "2023", copy: "Grew to six member companies spanning development, capital and contracting." },
+  {
+    year: '2009',
+    copy: 'Founded with a single residential development in Lagos.',
+  },
+  {
+    year: '2014',
+    copy: 'Expanded into brokerage with the launch of a dedicated sales arm.',
+  },
+  {
+    year: '2018',
+    copy: 'Brought construction in-house to control quality end-to-end.',
+  },
+  {
+    year: '2023',
+    copy: 'Grew to six member companies spanning development, capital and contracting.',
+  },
 ];
 
 export default function AboutPage() {
@@ -43,7 +55,7 @@ export default function AboutPage() {
         eyebrow="About Palton Morgan Holdings"
         title="About Us"
         image="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2400&auto=format&fit=crop"
-        crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]}
       />
 
       {/* At the Core — asymmetric intro */}
@@ -57,21 +69,21 @@ export default function AboutPage() {
               </p>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+              <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
                 A Group Built on Six Companies, One Standard
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-6 text-[15px] leading-relaxed text-body">
-                Palton Morgan Holdings was founded to bring the full real
-                estate value chain — development, brokerage, contracting and
-                capital — under one roof, with a single standard of design
-                and delivery across every business.
+                Palton Morgan Holdings was founded to bring the full real estate
+                value chain — development, brokerage, contracting and capital —
+                under one roof, with a single standard of design and delivery
+                across every business.
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-body">
                 Today the group operates across Lagos and Abuja, with a
-                portfolio spanning gated estates, waterfront towers and
-                serviced plots.
+                portfolio spanning gated estates, waterfront towers and serviced
+                plots.
               </p>
             </Reveal>
           </div>
@@ -101,7 +113,7 @@ export default function AboutPage() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display max-w-2xl text-3xl font-light leading-tight lg:text-5xl">
+            <h2 className="max-w-2xl font-display text-3xl leading-tight font-light lg:text-5xl">
               Fifteen Years of Building Forward
             </h2>
           </Reveal>
@@ -128,7 +140,7 @@ export default function AboutPage() {
             <p className="text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
               Our Vision
             </p>
-            <p className="font-display mt-5 text-2xl font-light leading-snug text-ink-warm lg:text-3xl">
+            <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
               To be Africa&rsquo;s most trusted name in luxury real estate.
             </p>
           </Reveal>
@@ -136,7 +148,7 @@ export default function AboutPage() {
             <p className="text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
               Our Mission
             </p>
-            <p className="font-display mt-5 text-2xl font-light leading-snug text-ink-warm lg:text-3xl">
+            <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
               To create exceptional living spaces that stand the test of time.
             </p>
           </Reveal>
@@ -152,7 +164,7 @@ export default function AboutPage() {
               Our Values
               <span className="h-px w-12 bg-gold" />
             </p>
-            <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+            <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               What We Hold To
             </h2>
           </Reveal>
@@ -172,7 +184,7 @@ export default function AboutPage() {
               >
                 <span
                   aria-hidden="true"
-                  className="font-display w-14 shrink-0 text-center text-5xl font-light text-gold lg:text-6xl"
+                  className="w-14 shrink-0 text-center font-display text-5xl font-light text-gold lg:text-6xl"
                 >
                   {v.letter}
                 </span>
@@ -196,7 +208,7 @@ export default function AboutPage() {
           <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
             Our Commitment
           </p>
-          <h2 className="font-display mx-auto max-w-2xl text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+          <h2 className="mx-auto max-w-2xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
             Built to Be Lived In, Not Just Sold
           </h2>
         </Reveal>
@@ -204,15 +216,14 @@ export default function AboutPage() {
           <p className="mx-auto mt-8 max-w-[1100px] text-[15px] leading-relaxed text-body">
             Our obligation to a client does not end at handover. We commit to
             clean, registrable title on every unit we sell, to construction
-            timelines we are prepared to be held to, and to a standard of
-            finish that still reads well a decade after completion. Where
-            something falls short, we would rather correct it than explain it
-            away — that is the whole of the commitment, and we intend to keep
-            being measured against it.
+            timelines we are prepared to be held to, and to a standard of finish
+            that still reads well a decade after completion. Where something
+            falls short, we would rather correct it than explain it away — that
+            is the whole of the commitment, and we intend to keep being measured
+            against it.
           </p>
         </Reveal>
       </section>
-
     </>
   );
 }

@@ -1,21 +1,21 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import PageHero from "@/components/ui/PageHero";
-import Reveal from "@/components/animation/Reveal";
-import MediaSidebar from "@/components/media/MediaSidebar";
-import ArticleCard from "@/components/media/ArticleCard";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import PageHero from '@/components/ui/PageHero';
+import Reveal from '@/components/animation/Reveal';
+import MediaSidebar from '@/components/media/MediaSidebar';
+import ArticleCard from '@/components/media/ArticleCard';
 import {
   articles,
   categorySlug,
   formatDate,
   getArticle,
   type MediaCategory,
-} from "@/data/news";
+} from '@/data/news';
 
 const SLUG_TO_CATEGORY: Record<string, MediaCategory> = {
-  news: "News",
-  blogs: "Blogs",
+  news: 'News',
+  blogs: 'Blogs',
 };
 
 export function generateStaticParams() {
@@ -26,7 +26,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: PageProps<"/media/[category]/[slug]">
+  props: PageProps<'/media/[category]/[slug]'>
 ): Promise<Metadata> {
   const { category, slug } = await props.params;
   const mediaCategory = SLUG_TO_CATEGORY[category];
@@ -38,7 +38,7 @@ export async function generateMetadata(
     description: article.excerpt,
     alternates: { canonical: `/media/${category}/${slug}` },
     openGraph: {
-      type: "article",
+      type: 'article',
       title: article.title,
       description: article.excerpt,
       publishedTime: article.date,
@@ -48,7 +48,7 @@ export async function generateMetadata(
 }
 
 export default async function ArticlePage(
-  props: PageProps<"/media/[category]/[slug]">
+  props: PageProps<'/media/[category]/[slug]'>
 ) {
   const { category, slug } = await props.params;
   const mediaCategory = SLUG_TO_CATEGORY[category];
@@ -62,21 +62,30 @@ export default async function ArticlePage(
     .slice(0, 2);
 
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
     headline: article.title,
     description: article.excerpt,
     image: article.image,
     datePublished: article.date,
-    author: { "@type": "Organization", name: article.author },
-    publisher: { "@type": "Organization", name: "Palton Morgan Holdings" },
+    author: { '@type': 'Organization', name: article.author },
+    publisher: { '@type': 'Organization', name: 'Palton Morgan Holdings' },
   };
 
   const shareUrl = `https://example.com/media/${category}/${slug}`;
   const shares = [
-    { label: "X", href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}` },
-    { label: "LinkedIn", href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}` },
-    { label: "Facebook", href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}` },
+    {
+      label: 'X',
+      href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}`,
+    },
+    {
+      label: 'LinkedIn',
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+    },
+    {
+      label: 'Facebook',
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+    },
   ];
 
   return (
@@ -91,8 +100,8 @@ export default async function ArticlePage(
         title={article.title}
         image={article.image}
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "Media" },
+          { label: 'Home', href: '/' },
+          { label: 'Media' },
           {
             label: article.category,
             href: `/media/${categorySlug[article.category]}`,
@@ -145,7 +154,7 @@ export default async function ArticlePage(
 
             {related.length > 0 && (
               <div className="mt-20">
-                <h2 className="font-display mb-10 text-2xl font-light text-ink-warm">
+                <h2 className="mb-10 font-display text-2xl font-light text-ink-warm">
                   Related Reading
                 </h2>
                 <div className="grid gap-12 sm:grid-cols-2">
@@ -163,7 +172,10 @@ export default async function ArticlePage(
                 </h2>
                 <form className="mt-6 grid gap-6 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="c-name" className="mb-2 block text-[13px] text-body">
+                    <label
+                      htmlFor="c-name"
+                      className="mb-2 block text-[13px] text-body"
+                    >
                       Name
                     </label>
                     <input
@@ -175,7 +187,10 @@ export default async function ArticlePage(
                     />
                   </div>
                   <div>
-                    <label htmlFor="c-email" className="mb-2 block text-[13px] text-body">
+                    <label
+                      htmlFor="c-email"
+                      className="mb-2 block text-[13px] text-body"
+                    >
                       Email
                     </label>
                     <input
@@ -188,7 +203,10 @@ export default async function ArticlePage(
                     />
                   </div>
                   <div className="sm:col-span-2">
-                    <label htmlFor="c-message" className="mb-2 block text-[13px] text-body">
+                    <label
+                      htmlFor="c-message"
+                      className="mb-2 block text-[13px] text-body"
+                    >
                       Comment
                     </label>
                     <textarea

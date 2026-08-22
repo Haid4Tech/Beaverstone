@@ -1,15 +1,27 @@
-import Link from "next/link";
-import { projects } from "@/data/projects";
-import Reveal from "@/components/animation/Reveal";
-import ShowcaseCard from "@/components/projects/ShowcaseCard";
+import Link from 'next/link';
+import { projects } from '@/data/projects';
+import Reveal from '@/components/animation/Reveal';
+import ShowcaseCard from '@/components/projects/ShowcaseCard';
 
 // Asymmetric editorial layout: wide/narrow pair, single centred feature, wide/narrow pair.
 const layout = [
-  { span: "lg:col-span-7", ratio: "aspect-[5/3]", offset: "" },
-  { span: "lg:col-span-4 lg:col-start-9", ratio: "aspect-[16/9]", offset: "lg:mt-16" },
-  { span: "lg:col-span-6 lg:col-start-4", ratio: "aspect-[3/2]", offset: "lg:mt-8" },
-  { span: "lg:col-span-7", ratio: "aspect-[16/9]", offset: "" },
-  { span: "lg:col-span-4 lg:col-start-9", ratio: "aspect-[3/2]", offset: "lg:mt-16" },
+  { span: 'lg:col-span-7', ratio: 'aspect-[5/3]', offset: '' },
+  {
+    span: 'lg:col-span-4 lg:col-start-9',
+    ratio: 'aspect-[16/9]',
+    offset: 'lg:mt-16',
+  },
+  {
+    span: 'lg:col-span-6 lg:col-start-4',
+    ratio: 'aspect-[3/2]',
+    offset: 'lg:mt-8',
+  },
+  { span: 'lg:col-span-7', ratio: 'aspect-[16/9]', offset: '' },
+  {
+    span: 'lg:col-span-4 lg:col-start-9',
+    ratio: 'aspect-[3/2]',
+    offset: 'lg:mt-16',
+  },
 ];
 
 export default function ProjectsShowcase() {
@@ -25,7 +37,7 @@ export default function ProjectsShowcase() {
               </p>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-display max-w-xl text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+              <h2 className="max-w-xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
                 A Portfolio Built for High-End Living
               </h2>
             </Reveal>

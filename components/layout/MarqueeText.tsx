@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 /**
  * Infinite horizontal wordmark marquee.
@@ -8,12 +8,12 @@ import { cn } from "@/lib/utils";
  */
 export default function MarqueeText({
   text,
-  variant = "outline",
-  durationSeconds = 150,
+  variant = 'outline',
+  durationSeconds = 15,
   className,
 }: {
   text: string;
-  variant?: "outline" | "solid";
+  variant?: 'outline' | 'solid';
   durationSeconds?: number;
   className?: string;
 }) {
@@ -23,9 +23,11 @@ export default function MarqueeText({
   return (
     <div
       aria-hidden="true"
-      className={cn("w-full overflow-hidden", className)}
+      className={cn('w-full overflow-hidden', className)}
       style={
-        { "--pm-marquee-duration": `${durationSeconds}s` } as React.CSSProperties
+        {
+          '--pm-marquee-duration': `${durationSeconds}s`,
+        } as React.CSSProperties
       }
     >
       <div className="pm-marquee-track flex w-max">
@@ -33,9 +35,9 @@ export default function MarqueeText({
           <span
             key={i}
             className={cn(
-              "block pr-[0.25em] leading-none font-semibold tracking-tight whitespace-nowrap uppercase",
-              "text-[clamp(3rem,12vw,200px)]",
-              variant === "outline" ? "pm-marquee-outline" : "text-white/10"
+              'block pr-[0.28em] leading-none font-medium tracking-[0.02em] whitespace-nowrap uppercase',
+              'text-[clamp(3rem,12vw,200px)]',
+              variant === 'outline' ? 'pm-marquee-outline' : 'text-white/10'
             )}
           >
             {text}

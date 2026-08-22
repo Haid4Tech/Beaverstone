@@ -1,11 +1,14 @@
-import type { Project } from "@/data/projects";
+import type { Project } from '@/data/projects';
 
 export default function ProjectQuickFacts({ project }: { project: Project }) {
   const items = [
-    { label: "Location", value: project.location },
-    { label: "Unit Type", value: project.unitTypes[0] },
-    { label: "Prices From", value: project.startingPrice.replace(/^From\s*/i, "") },
-    { label: "Availability", value: project.availableUnits },
+    { label: 'Location', value: project.location },
+    { label: 'Unit Type', value: project.unitTypes[0] },
+    {
+      label: 'Prices From',
+      value: project.startingPrice.replace(/^From\s*/i, ''),
+    },
+    { label: 'Availability', value: project.availableUnits },
   ];
 
   return (
@@ -16,7 +19,7 @@ export default function ProjectQuickFacts({ project }: { project: Project }) {
             <dt className="text-[11px] tracking-widest text-body uppercase">
               {item.label}
             </dt>
-            <dd className="font-display mt-1.5 text-lg leading-snug text-ink-warm">
+            <dd className="mt-1.5 font-display text-lg leading-snug text-ink-warm">
               {item.value}
             </dd>
           </div>

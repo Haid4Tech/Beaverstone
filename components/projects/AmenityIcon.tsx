@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 // Keyword-matched so new amenity labels degrade to a sensible icon
 // instead of needing a map entry for every string in the data.
@@ -9,7 +9,9 @@ const ICONS: { match: RegExp; path: ReactNode }[] = [
   },
   {
     match: /pool|swim/i,
-    path: <path d="M2 17c2 0 2 1.5 4 1.5S8 17 10 17s2 1.5 4 1.5S16 17 18 17s2 1.5 4 1.5M6 14V5a2 2 0 1 1 4 0M14 14V5a2 2 0 1 1 4 0M6 8h4M14 8h4" />,
+    path: (
+      <path d="M2 17c2 0 2 1.5 4 1.5S8 17 10 17s2 1.5 4 1.5S16 17 18 17s2 1.5 4 1.5M6 14V5a2 2 0 1 1 4 0M14 14V5a2 2 0 1 1 4 0M6 8h4M14 8h4" />
+    ),
   },
   {
     match: /fitness|gym/i,
@@ -25,7 +27,9 @@ const ICONS: { match: RegExp; path: ReactNode }[] = [
   },
   {
     match: /green|garden|landscap/i,
-    path: <path d="M12 21v-7M12 14s-1-7 5-9c1 6-2 9-5 9ZM12 14s1-5-5-6c-1 4 2 6 5 6Z" />,
+    path: (
+      <path d="M12 21v-7M12 14s-1-7 5-9c1 6-2 9-5 9ZM12 14s1-5-5-6c-1 4 2 6 5 6Z" />
+    ),
   },
   {
     match: /power|electric|lighting/i,

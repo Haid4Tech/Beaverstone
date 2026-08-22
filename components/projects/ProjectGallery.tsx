@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import ImageReveal from "@/components/animation/ImageReveal";
+import Image from 'next/image';
+import { useCallback, useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import ImageReveal from '@/components/animation/ImageReveal';
 
 export default function ProjectGallery({
   images,
@@ -17,22 +17,24 @@ export default function ProjectGallery({
   const close = useCallback(() => setOpen(null), []);
   const step = useCallback(
     (dir: number) =>
-      setOpen((i) => (i === null ? i : (i + dir + images.length) % images.length)),
+      setOpen((i) =>
+        i === null ? i : (i + dir + images.length) % images.length
+      ),
     [images.length]
   );
 
   useEffect(() => {
     if (open === null) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close();
-      if (e.key === "ArrowRight") step(1);
-      if (e.key === "ArrowLeft") step(-1);
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowRight') step(1);
+      if (e.key === 'ArrowLeft') step(-1);
     };
-    window.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
+    window.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
     return () => {
-      window.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
     };
   }, [open, close, step]);
 
@@ -75,7 +77,7 @@ export default function ProjectGallery({
               type="button"
               onClick={close}
               aria-label="Close gallery"
-              className="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-gold"
+              className="absolute top-5 right-5 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-gold"
             >
               &times;
             </button>

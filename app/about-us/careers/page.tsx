@@ -1,25 +1,34 @@
-import type { Metadata } from "next";
-import PageHero from "@/components/ui/PageHero";
-import Reveal from "@/components/animation/Reveal";
-import { Stagger, StaggerItem } from "@/components/animation/Stagger";
+import type { Metadata } from 'next';
+import PageHero from '@/components/ui/PageHero';
+import Reveal from '@/components/animation/Reveal';
+import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 export const metadata: Metadata = {
-  title: "Work With Us",
+  title: 'Work With Us',
   description:
     "Explore career opportunities across Palton Morgan Holdings' member companies.",
 };
 
 const openings = [
-  { title: "Site Engineer", team: "Construction", location: "Lagos" },
-  { title: "Sales Executive", team: "Brokerage", location: "Lagos" },
-  { title: "Quantity Surveyor", team: "Development", location: "Abuja" },
-  { title: "Interior Designer", team: "Development", location: "Lagos" },
+  { title: 'Site Engineer', team: 'Construction', location: 'Lagos' },
+  { title: 'Sales Executive', team: 'Brokerage', location: 'Lagos' },
+  { title: 'Quantity Surveyor', team: 'Development', location: 'Abuja' },
+  { title: 'Interior Designer', team: 'Development', location: 'Lagos' },
 ];
 
 const benefits = [
-  { title: "Growth", copy: "Structured career paths across six member companies." },
-  { title: "Culture", copy: "A collaborative, detail-driven team building real, lasting work." },
-  { title: "Impact", copy: "Direct involvement in projects that shape how people live." },
+  {
+    title: 'Growth',
+    copy: 'Structured career paths across six member companies.',
+  },
+  {
+    title: 'Culture',
+    copy: 'A collaborative, detail-driven team building real, lasting work.',
+  },
+  {
+    title: 'Impact',
+    copy: 'Direct involvement in projects that shape how people live.',
+  },
 ];
 
 export default function CareersPage() {
@@ -30,9 +39,9 @@ export default function CareersPage() {
         title="Work With Us"
         image="https://images.unsplash.com/photo-1600585153490-76fb20a32601?q=80&w=2400&auto=format&fit=crop"
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "About", href: "/about-us" },
-          { label: "Work With Us" },
+          { label: 'Home', href: '/' },
+          { label: 'About', href: '/about-us' },
+          { label: 'Work With Us' },
         ]}
       />
 
@@ -56,7 +65,7 @@ export default function CareersPage() {
       <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
-            <h2 className="font-display max-w-xl text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+            <h2 className="max-w-xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               Current Openings
             </h2>
           </Reveal>

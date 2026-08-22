@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { articleHref, recentArticles } from "@/data/news";
-import Reveal from "@/components/animation/Reveal";
-import ImageReveal from "@/components/animation/ImageReveal";
+import Link from 'next/link';
+import { articleHref, recentArticles } from '@/data/news';
+import Reveal from '@/components/animation/Reveal';
+import ImageReveal from '@/components/animation/ImageReveal';
 
 export default function News() {
   return (
@@ -15,7 +15,7 @@ export default function News() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display max-w-xl text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+            <h2 className="max-w-xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               News &amp; Insights
             </h2>
           </Reveal>
@@ -41,14 +41,14 @@ export default function News() {
                 imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <p className="mt-4 text-[11px] font-medium tracking-widest text-gold uppercase">
-                {article.category} &middot;{" "}
-                {new Date(article.date).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                  year: "numeric",
+                {article.category} &middot;{' '}
+                {new Date(article.date).toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
                 })}
               </p>
-              <h3 className="font-display mt-2 text-xl leading-snug text-ink-warm">
+              <h3 className="mt-2 font-display text-xl leading-snug text-ink-warm">
                 {article.title}
               </h3>
             </Link>

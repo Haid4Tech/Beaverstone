@@ -1,39 +1,39 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import PageHero from "@/components/ui/PageHero";
-import Reveal from "@/components/animation/Reveal";
-import ImageReveal from "@/components/animation/ImageReveal";
-import ArticleCard from "@/components/media/ArticleCard";
-import { articles, events, recentArticles } from "@/data/news";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import PageHero from '@/components/ui/PageHero';
+import Reveal from '@/components/animation/Reveal';
+import ImageReveal from '@/components/animation/ImageReveal';
+import ArticleCard from '@/components/media/ArticleCard';
+import { articles, events, recentArticles } from '@/data/news';
 
 export const metadata: Metadata = {
-  title: "Media",
+  title: 'Media',
   description:
-    "News, insight and company events from across Palton Morgan Holdings.",
-  alternates: { canonical: "/media" },
+    'News, insight and company events from across Palton Morgan Holdings.',
+  alternates: { canonical: '/media' },
 };
 
 const sections = [
   {
-    href: "/media/news",
-    label: "News",
-    copy: "Company announcements, awards and construction milestones.",
+    href: '/media/news',
+    label: 'News',
+    copy: 'Company announcements, awards and construction milestones.',
     image:
-      "https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1600&auto=format&fit=crop",
+      'https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1600&auto=format&fit=crop',
   },
   {
-    href: "/media/blogs",
-    label: "Blog",
-    copy: "Guides and market insight for buyers, builders and investors.",
+    href: '/media/blogs',
+    label: 'Blog',
+    copy: 'Guides and market insight for buyers, builders and investors.',
     image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop",
+      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop',
   },
   {
-    href: "/media/events",
-    label: "Events",
-    copy: "Life across the group, from retreats to office openings.",
+    href: '/media/events',
+    label: 'Events',
+    copy: 'Life across the group, from retreats to office openings.',
     image:
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop",
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop',
   },
 ];
 
@@ -44,7 +44,7 @@ export default function MediaPage() {
         eyebrow="Media"
         title="Newsroom"
         image="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=2400&auto=format&fit=crop"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Media" }]}
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Media' }]}
       />
 
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
@@ -59,7 +59,7 @@ export default function MediaPage() {
                   sizes="(max-width: 640px) 100vw, 33vw"
                   imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <h2 className="font-display mt-5 text-2xl text-ink-warm transition-colors group-hover:text-gold">
+                <h2 className="mt-5 font-display text-2xl text-ink-warm transition-colors group-hover:text-gold">
                   {s.label}
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-body">
@@ -78,7 +78,7 @@ export default function MediaPage() {
       <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
-            <h2 className="font-display mb-14 text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+            <h2 className="mb-14 font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
               Latest Stories
             </h2>
           </Reveal>

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 import {
   articleHref,
   articles,
@@ -7,13 +7,13 @@ import {
   formatDate,
   recentArticles,
   type MediaCategory,
-} from "@/data/news";
+} from '@/data/news';
 
-const CATEGORIES: MediaCategory[] = ["News", "Blogs"];
+const CATEGORIES: MediaCategory[] = ['News', 'Blogs'];
 
 export default function MediaSidebar({
-  action = "/media/news",
-  query = "",
+  action = '/media/news',
+  query = '',
 }: {
   action?: string;
   query?: string;
@@ -23,7 +23,10 @@ export default function MediaSidebar({
       {/* Search — a plain GET form so filtering works without client JS */}
       <div>
         <h2 className="font-display text-xl text-ink-warm">Search Here</h2>
-        <form action={action} className="mt-4 flex border-b border-line focus-within:border-gold">
+        <form
+          action={action}
+          className="mt-4 flex border-b border-line focus-within:border-gold"
+        >
           <label htmlFor="media-search" className="sr-only">
             Search articles
           </label>
@@ -61,7 +64,7 @@ export default function MediaSidebar({
                   />
                 </span>
                 <span className="min-w-0">
-                  <span className="font-display block text-sm leading-snug text-ink-warm transition-colors group-hover:text-gold">
+                  <span className="block font-display text-sm leading-snug text-ink-warm transition-colors group-hover:text-gold">
                     {article.title}
                   </span>
                   <span className="mt-1 block text-[11px] tracking-wide text-body">

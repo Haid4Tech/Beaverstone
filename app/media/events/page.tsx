@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-import PageHero from "@/components/ui/PageHero";
-import Reveal from "@/components/animation/Reveal";
-import ProjectGallery from "@/components/projects/ProjectGallery";
-import ContactCTA from "@/components/ui/ContactCTA";
-import { events, formatDate } from "@/data/news";
+import type { Metadata } from 'next';
+import PageHero from '@/components/ui/PageHero';
+import Reveal from '@/components/animation/Reveal';
+import ProjectGallery from '@/components/projects/ProjectGallery';
+import ContactCTA from '@/components/ui/ContactCTA';
+import { events, formatDate } from '@/data/news';
 
 export const metadata: Metadata = {
-  title: "Events",
+  title: 'Events',
   description:
-    "Company events and celebrations across the Palton Morgan Holdings group.",
-  alternates: { canonical: "/media/events" },
+    'Company events and celebrations across the Palton Morgan Holdings group.',
+  alternates: { canonical: '/media/events' },
 };
 
 export default function EventsPage() {
@@ -20,9 +20,9 @@ export default function EventsPage() {
         title="Events"
         image="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2400&auto=format&fit=crop"
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "Media" },
-          { label: "Events" },
+          { label: 'Home', href: '/' },
+          { label: 'Media' },
+          { label: 'Events' },
         ]}
       />
 
@@ -31,7 +31,7 @@ export default function EventsPage() {
           <section
             key={event.slug}
             aria-labelledby={`event-${event.slug}`}
-            className={`py-20 lg:py-24 ${i > 0 ? "border-t border-line" : ""}`}
+            className={`py-20 lg:py-24 ${i > 0 ? 'border-t border-line' : ''}`}
           >
             <Reveal>
               <p className="text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
@@ -39,7 +39,7 @@ export default function EventsPage() {
               </p>
               <h2
                 id={`event-${event.slug}`}
-                className="font-display mt-3 max-w-2xl text-3xl font-light leading-tight text-ink-warm lg:text-4xl"
+                className="mt-3 max-w-2xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl"
               >
                 {event.title}
               </h2>
@@ -49,10 +49,7 @@ export default function EventsPage() {
             </Reveal>
 
             <div className="mt-10">
-              <ProjectGallery
-                images={event.images}
-                projectName={event.title}
-              />
+              <ProjectGallery images={event.images} projectName={event.title} />
             </div>
           </section>
         ))}

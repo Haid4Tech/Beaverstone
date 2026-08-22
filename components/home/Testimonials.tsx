@@ -1,27 +1,27 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import Reveal from "@/components/animation/Reveal";
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import Reveal from '@/components/animation/Reveal';
 
 const testimonials = [
   {
     quote:
-      "From reservation to handover, the process was transparent and well communicated. Our home was delivered exactly as shown.",
-    name: "A. Bello",
-    role: "Homeowner, Kadars Gate",
+      'From reservation to handover, the process was transparent and well communicated. Our home was delivered exactly as shown.',
+    name: 'A. Bello',
+    role: 'Homeowner, Kadars Gate',
   },
   {
     quote:
-      "The build quality and attention to finishing detail stood out immediately compared to other developments we viewed.",
-    name: "C. Okafor",
-    role: "Homeowner, The Meadows",
+      'The build quality and attention to finishing detail stood out immediately compared to other developments we viewed.',
+    name: 'C. Okafor',
+    role: 'Homeowner, The Meadows',
   },
   {
     quote:
-      "As an investor, the documentation and title process gave us confidence to commit early in construction.",
-    name: "T. Adeyemi",
-    role: "Investor, Paramount Twin Towers",
+      'As an investor, the documentation and title process gave us confidence to commit early in construction.',
+    name: 'T. Adeyemi',
+    role: 'Investor, Paramount Twin Towers',
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Testimonials() {
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              <p className="font-display text-2xl font-light leading-relaxed text-ink-warm lg:text-3xl">
+              <p className="font-display text-2xl leading-relaxed font-light text-ink-warm lg:text-3xl">
                 &ldquo;{active.quote}&rdquo;
               </p>
               <p className="mt-6 text-sm font-medium text-ink-warm">
@@ -70,7 +70,7 @@ export default function Testimonials() {
               aria-current={i === index}
               onClick={() => setIndex(i)}
               className={`h-1.5 rounded-full transition-all ${
-                i === index ? "w-8 bg-gold" : "w-1.5 bg-line"
+                i === index ? 'w-8 bg-gold' : 'w-1.5 bg-line'
               }`}
             />
           ))}

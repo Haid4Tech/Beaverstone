@@ -1,11 +1,11 @@
-import ArticleCard from "./ArticleCard";
-import MediaSidebar from "./MediaSidebar";
-import type { Article } from "@/data/news";
+import ArticleCard from './ArticleCard';
+import MediaSidebar from './MediaSidebar';
+import type { Article } from '@/data/news';
 
 export default function ArticleListing({
   articles,
   basePath,
-  query = "",
+  query = '',
 }: {
   articles: Article[];
   basePath: string;
@@ -18,8 +18,8 @@ export default function ArticleListing({
           {query && (
             <p className="text-sm text-body">
               {articles.length === 0
-                ? "No articles found for "
-                : `${articles.length} result${articles.length === 1 ? "" : "s"} for `}
+                ? 'No articles found for '
+                : `${articles.length} result${articles.length === 1 ? '' : 's'} for `}
               <span className="text-ink-warm">&ldquo;{query}&rdquo;</span>
             </p>
           )}

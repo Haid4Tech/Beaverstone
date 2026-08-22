@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion, type Variants } from "framer-motion";
-import type { ReactNode } from "react";
+import { motion, type Variants } from 'framer-motion';
+import type { ReactNode } from 'react';
 
 const container: Variants = {
   hidden: {},
@@ -31,7 +31,7 @@ export function Stagger({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-10% 0px" }}
+      viewport={{ once: true, margin: '-10% 0px' }}
       variants={container}
     >
       {children}

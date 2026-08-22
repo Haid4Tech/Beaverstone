@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-import PageHero from "@/components/ui/PageHero";
-import ProjectCard from "@/components/projects/ProjectCard";
-import ContactCTA from "@/components/ui/ContactCTA";
-import { projects } from "@/data/projects";
+import type { Metadata } from 'next';
+import PageHero from '@/components/ui/PageHero';
+import ProjectCard from '@/components/projects/ProjectCard';
+import ContactCTA from '@/components/ui/ContactCTA';
+import { projects } from '@/data/projects';
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: 'Projects',
   description:
-    "Explore the Palton Morgan Holdings portfolio of luxury residential developments across Lagos and Abuja.",
-  alternates: { canonical: "/projects" },
+    'Explore the Palton Morgan Holdings portfolio of luxury residential developments across Lagos and Abuja.',
+  alternates: { canonical: '/projects' },
 };
 
 export default function ProjectsPage() {
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
         eyebrow="Our Portfolio"
         title="Luxury Real Estate Projects by Palton Morgan"
         image={projects[0].heroImage}
-        crumbs={[{ label: "Home", href: "/" }, { label: "Projects" }]}
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Projects' }]}
       />
 
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">

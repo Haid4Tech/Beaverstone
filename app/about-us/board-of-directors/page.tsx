@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import PageHero from "@/components/ui/PageHero";
-import TeamCard from "@/components/ui/TeamCard";
-import ContactCTA from "@/components/ui/ContactCTA";
-import { boardOfDirectors } from "@/data/team";
+import type { Metadata } from 'next';
+import PageHero from '@/components/ui/PageHero';
+import TeamCard from '@/components/ui/TeamCard';
+import ContactCTA from '@/components/ui/ContactCTA';
+import { boardOfDirectors } from '@/data/team';
 
 export const metadata: Metadata = {
-  title: "Board of Directors",
+  title: 'Board of Directors',
   description:
-    "Meet the Board of Directors guiding strategy and governance at Palton Morgan Holdings.",
+    'Meet the Board of Directors guiding strategy and governance at Palton Morgan Holdings.',
 };
 
 export default function BoardOfDirectorsPage() {
@@ -18,9 +18,9 @@ export default function BoardOfDirectorsPage() {
         title="Board of Directors"
         image="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=2400&auto=format&fit=crop"
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "About", href: "/about-us" },
-          { label: "Board of Directors" },
+          { label: 'Home', href: '/' },
+          { label: 'About', href: '/about-us' },
+          { label: 'Board of Directors' },
         ]}
       />
 

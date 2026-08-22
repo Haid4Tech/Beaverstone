@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Reveal from "@/components/animation/Reveal";
-import ImageReveal from "@/components/animation/ImageReveal";
+import Link from 'next/link';
+import Reveal from '@/components/animation/Reveal';
+import ImageReveal from '@/components/animation/ImageReveal';
 
 export default function About() {
   return (
@@ -19,7 +19,7 @@ export default function About() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+            <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               The Preferred <span className="text-gold">Luxury</span> Real
               Estate Brand.
             </h2>
@@ -31,8 +31,8 @@ export default function About() {
               working toward a single standard of design and delivery.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-body">
-              From gated residential estates to waterfront towers, every
-              project is shaped around the way people actually want to live —
+              From gated residential estates to waterfront towers, every project
+              is shaped around the way people actually want to live —
               considered, private, and built to last.
             </p>
           </Reveal>

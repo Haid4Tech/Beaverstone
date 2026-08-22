@@ -1,16 +1,18 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 // Placeholder hrefs — deliberately not pointing at the real company's
 // accounts. Swap for real profile URLs on the real site.
 const socials = [
   {
-    label: "Facebook",
-    href: "#",
-    path: <path d="M14 8.5h2.5V5.5H14c-2 0-3.5 1.5-3.5 3.5v2H8.5v3h2v7h3v-7H16l.5-3h-3v-1.5c0-.6.4-1 1-1Z" />,
+    label: 'Facebook',
+    href: '#',
+    path: (
+      <path d="M14 8.5h2.5V5.5H14c-2 0-3.5 1.5-3.5 3.5v2H8.5v3h2v7h3v-7H16l.5-3h-3v-1.5c0-.6.4-1 1-1Z" />
+    ),
   },
   {
-    label: "WhatsApp",
-    href: "#",
+    label: 'WhatsApp',
+    href: '#',
     path: (
       <>
         <path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Z" />
@@ -19,8 +21,8 @@ const socials = [
     ),
   },
   {
-    label: "YouTube",
-    href: "#",
+    label: 'YouTube',
+    href: '#',
     path: (
       <>
         <rect x="2.5" y="6" width="19" height="12" rx="3.5" />
@@ -29,8 +31,8 @@ const socials = [
     ),
   },
   {
-    label: "LinkedIn",
-    href: "#",
+    label: 'LinkedIn',
+    href: '#',
     path: (
       <>
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -39,8 +41,8 @@ const socials = [
     ),
   },
   {
-    label: "Instagram",
-    href: "#",
+    label: 'Instagram',
+    href: '#',
     path: (
       <>
         <rect x="3" y="3" width="18" height="18" rx="5" />
@@ -53,7 +55,7 @@ const socials = [
 
 export default function SocialLinks({ className }: { className?: string }) {
   return (
-    <ul className={cn("flex items-center gap-3", className)}>
+    <ul className={cn('flex items-center gap-3', className)}>
       {socials.map((s) => (
         <li key={s.label}>
           <a

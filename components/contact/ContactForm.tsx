@@ -1,7 +1,7 @@
-import { enquiryTypes } from "@/data/contact";
+import { enquiryTypes } from '@/data/contact';
 
 const inputClass =
-  "w-full border-b border-line bg-transparent py-2.5 text-sm text-ink-warm placeholder:text-body/50 focus:border-gold focus:outline-none";
+  'w-full border-b border-line bg-transparent py-2.5 text-sm text-ink-warm placeholder:text-body/50 focus:border-gold focus:outline-none';
 
 export default function ContactForm() {
   return (
@@ -60,7 +60,10 @@ export default function ContactForm() {
       </div>
 
       <div className="sm:col-span-2">
-        <label htmlFor="cf-subject" className="mb-2 block text-[13px] text-body">
+        <label
+          htmlFor="cf-subject"
+          className="mb-2 block text-[13px] text-body"
+        >
           Enquiry Type
         </label>
         <select id="cf-subject" name="subject" className={inputClass}>
@@ -71,7 +74,10 @@ export default function ContactForm() {
       </div>
 
       <div className="sm:col-span-2">
-        <label htmlFor="cf-message" className="mb-2 block text-[13px] text-body">
+        <label
+          htmlFor="cf-message"
+          className="mb-2 block text-[13px] text-body"
+        >
           Your Message
         </label>
         <textarea

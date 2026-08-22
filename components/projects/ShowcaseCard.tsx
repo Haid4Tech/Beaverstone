@@ -1,7 +1,7 @@
-import Link from "next/link";
-import ImageReveal from "@/components/animation/ImageReveal";
-import Reveal from "@/components/animation/Reveal";
-import { projectHref, type Project } from "@/data/projects";
+import Link from 'next/link';
+import ImageReveal from '@/components/animation/ImageReveal';
+import Reveal from '@/components/animation/Reveal';
+import { projectHref, type Project } from '@/data/projects';
 
 export default function ShowcaseCard({
   project,
@@ -23,8 +23,8 @@ export default function ShowcaseCard({
             sizes="(max-width: 1024px) 100vw, 50vw"
             imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
           />
-          {project.status === "Currently Selling" && (
-            <span className="absolute left-4 top-4 z-20 bg-gold px-3 py-1.5 text-[11px] font-medium tracking-widest text-ink uppercase">
+          {project.status === 'Currently Selling' && (
+            <span className="absolute top-4 left-4 z-20 bg-gold px-3 py-1.5 text-[11px] font-medium tracking-widest text-ink uppercase">
               {project.status}
             </span>
           )}
@@ -34,7 +34,7 @@ export default function ShowcaseCard({
           <p className="text-[11px] font-medium tracking-widest text-gold uppercase">
             {project.location}
           </p>
-          <h3 className="font-display mt-1.5 text-2xl text-ink-warm transition-colors group-hover:text-gold lg:text-3xl">
+          <h3 className="mt-1.5 font-display text-2xl text-ink-warm transition-colors group-hover:text-gold lg:text-3xl">
             {project.name}
           </h3>
           <p className="mt-1.5 text-sm leading-relaxed text-body">

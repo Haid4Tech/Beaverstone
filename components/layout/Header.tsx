@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { navigation, isNavGroup } from "@/data/navigation";
-import { cn } from "@/lib/utils";
-import MobileMenu from "./MobileMenu";
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { navigation, isNavGroup } from '@/data/navigation';
+import { cn } from '@/lib/utils';
+import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,14 +15,14 @@ export default function Header() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     };
   }, [mobileOpen]);
 
@@ -31,35 +31,41 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-colors duration-500",
-        scrolled ? "bg-white shadow-[0_1px_0_0_theme(colors.line)]" : "bg-transparent"
+        'fixed inset-x-0 top-0 z-50 transition-colors duration-500',
+        scrolled
+          ? 'bg-white shadow-[0_1px_0_0_theme(colors.line)]'
+          : 'bg-transparent'
       )}
     >
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <Link href="/" className="font-display text-xl tracking-wide">
-          <span className={dark ? "text-white" : "text-ink-warm"}>
+          <span className={dark ? 'text-white' : 'text-ink-warm'}>
             Palton Morgan
           </span>
-          <span className="ml-2 align-middle text-[10px] font-sans font-medium tracking-[0.3em] text-gold">
+          <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-gold">
             HOLDINGS
           </span>
         </Link>
 
         <nav className="hidden items-center lg:flex" aria-label="Primary">
           {navigation
-            .filter((item) => item.label !== "Contact Us")
+            .filter((item) => item.label !== 'Contact Us')
             .map((item) => (
               <div
                 key={item.label}
                 className="relative"
-                onMouseEnter={() => isNavGroup(item) && setOpenGroup(item.label)}
+                onMouseEnter={() =>
+                  isNavGroup(item) && setOpenGroup(item.label)
+                }
                 onMouseLeave={() => setOpenGroup(null)}
               >
                 <Link
                   href={item.href}
                   className={cn(
-                    "flex h-20 items-center px-4 text-[13px] font-medium tracking-wide transition-colors",
-                    dark ? "text-white/90 hover:text-white" : "text-ink-warm hover:text-gold"
+                    'flex h-20 items-center px-4 text-[13px] font-medium tracking-wide transition-colors',
+                    dark
+                      ? 'text-white/90 hover:text-white'
+                      : 'text-ink-warm hover:text-gold'
                   )}
                 >
                   {item.label}
@@ -71,8 +77,8 @@ export default function Header() {
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
-                        transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="absolute left-0 top-full min-w-[240px] border-t-2 border-gold bg-white py-3 shadow-xl"
+                        transition={{ duration: 0.2, ease: 'easeOut' }}
+                        className="absolute top-full left-0 min-w-[240px] border-t-2 border-gold bg-white py-3 shadow-xl"
                       >
                         {item.children.map((child) => (
                           <Link
@@ -95,31 +101,33 @@ export default function Header() {
           <Link
             href="/contact-us"
             className={cn(
-              "hidden rounded-sm border px-6 py-2.5 text-[13px] font-medium tracking-wide transition-colors lg:inline-block",
+              'hidden rounded-sm border px-6 py-2.5 text-[13px] font-medium tracking-wide transition-colors lg:inline-block',
               dark
-                ? "border-white/40 text-white hover:border-gold hover:text-gold"
-                : "border-ink-warm/30 text-ink-warm hover:border-gold hover:text-gold"
+                ? 'border-white/40 text-white hover:border-gold hover:text-gold'
+                : 'border-ink-warm/30 text-ink-warm hover:border-gold hover:text-gold'
             )}
           >
             Contact Us
           </Link>
           <button
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((v) => !v)}
             className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
           >
             <motion.span
               animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              className={cn("h-[1.5px] w-6", dark ? "bg-white" : "bg-ink-warm")}
+              className={cn('h-[1.5px] w-6', dark ? 'bg-white' : 'bg-ink-warm')}
             />
             <motion.span
               animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-              className={cn("h-[1.5px] w-6", dark ? "bg-white" : "bg-ink-warm")}
+              className={cn('h-[1.5px] w-6', dark ? 'bg-white' : 'bg-ink-warm')}
             />
             <motion.span
-              animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              className={cn("h-[1.5px] w-6", dark ? "bg-white" : "bg-ink-warm")}
+              animate={
+                mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }
+              }
+              className={cn('h-[1.5px] w-6', dark ? 'bg-white' : 'bg-ink-warm')}
             />
           </button>
         </div>

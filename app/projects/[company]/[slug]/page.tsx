@@ -1,23 +1,23 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import PageHero from "@/components/ui/PageHero";
-import Reveal from "@/components/animation/Reveal";
-import ImageReveal from "@/components/animation/ImageReveal";
-import { Stagger, StaggerItem } from "@/components/animation/Stagger";
-import ProjectQuickFacts from "@/components/projects/ProjectQuickFacts";
-import ProjectGallery from "@/components/projects/ProjectGallery";
-import RegisterInterest from "@/components/projects/RegisterInterest";
-import AmenityIcon from "@/components/projects/AmenityIcon";
-import ProjectCard from "@/components/projects/ProjectCard";
-import { getProject, otherProjects, projects } from "@/data/projects";
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import PageHero from '@/components/ui/PageHero';
+import Reveal from '@/components/animation/Reveal';
+import ImageReveal from '@/components/animation/ImageReveal';
+import { Stagger, StaggerItem } from '@/components/animation/Stagger';
+import ProjectQuickFacts from '@/components/projects/ProjectQuickFacts';
+import ProjectGallery from '@/components/projects/ProjectGallery';
+import RegisterInterest from '@/components/projects/RegisterInterest';
+import AmenityIcon from '@/components/projects/AmenityIcon';
+import ProjectCard from '@/components/projects/ProjectCard';
+import { getProject, otherProjects, projects } from '@/data/projects';
 
 export function generateStaticParams() {
   return projects.map((p) => ({ company: p.company.slug, slug: p.slug }));
 }
 
 export async function generateMetadata(
-  props: PageProps<"/projects/[company]/[slug]">
+  props: PageProps<'/projects/[company]/[slug]'>
 ): Promise<Metadata> {
   const { company, slug } = await props.params;
   const project = getProject(company, slug);
@@ -36,7 +36,7 @@ export async function generateMetadata(
 }
 
 export default async function ProjectDetailPage(
-  props: PageProps<"/projects/[company]/[slug]">
+  props: PageProps<'/projects/[company]/[slug]'>
 ) {
   const { company, slug } = await props.params;
   const project = getProject(company, slug);
@@ -45,15 +45,15 @@ export default async function ProjectDetailPage(
   const related = otherProjects(project);
 
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Residence",
+    '@context': 'https://schema.org',
+    '@type': 'Residence',
     name: project.name,
     description: project.summary,
     image: project.heroImage,
     address: {
-      "@type": "PostalAddress",
+      '@type': 'PostalAddress',
       addressLocality: project.location,
-      addressCountry: "NG",
+      addressCountry: 'NG',
     },
   };
 
@@ -69,8 +69,8 @@ export default async function ProjectDetailPage(
         title={project.name}
         image={project.heroImage}
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "Projects", href: "/projects" },
+          { label: 'Home', href: '/' },
+          { label: 'Projects', href: '/projects' },
           { label: project.name },
         ]}
       />
@@ -88,13 +88,16 @@ export default async function ProjectDetailPage(
               </p>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+              <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
                 {project.tagline}
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               {project.description.map((para) => (
-                <p key={para} className="mt-5 text-[15px] leading-relaxed text-body">
+                <p
+                  key={para}
+                  className="mt-5 text-[15px] leading-relaxed text-body"
+                >
                   {para}
                 </p>
               ))}
@@ -119,7 +122,7 @@ export default async function ProjectDetailPage(
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display max-w-2xl text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+            <h2 className="max-w-2xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               The Specification
             </h2>
           </Reveal>
@@ -184,7 +187,7 @@ export default async function ProjectDetailPage(
               </p>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+              <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
                 {project.location}
               </h2>
             </Reveal>
@@ -214,7 +217,7 @@ export default async function ProjectDetailPage(
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display max-w-2xl text-3xl font-light leading-tight lg:text-5xl">
+            <h2 className="max-w-2xl font-display text-3xl leading-tight font-light lg:text-5xl">
               Everything On Site
             </h2>
           </Reveal>
@@ -240,7 +243,7 @@ export default async function ProjectDetailPage(
             Neighbourhood
             <span className="h-px w-12 bg-gold" />
           </p>
-          <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+          <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
             {project.neighbourhood.name}
           </h2>
         </Reveal>
@@ -267,7 +270,7 @@ export default async function ProjectDetailPage(
               Gallery
               <span className="h-px w-12 bg-gold" />
             </p>
-            <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-5xl">
+            <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               Inside {project.name}
             </h2>
           </Reveal>
@@ -288,7 +291,7 @@ export default async function ProjectDetailPage(
       {/* Other Projects */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
         <Reveal>
-          <h2 className="font-display mb-14 text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+          <h2 className="mb-14 font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
             Other Projects
           </h2>
         </Reveal>

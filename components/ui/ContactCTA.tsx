@@ -1,11 +1,11 @@
-import Link from "next/link";
-import Reveal from "@/components/animation/Reveal";
+import Link from 'next/link';
+import Reveal from '@/components/animation/Reveal';
 
 export default function ContactCTA({
-  title = "Get in Touch",
-  copy = "Have a question about a project, partnership or career opportunity? Our team is ready to help.",
-  href = "/contact-us",
-  label = "Contact Us",
+  title = 'Get in Touch',
+  copy = 'Have a question about a project, partnership or career opportunity? Our team is ready to help.',
+  href = '/contact-us',
+  label = 'Contact Us',
 }: {
   title?: string;
   copy?: string;

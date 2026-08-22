@@ -1,23 +1,23 @@
-import Link from "next/link";
-import SocialLinks from "./SocialLinks";
-import MarqueeText from "./MarqueeText";
-import { navigation, isNavGroup } from "@/data/navigation";
-import { contactDetails } from "@/data/contact";
+import Link from 'next/link';
+import SocialLinks from './SocialLinks';
+import MarqueeText from './MarqueeText';
+import { navigation, isNavGroup } from '@/data/navigation';
+import { contactDetails } from '@/data/contact';
 
-const memberCompanies = navigation.find((n) => n.label === "Member Companies");
+const memberCompanies = navigation.find((n) => n.label === 'Member Companies');
 
 // Column-major so the two rendered columns read down, matching the reference.
 const quickLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
-  { label: "Projects", href: "/projects" },
-  { label: "Work With Us", href: "/about-us/careers" },
-  { label: "Partner With Us", href: "/about-us/partner-with-us" },
-  { label: "Contact", href: "/contact-us" },
-  { label: "Blog", href: "/media/blogs" },
-  { label: "News", href: "/media/news" },
-  { label: "Events", href: "/media/events" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about-us' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Work With Us', href: '/about-us/careers' },
+  { label: 'Partner With Us', href: '/about-us/partner-with-us' },
+  { label: 'Contact', href: '/contact-us' },
+  { label: 'Blog', href: '/media/blogs' },
+  { label: 'News', href: '/media/news' },
+  { label: 'Events', href: '/media/events' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
 ];
 
 export default function Footer() {
@@ -51,7 +51,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="shrink-0 whitespace-nowrap px-2 text-[13px] font-medium tracking-wide text-gold transition-colors hover:text-white"
+              className="shrink-0 px-2 text-[13px] font-medium tracking-wide whitespace-nowrap text-gold transition-colors hover:text-white"
             >
               Subscribe
             </button>
@@ -64,13 +64,13 @@ export default function Footer() {
         <div>
           <Link href="/" className="font-display text-2xl text-white">
             Palton Morgan
-            <span className="ml-2 align-middle text-[10px] font-sans font-medium tracking-[0.3em] text-gold">
+            <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-gold">
               HOLDINGS
             </span>
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
-            A luxury real estate group creating exceptional living spaces
-            across Lagos and Abuja.
+            A luxury real estate group creating exceptional living spaces across
+            Lagos and Abuja.
           </p>
           <SocialLinks className="mt-7" />
         </div>
@@ -82,7 +82,10 @@ export default function Footer() {
           <ul className="grid grid-flow-col grid-cols-2 grid-rows-5 gap-x-8 gap-y-3 text-sm">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="transition-colors hover:text-gold">
+                <Link
+                  href={link.href}
+                  className="transition-colors hover:text-gold"
+                >
                   {link.label}
                 </Link>
               </li>
@@ -99,7 +102,10 @@ export default function Footer() {
               isNavGroup(memberCompanies) &&
               memberCompanies.children.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="transition-colors hover:text-gold">
+                  <Link
+                    href={link.href}
+                    className="transition-colors hover:text-gold"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -136,8 +142,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-5 px-6 py-6 text-xs text-white/40 sm:flex-row lg:px-12">
           <p>
-            Copyright &copy; Palton Morgan Holdings{" "}
-            {new Date().getFullYear()}
+            Copyright &copy; Palton Morgan Holdings {new Date().getFullYear()}
           </p>
           <SocialLinks />
         </div>

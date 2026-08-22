@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { navigation, isNavGroup } from "@/data/navigation";
+import Link from 'next/link';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { navigation, isNavGroup } from '@/data/navigation';
 
 export default function MobileMenu({
   open,
@@ -30,14 +30,18 @@ export default function MobileMenu({
                 key={item.label}
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.05 * i, ease: [0.16, 1, 0.3, 1] }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.05 * i,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
                 className="border-b border-white/10"
               >
                 <div className="flex items-center justify-between">
                   <Link
                     href={item.href}
                     onClick={onClose}
-                    className="flex-1 py-4 text-lg font-display text-white"
+                    className="flex-1 py-4 font-display text-lg text-white"
                   >
                     {item.label}
                   </Link>
@@ -46,7 +50,9 @@ export default function MobileMenu({
                       aria-label={`Toggle ${item.label} submenu`}
                       aria-expanded={expanded === item.label}
                       onClick={() =>
-                        setExpanded((v) => (v === item.label ? null : item.label))
+                        setExpanded((v) =>
+                          v === item.label ? null : item.label
+                        )
                       }
                       className="flex h-10 w-10 items-center justify-center text-white/70"
                     >
@@ -64,7 +70,7 @@ export default function MobileMenu({
                     {expanded === item.label && (
                       <motion.div
                         initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
+                        animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                         className="overflow-hidden"

@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import Reveal from "@/components/animation/Reveal";
-import { Stagger, StaggerItem } from "@/components/animation/Stagger";
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import Reveal from '@/components/animation/Reveal';
+import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 const stats = [
-  { value: "7,000+", label: "Lands & Houses Sold" },
-  { value: "20+", label: "Completed Projects" },
-  { value: "500+", label: "Staff Members" },
-  { value: "6", label: "Member Companies" },
+  { value: '7,000+', label: 'Lands & Houses Sold' },
+  { value: '20+', label: 'Completed Projects' },
+  { value: '500+', label: 'Staff Members' },
+  { value: '6', label: 'Member Companies' },
 ];
 
-const socials = ["Instagram", "LinkedIn", "X"];
+const socials = ['Instagram', 'LinkedIn', 'X'];
 
 export default function Hero() {
   return (
@@ -35,8 +35,10 @@ export default function Hero() {
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
 
-      <div className="absolute right-6 top-24 z-10 hidden items-center gap-3 text-white/60 lg:right-12 lg:flex">
-        <span className="text-[11px] tracking-[0.25em] uppercase">Follow Us</span>
+      <div className="absolute top-24 right-6 z-10 hidden items-center gap-3 text-white/60 lg:right-12 lg:flex">
+        <span className="text-[11px] tracking-[0.25em] uppercase">
+          Follow Us
+        </span>
         <span className="h-px w-8 bg-white/30" />
         {socials.map((s) => (
           <a
@@ -50,11 +52,11 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 pb-16 pt-40 lg:px-12">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 pt-40 pb-16 lg:px-12">
         <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
           Africa&rsquo;s Premier Luxury Real Estate Brand
         </p>
-        <h1 className="font-display max-w-3xl text-5xl font-light leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+        <h1 className="max-w-3xl font-display text-5xl leading-[1.05] font-light text-white sm:text-6xl lg:text-7xl">
           Redefining Luxury Real Estate in Africa and Beyond
         </h1>
         <Reveal delay={0.3}>

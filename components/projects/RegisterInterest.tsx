@@ -1,4 +1,4 @@
-import Reveal from "@/components/animation/Reveal";
+import Reveal from '@/components/animation/Reveal';
 
 export default function RegisterInterest({
   projectName,
@@ -14,7 +14,7 @@ export default function RegisterInterest({
           <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
             Register Interest
           </p>
-          <h2 className="font-display text-3xl font-light leading-tight text-ink-warm lg:text-4xl">
+          <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
             Enquire About {projectName}
           </h2>
           <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-body">
@@ -26,7 +26,10 @@ export default function RegisterInterest({
         <Reveal delay={0.1}>
           <form className="mt-12 grid gap-6 sm:grid-cols-2">
             <div>
-              <label htmlFor="ri-name" className="mb-2 block text-[13px] text-body">
+              <label
+                htmlFor="ri-name"
+                className="mb-2 block text-[13px] text-body"
+              >
                 Full Name
               </label>
               <input
@@ -38,7 +41,10 @@ export default function RegisterInterest({
               />
             </div>
             <div>
-              <label htmlFor="ri-email" className="mb-2 block text-[13px] text-body">
+              <label
+                htmlFor="ri-email"
+                className="mb-2 block text-[13px] text-body"
+              >
                 Email Address
               </label>
               <input
@@ -51,7 +57,10 @@ export default function RegisterInterest({
               />
             </div>
             <div>
-              <label htmlFor="ri-phone" className="mb-2 block text-[13px] text-body">
+              <label
+                htmlFor="ri-phone"
+                className="mb-2 block text-[13px] text-body"
+              >
                 Phone Number
               </label>
               <input
@@ -63,7 +72,10 @@ export default function RegisterInterest({
               />
             </div>
             <div>
-              <label htmlFor="ri-unit" className="mb-2 block text-[13px] text-body">
+              <label
+                htmlFor="ri-unit"
+                className="mb-2 block text-[13px] text-body"
+              >
                 Unit of Interest
               </label>
               <select
@@ -77,7 +89,10 @@ export default function RegisterInterest({
               </select>
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="ri-message" className="mb-2 block text-[13px] text-body">
+              <label
+                htmlFor="ri-message"
+                className="mb-2 block text-[13px] text-body"
+              >
                 Message
               </label>
               <textarea
