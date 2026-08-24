@@ -48,7 +48,7 @@ export const articles: Article[] = [
   {
     slug: 'real-estate-company-of-the-year',
     category: 'News',
-    title: 'Palton Morgan Named Real Estate Company of the Year',
+    title: 'Beaverstone Named Real Estate Company of the Year',
     excerpt:
       "The group has been recognised as Real Estate Company of the Year at this year's industry awards, citing consistency of delivery across its portfolio.",
     body: [
@@ -57,7 +57,7 @@ export const articles: Article[] = [
       'Leadership used the announcement to credit site teams and project managers, noting that awards follow build quality rather than the other way round.',
     ],
     date: '2026-07-22',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.award),
   },
   {
@@ -72,13 +72,13 @@ export const articles: Article[] = [
       'Buyers registered on the project will receive the next milestone update, including revised access arrangements for site visits, later in the quarter.',
     ],
     date: '2026-07-21',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.tower),
   },
   {
     slug: 'africa-international-housing-show',
     category: 'News',
-    title: 'Palton Morgan Exhibits at the Africa Housing Show, Abuja',
+    title: 'Beaverstone Exhibits at the Africa Housing Show, Abuja',
     excerpt:
       "The group presented its Abuja portfolio at this year's Africa International Housing Show, with a focus on the Katampe developments.",
     body: [
@@ -87,7 +87,7 @@ export const articles: Article[] = [
       'The exhibition remains one of the main points of contact between developers and prospective buyers across the region.',
     ],
     date: '2026-06-18',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.site),
   },
   {
@@ -101,7 +101,7 @@ export const articles: Article[] = [
       'Attention now turns to facade cladding and internal partitioning, ahead of services installation later in the year.',
     ],
     date: '2026-05-30',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.interior),
   },
   {
@@ -116,7 +116,7 @@ export const articles: Article[] = [
       "Before completing, ask for sight of the title document, confirm the property's survey coordinates, and check that any outstanding consent application is already in progress rather than merely intended.",
     ],
     date: '2026-05-12',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.market),
   },
   {
@@ -131,7 +131,7 @@ export const articles: Article[] = [
       'A finished home removes that burden and gives you a fixed cost and date, at the price of accepting decisions somebody else has already made.',
     ],
     date: '2026-04-24',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.estate),
   },
   {
@@ -146,7 +146,7 @@ export const articles: Article[] = [
       'None of these are difficult to assess, and together they say more about how a development will age than any specification sheet.',
     ],
     date: '2026-03-19',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.villa),
   },
   {
@@ -160,7 +160,7 @@ export const articles: Article[] = [
       'The programme covers tuition and materials from enrolment through to graduation, and continues with a new intake this academic year.',
     ],
     date: '2026-02-14',
-    author: 'Palton Morgan',
+    author: 'Beaverstone',
     image: u(A.lobby),
   },
 ];
@@ -168,7 +168,7 @@ export const articles: Article[] = [
 export const events: MediaEvent[] = [
   {
     slug: 'end-of-year-party',
-    title: 'Palton Morgan Unwinds — End of Year Party',
+    title: 'Beaverstone Unwinds — End of Year Party',
     date: '2025-12-19',
     description:
       'The whole group came together to close out the year, with teams from every member company in one room.',
@@ -208,7 +208,7 @@ export const events: MediaEvent[] = [
   },
   {
     slug: 'headquarters-opening',
-    title: 'Opening of the Palton Morgan Headquarters',
+    title: 'Opening of the Beaverstone Headquarters',
     date: '2025-06-05',
     description:
       "The official opening of the group's headquarters, bringing all member companies under one roof.",

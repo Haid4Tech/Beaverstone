@@ -63,7 +63,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-16 lg:grid-cols-[1.3fr_1.4fr_1fr_1.1fr] lg:px-12">
         <div>
           <Link href="/" className="font-display text-2xl text-white">
-            Palton Morgan
+            Beaverstone
             <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-gold">
               HOLDINGS
             </span>
@@ -136,14 +136,12 @@ export default function Footer() {
       </div>
 
       {/* Drifting wordmark */}
-      <MarqueeText text="Palton Morgan Holdings" className="py-2" />
+      <MarqueeText text="Beaverstone" className="py-2" />
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-5 px-6 py-6 text-xs text-white/40 sm:flex-row lg:px-12">
-          <p>
-            Copyright &copy; Palton Morgan Holdings {new Date().getFullYear()}
-          </p>
+          <p>Copyright &copy; Beaverstone {new Date().getFullYear()}</p>
           <SocialLinks />
         </div>
       </div>

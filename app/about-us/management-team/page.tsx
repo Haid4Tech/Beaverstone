@@ -7,7 +7,7 @@ import { managementTeam } from '@/data/team';
 export const metadata: Metadata = {
   title: 'Management Team',
   description:
-    'Meet the Management Team running day-to-day operations across Palton Morgan Holdings.',
+    'Meet the Management Team running day-to-day operations across Beaverstone.',
 };
 
 export default function ManagementTeamPage() {

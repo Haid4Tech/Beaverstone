@@ -6,9 +6,9 @@ import ImageReveal from '@/components/animation/ImageReveal';
 import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 export const metadata: Metadata = {
-  title: 'About Palton Morgan',
+  title: 'About Beaverstone',
   description:
-    'Learn about Palton Morgan Holdings — our history, vision, mission and values as a luxury real estate group in Nigeria.',
+    'Learn about Beaverstone — our history, vision, mission and values as a luxury real estate group in Nigeria.',
 };
 
 const values = [
@@ -52,7 +52,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Palton Morgan Holdings"
+        eyebrow="About Beaverstone"
         title="About Us"
         image="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2400&auto=format&fit=crop"
         crumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]}
@@ -75,10 +75,10 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-6 text-[15px] leading-relaxed text-body">
-                Palton Morgan Holdings was founded to bring the full real estate
-                value chain — development, brokerage, contracting and capital —
-                under one roof, with a single standard of design and delivery
-                across every business.
+                Beaverstone was founded to bring the full real estate value
+                chain — development, brokerage, contracting and capital — under
+                one roof, with a single standard of design and delivery across
+                every business.
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-body">
                 Today the group operates across Lagos and Abuja, with a
@@ -89,7 +89,7 @@ export default function AboutPage() {
           </div>
           <ImageReveal
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
-            alt="Interior of a Palton Morgan residence — placeholder image"
+            alt="Interior of a Beaverstone residence — placeholder image"
             className="aspect-[4/5] w-full"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
@@ -171,7 +171,7 @@ export default function AboutPage() {
 
           <ImageReveal
             src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2400&auto=format&fit=crop"
-            alt="Palton Morgan residence detail — placeholder image"
+            alt="Beaverstone residence detail — placeholder image"
             className="mx-auto mt-14 aspect-[21/9] w-full max-w-[1000px]"
             sizes="(max-width: 1024px) 100vw, 1000px"
           />

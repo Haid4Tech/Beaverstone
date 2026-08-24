@@ -39,11 +39,6 @@ body {
   font-family: var(--font-display);
 }
 
-/* Footer wordmark marquee.
-   Track holds two identical copies, so translating -50% lands exactly on the
-   start of the second copy and the loop is seamless. Transform-only, so it
-   stays on the compositor. Duration is a variable for easy tuning — the
-   reference drifts at roughly 13px/sec. */
 @keyframes pm-marquee {
   from {
     transform: translate3d(0, 0, 0);
@@ -58,12 +53,22 @@ body {
   will-change: transform;
 }
 
-.pm-marquee-outline {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--color-tan);
+.pm-marquee-outline-layered {
+  position: relative;
+  -webkit-text-stroke: 1.5px var(--color-tan);
+  -webkit-text-fill-color: transparent;
 }
 
-/* Without text-stroke support transparent text would vanish entirely. */
+.pm-marquee-outline-layered::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: var(--bg-background, var(--color-ink));
+  z-index: 1;
+}
+
 @supports not (-webkit-text-stroke: 1px currentColor) {
   .pm-marquee-outline {
     color: color-mix(in srgb, var(--color-tan) 35%, transparent);

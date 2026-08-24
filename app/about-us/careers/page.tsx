@@ -6,7 +6,7 @@ import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 export const metadata: Metadata = {
   title: 'Work With Us',
   description:
-    "Explore career opportunities across Palton Morgan Holdings' member companies.",
+    "Explore career opportunities across Beaverstone' member companies.",
 };
 
 const openings = [
@@ -48,7 +48,7 @@ export default function CareersPage() {
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
         <Reveal>
           <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
-            Why Palton Morgan
+            Why Beaverstone
             <span className="h-px w-12 bg-gold" />
           </p>
         </Reveal>

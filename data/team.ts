@@ -5,7 +5,7 @@ export type TeamMember = {
   bio?: string;
 };
 
-// Placeholder names/photos — not the real Palton Morgan board or management team.
+// Placeholder names/photos — not the real Beaverstone board or management team.
 export const boardOfDirectors: TeamMember[] = [
   {
     name: 'Adebayo Coker',

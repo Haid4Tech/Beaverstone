@@ -7,7 +7,7 @@ import { contactDetails } from '@/data/contact';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with Palton Morgan Holdings for project enquiries, partnerships and general questions.',
+    'Get in touch with Beaverstone for project enquiries, partnerships and general questions.',
   alternates: { canonical: '/contact-us' },
 };
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Palton Morgan Holdings',
+    name: 'Beaverstone',
     email: contactDetails.email,
     telephone: contactDetails.phone,
     address: {
@@ -140,7 +140,7 @@ export default function ContactPage() {
       >
         <div className="aspect-[21/9] w-full lg:aspect-[3/1]">
           <iframe
-            title="Map of the Palton Morgan Holdings office"
+            title="Map of the Beaverstone office"
             src={`https://maps.google.com/maps?q=${encodeURIComponent(
               contactDetails.mapQuery
             )}&output=embed`}

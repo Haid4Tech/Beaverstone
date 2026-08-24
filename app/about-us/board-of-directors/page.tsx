@@ -7,7 +7,7 @@ import { boardOfDirectors } from '@/data/team';
 export const metadata: Metadata = {
   title: 'Board of Directors',
   description:
-    'Meet the Board of Directors guiding strategy and governance at Palton Morgan Holdings.',
+    'Meet the Board of Directors guiding strategy and governance at Beaverstone.',
 };
 
 export default function BoardOfDirectorsPage() {

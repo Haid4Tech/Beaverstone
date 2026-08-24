@@ -69,7 +69,7 @@ export default async function ArticlePage(
     image: article.image,
     datePublished: article.date,
     author: { '@type': 'Organization', name: article.author },
-    publisher: { '@type': 'Organization', name: 'Palton Morgan Holdings' },
+    publisher: { '@type': 'Organization', name: 'Beaverstone' },
   };
 
   const shareUrl = `https://example.com/media/${category}/${slug}`;

@@ -1,5 +1,5 @@
 // Project names, locations and member-company groupings mirror the real
-// Palton Morgan portfolio. Prices, unit counts, descriptions and imagery are
+// Beaverstone portfolio. Prices, unit counts, descriptions and imagery are
 // PLACEHOLDER content for this build — not official company figures.
 
 export type ProjectStatus =

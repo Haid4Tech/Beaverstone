@@ -21,15 +21,15 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Luxury Real Estate Company in Lagos & Abuja | Palton Morgan',
-    template: '%s | Palton Morgan Holdings',
+    default: 'Luxury Real Estate Company in Lagos & Abuja | Beaverstone',
+    template: '%s | Beaverstone',
   },
   description:
-    'Palton Morgan Holdings is a luxury real estate company in Nigeria, creating exceptional living spaces across Lagos and Abuja.',
+    'Beaverstone is a luxury real estate company in Nigeria, creating exceptional living spaces across Lagos and Abuja.',
   metadataBase: new URL('https://example.com'),
   openGraph: {
     type: 'website',
-    siteName: 'Palton Morgan Holdings',
+    siteName: 'Beaverstone',
   },
 };
 

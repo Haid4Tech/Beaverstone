@@ -61,9 +61,8 @@ export default function Hero() {
         </h1>
         <Reveal delay={0.3}>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
-            Palton Morgan Holdings crafts residences that bring considered
-            design and lasting quality to Africa&rsquo;s most desirable
-            addresses.
+            Beaverstone crafts residences that bring considered design and
+            lasting quality to Africa&rsquo;s most desirable addresses.
           </p>
         </Reveal>
         <motion.div

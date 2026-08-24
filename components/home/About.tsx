@@ -8,13 +8,13 @@ export default function About() {
       <div className="grid items-center gap-16 lg:grid-cols-2">
         <ImageReveal
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
-          alt="Interior of a Palton Morgan residence, placeholder image"
+          alt="Interior of a Beaverstone residence, placeholder image"
           className="aspect-[4/5] w-full"
         />
         <div>
           <Reveal>
             <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
-              About Palton Morgan Holdings
+              About Beaverstone
               <span className="h-px w-12 bg-gold" />
             </p>
           </Reveal>
@@ -26,9 +26,9 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 text-[15px] leading-relaxed text-body">
-              Palton Morgan Holdings brings together six member companies
-              spanning development, brokerage, contracting and capital, each
-              working toward a single standard of design and delivery.
+              Beaverstone brings together six member companies spanning
+              development, brokerage, contracting and capital, each working
+              toward a single standard of design and delivery.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-body">
               From gated residential estates to waterfront towers, every project

@@ -6,7 +6,7 @@ import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 export const metadata: Metadata = {
   title: 'Partner With Us',
   description:
-    'Explore land, joint-venture and investment partnership opportunities with Palton Morgan Holdings.',
+    'Explore land, joint-venture and investment partnership opportunities with Beaverstone.',
 };
 
 const partnerships = [
@@ -29,7 +29,7 @@ export default function PartnerWithUsPage() {
     <>
       <PageHero
         eyebrow="Work With Us"
-        title="Partner With Palton Morgan"
+        title="Partner With Beaverstone"
         image="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2400&auto=format&fit=crop"
         crumbs={[
           { label: 'Home', href: '/' },

@@ -7,8 +7,7 @@ import { events, formatDate } from '@/data/news';
 
 export const metadata: Metadata = {
   title: 'Events',
-  description:
-    'Company events and celebrations across the Palton Morgan Holdings group.',
+  description: 'Company events and celebrations across the Beaverstone group.',
   alternates: { canonical: '/media/events' },
 };
 

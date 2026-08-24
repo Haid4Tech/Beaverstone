@@ -12,7 +12,7 @@ export const navigation: NavItem[] = [
     label: 'About',
     href: '/about-us',
     children: [
-      { label: 'About Palton Morgan', href: '/about-us' },
+      { label: 'About Beaverstone', href: '/about-us' },
       { label: 'Board of Directors', href: '/about-us/board-of-directors' },
       { label: 'Management Team', href: '/about-us/management-team' },
       { label: 'Partner With Us', href: '/about-us/partner-with-us' },
@@ -38,8 +38,8 @@ export const navigation: NavItem[] = [
         href: '/member-companies/micherutti-contractors',
       },
       {
-        label: 'Palton Morgan Capital',
-        href: '/member-companies/palton-morgan-capital',
+        label: 'Beaverstone Capital',
+        href: '/member-companies/beaverstone-capital',
       },
     ],
   },

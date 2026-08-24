@@ -7,7 +7,7 @@ import { projects } from '@/data/projects';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Explore the Palton Morgan Holdings portfolio of luxury residential developments across Lagos and Abuja.',
+    'Explore the Beaverstone portfolio of luxury residential developments across Lagos and Abuja.',
   alternates: { canonical: '/projects' },
 };
 
@@ -16,7 +16,7 @@ export default function ProjectsPage() {
     <>
       <PageHero
         eyebrow="Our Portfolio"
-        title="Luxury Real Estate Projects by Palton Morgan"
+        title="Luxury Real Estate Projects by Beaverstone"
         image={projects[0].heroImage}
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Projects' }]}
       />

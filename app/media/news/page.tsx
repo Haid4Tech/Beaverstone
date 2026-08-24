@@ -7,7 +7,7 @@ import { searchArticles } from '@/lib/media';
 export const metadata: Metadata = {
   title: 'News',
   description:
-    'Company news and project updates from Palton Morgan Holdings across Lagos and Abuja.',
+    'Company news and project updates from Beaverstone across Lagos and Abuja.',
   alternates: { canonical: '/media/news' },
 };
 

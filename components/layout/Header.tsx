@@ -40,7 +40,7 @@ export default function Header() {
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <Link href="/" className="font-display text-xl tracking-wide">
           <span className={dark ? 'text-white' : 'text-ink-warm'}>
-            Palton Morgan
+            Beaverstone
           </span>
           <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-gold">
             HOLDINGS

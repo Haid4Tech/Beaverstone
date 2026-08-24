@@ -1,11 +1,5 @@
 import { cn } from '@/lib/utils';
 
-/**
- * Infinite horizontal wordmark marquee.
- *
- * Decorative by design: the text repeats content already present as real
- * headings/links, so the whole strip is hidden from assistive tech.
- */
 export default function MarqueeText({
   text,
   variant = 'outline',
@@ -30,14 +24,17 @@ export default function MarqueeText({
         } as React.CSSProperties
       }
     >
-      <div className="pm-marquee-track flex w-max">
+      <div className="pm-marquee-track flex w-max [transform:translateZ(0)] antialiased will-change-transform [backface-visibility:hidden]">
         {copies.map((i) => (
           <span
             key={i}
+            data-text={text}
             className={cn(
               'block pr-[0.28em] leading-none font-medium tracking-[0.02em] whitespace-nowrap uppercase',
               'text-[clamp(3rem,12vw,200px)]',
-              variant === 'outline' ? 'pm-marquee-outline' : 'text-white/10'
+              variant === 'outline'
+                ? 'pm-marquee-outline-layered'
+                : 'text-white/10'
             )}
           >
             {text}
