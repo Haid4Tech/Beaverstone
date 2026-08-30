@@ -22,16 +22,18 @@ const item: Variants = {
 export function Stagger({
   children,
   className,
+  once = true,
 }: {
   children: ReactNode;
   className?: string;
+  once?: boolean;
 }) {
   return (
     <motion.div
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-10% 0px' }}
+      viewport={{ once, margin: '-10% 0px' }}
       variants={container}
     >
       {children}

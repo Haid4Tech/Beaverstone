@@ -65,7 +65,7 @@ body {
   left: 0;
   top: 0;
   -webkit-text-stroke: 0;
-  -webkit-text-fill-color: var(--bg-background, var(--color-ink));
+  -webkit-text-fill-color: var(--bg-background, transparent);
   z-index: 1;
 }
 

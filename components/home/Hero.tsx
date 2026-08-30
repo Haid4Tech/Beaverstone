@@ -1,9 +1,3 @@
-'use client';
-
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import Reveal from '@/components/animation/Reveal';
 import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 const stats = [
@@ -17,25 +11,18 @@ const socials = ['Instagram', 'LinkedIn', 'X'];
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[720px] w-full flex-col justify-end overflow-hidden bg-ink">
-      <motion.div
-        className="absolute inset-0"
-        initial={{ scale: 1.08 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 8, ease: [0.16, 1, 0.3, 1] }}
-      >
-        <Image
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2400&auto=format&fit=crop"
-          alt="Contemporary luxury residence at dusk, placeholder image"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-      </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
+    <section className="relative flex h-[70vh] min-h-[420px] w-full flex-col justify-end overflow-hidden bg-ink">
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        src="/videos/hero-placeholder.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/20" />
 
-      <div className="absolute top-24 right-6 z-10 hidden items-center gap-3 text-white/60 lg:right-12 lg:flex">
+      <div className="absolute top-6 right-6 z-10 hidden items-center gap-3 text-white/60 lg:right-12 lg:flex">
         <span className="text-[11px] tracking-[0.25em] uppercase">
           Follow Us
         </span>
@@ -50,40 +37,6 @@ export default function Hero() {
             {s}
           </a>
         ))}
-      </div>
-
-      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 pt-40 pb-16 lg:px-12">
-        <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
-          Africa&rsquo;s Premier Luxury Real Estate Brand
-        </p>
-        <h1 className="max-w-3xl font-display text-5xl leading-[1.05] font-light text-white sm:text-6xl lg:text-7xl">
-          Redefining Luxury Real Estate in Africa and Beyond
-        </h1>
-        <Reveal delay={0.3}>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
-            Beaverstone crafts residences that bring considered design and
-            lasting quality to Africa&rsquo;s most desirable addresses.
-          </p>
-        </Reveal>
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-10 flex flex-wrap gap-4"
-        >
-          <Link
-            href="/projects"
-            className="rounded-sm bg-gold px-8 py-3.5 text-[13px] font-medium tracking-wide text-ink transition-colors hover:bg-gold-bright"
-          >
-            Explore Projects
-          </Link>
-          <Link
-            href="/about-us"
-            className="rounded-sm border border-white/30 px-8 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:border-gold hover:text-gold"
-          >
-            About Us
-          </Link>
-        </motion.div>
       </div>
 
       <Stagger className="relative z-10 mx-auto grid w-full max-w-[1400px] grid-cols-2 gap-8 border-t border-white/10 px-6 py-10 lg:grid-cols-4 lg:px-12">

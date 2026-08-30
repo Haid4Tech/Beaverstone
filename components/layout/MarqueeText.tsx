@@ -30,11 +30,11 @@ export default function MarqueeText({
             key={i}
             data-text={text}
             className={cn(
-              'block pr-[0.28em] leading-none font-medium tracking-[0.02em] whitespace-nowrap uppercase',
+              'block pr-[0.28em] leading-none font-black whitespace-nowrap uppercase',
               'text-[clamp(3rem,12vw,200px)]',
               variant === 'outline'
-                ? 'pm-marquee-outline-layered'
-                : 'text-white/10'
+                ? 'pm-marquee-outline-layered tracking-[0.06em]'
+                : 'text-white/10 tracking-[0.02em]'
             )}
           >
             {text}

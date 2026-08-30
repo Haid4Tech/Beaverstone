@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Reveal from '@/components/animation/Reveal';
+import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 const testimonials = [
   {
@@ -10,71 +11,132 @@ const testimonials = [
       'From reservation to handover, the process was transparent and well communicated. Our home was delivered exactly as shown.',
     name: 'A. Bello',
     role: 'Homeowner, Kadars Gate',
+    dark: false,
   },
   {
     quote:
       'The build quality and attention to finishing detail stood out immediately compared to other developments we viewed.',
     name: 'C. Okafor',
     role: 'Homeowner, The Meadows',
+    dark: true,
   },
   {
     quote:
       'As an investor, the documentation and title process gave us confidence to commit early in construction.',
     name: 'T. Adeyemi',
     role: 'Investor, Paramount Twin Towers',
+    dark: false,
   },
 ];
 
-export default function Testimonials() {
-  const [index, setIndex] = useState(0);
-  const active = testimonials[index];
+function StarRow({ dark }: { dark: boolean }) {
+  return (
+    <div className="flex gap-1">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg
+          key={i}
+          viewBox="0 0 24 24"
+          className={`h-4 w-4 ${dark ? 'fill-gold-bright' : 'fill-gold'}`}
+        >
+          <polygon points="12,1 15.09,8.26 23,9.27 17,14.97 18.18,22.9 12,19.1 5.82,22.9 7,14.97 1,9.27 8.91,8.26" />
+        </svg>
+      ))}
+    </div>
+  );
+}
+
+function QuoteMark() {
+  return (
+    <svg width="28" height="24" viewBox="0 0 35 30" className="fill-tan">
+      <path d="M0 15V30H14.9996V15H4.99991C4.99991 9.48612 9.48589 5.00003 14.9996 5.00003V0C6.72834 0 0 6.7285 0 15Z" />
+      <path d="M35.0001 5.00003V0C26.7288 0 20.0005 6.7285 20.0005 15V30H35.0001V15H25.0004C25.0004 9.48612 29.4864 5.00003 35.0001 5.00003Z" />
+    </svg>
+  );
+}
+
+function ScrollHeading() {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
+  const x = useTransform(scrollYProgress, [0, 1], ['30%', '-30%']);
 
   return (
-    <section className="bg-cream py-24 lg:py-32">
-      <div className="mx-auto max-w-[900px] px-6 text-center lg:px-12">
-        <Reveal>
-          <p className="mb-4 flex items-center justify-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
-            <span className="h-px w-12 bg-gold" />
-            Testimonials
-            <span className="h-px w-12 bg-gold" />
-          </p>
-        </Reveal>
+    <div
+      ref={ref}
+      aria-hidden="true"
+      className="hidden overflow-hidden lg:block"
+    >
+      <motion.p
+        style={{ x }}
+        className="text-[clamp(4rem,11vw,200px)] leading-none font-bold whitespace-nowrap text-ink-warm"
+      >
+        What Our Residents Say
+      </motion.p>
+    </div>
+  );
+}
 
-        <div className="relative mt-10 min-h-[220px]">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -16 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <p className="font-display text-2xl leading-relaxed font-light text-ink-warm lg:text-3xl">
-                &ldquo;{active.quote}&rdquo;
-              </p>
-              <p className="mt-6 text-sm font-medium text-ink-warm">
-                {active.name}
-              </p>
-              <p className="text-xs tracking-widest text-gold uppercase">
-                {active.role}
-              </p>
-            </motion.div>
-          </AnimatePresence>
+export default function Testimonials() {
+  return (
+    <section className="overflow-hidden bg-cream py-24 lg:py-32">
+      <div className="lg:hidden">
+        <div className="mx-auto max-w-[1400px] px-6">
+          <Reveal>
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+              Testimonials
+              <span className="h-px w-12 bg-gold" />
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="max-w-xl font-display text-3xl leading-tight font-light text-ink-warm">
+              What Our Residents Say
+            </h2>
+          </Reveal>
         </div>
+      </div>
+      <ScrollHeading />
 
-        <div className="mt-10 flex justify-center gap-3">
-          {testimonials.map((t, i) => (
-            <button
-              key={t.name}
-              aria-label={`Show testimonial from ${t.name}`}
-              aria-current={i === index}
-              onClick={() => setIndex(i)}
-              className={`h-1.5 rounded-full transition-all ${
-                i === index ? 'w-8 bg-gold' : 'w-1.5 bg-line'
-              }`}
-            />
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
+        <Stagger
+          once={false}
+          className="mt-14 grid gap-5 lg:mt-20 lg:grid-cols-3"
+        >
+          {testimonials.map((t) => (
+            <StaggerItem key={t.name} className="h-full">
+              <div
+                className={`flex h-full flex-col justify-between rounded-[10px] p-6 shadow-[0_30px_60px_rgba(0,0,0,0.1)] ${
+                  t.dark ? 'bg-ink text-white' : 'bg-white text-ink-warm'
+                }`}
+              >
+                <div>
+                  <StarRow dark={t.dark} />
+                  <p
+                    className={`mt-5 text-base leading-relaxed ${
+                      t.dark ? 'text-white/70' : 'text-body'
+                    }`}
+                  >
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                </div>
+                <div className="mt-8 flex items-end justify-between">
+                  <div>
+                    <p className="text-sm font-medium">{t.name}</p>
+                    <p
+                      className={`text-xs tracking-widest uppercase ${
+                        t.dark ? 'text-white/50' : 'text-body'
+                      }`}
+                    >
+                      {t.role}
+                    </p>
+                  </div>
+                  <QuoteMark />
+                </div>
+              </div>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </div>
     </section>
   );
