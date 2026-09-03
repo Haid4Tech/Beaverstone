@@ -25,7 +25,7 @@ export default function MediaSidebar({
         <h2 className="font-display text-xl text-ink-warm">Search Here</h2>
         <form
           action={action}
-          className="mt-4 flex border-b border-line focus-within:border-gold"
+          className="mt-4 flex border-b border-line focus-within:border-ink"
         >
           <label htmlFor="media-search" className="sr-only">
             Search articles
@@ -41,7 +41,7 @@ export default function MediaSidebar({
           <button
             type="submit"
             aria-label="Search"
-            className="px-2 text-gold transition-colors hover:text-ink-warm"
+            className="px-2 text-body transition-colors hover:text-ink-warm"
           >
             &rarr;
           </button>
@@ -64,7 +64,7 @@ export default function MediaSidebar({
                   />
                 </span>
                 <span className="min-w-0">
-                  <span className="block font-display text-sm leading-snug text-ink-warm transition-colors group-hover:text-gold">
+                  <span className="block font-display text-sm leading-snug text-ink-warm transition-colors group-hover:text-body">
                     {article.title}
                   </span>
                   <span className="mt-1 block text-[11px] tracking-wide text-body">
@@ -84,7 +84,7 @@ export default function MediaSidebar({
             <li key={category}>
               <Link
                 href={`/media/${categorySlug[category]}`}
-                className="flex items-center justify-between border-b border-line pb-2 text-sm text-body transition-colors hover:text-gold"
+                className="flex items-center justify-between border-b border-line pb-2 text-sm text-body transition-colors hover:text-ink"
               >
                 {category}
                 <span className="text-[12px] text-body/70">
@@ -96,7 +96,7 @@ export default function MediaSidebar({
           <li>
             <Link
               href="/media/events"
-              className="flex items-center justify-between border-b border-line pb-2 text-sm text-body transition-colors hover:text-gold"
+              className="flex items-center justify-between border-b border-line pb-2 text-sm text-body transition-colors hover:text-ink"
             >
               Events
             </Link>

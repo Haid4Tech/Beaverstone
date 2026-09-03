@@ -42,7 +42,12 @@ export default function Header() {
           <span className={dark ? 'text-white' : 'text-ink-warm'}>
             Beaverstone
           </span>
-          <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-gold">
+          <span
+            className={cn(
+              'ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em]',
+              dark ? 'text-mist' : 'text-body'
+            )}
+          >
             HOLDINGS
           </span>
         </Link>
@@ -64,8 +69,8 @@ export default function Header() {
                   className={cn(
                     'flex h-20 items-center px-4 text-[13px] font-medium tracking-wide transition-colors',
                     dark
-                      ? 'text-white/90 hover:text-white'
-                      : 'text-ink-warm hover:text-gold'
+                      ? 'text-white/70 hover:text-white'
+                      : 'text-ink-warm/70 hover:text-ink-warm'
                   )}
                 >
                   {item.label}
@@ -78,13 +83,13 @@ export default function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.2, ease: 'easeOut' }}
-                        className="absolute top-full left-0 min-w-[240px] border-t-2 border-gold bg-white py-3 shadow-xl"
+                        className="absolute top-full left-0 min-w-[240px] border-t-2 border-ink bg-white py-3 shadow-xl"
                       >
                         {item.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="block px-6 py-2.5 text-[13px] text-ink-warm/80 transition-colors hover:bg-cream hover:text-gold"
+                            className="block px-6 py-2.5 text-[13px] text-ink-warm/70 transition-colors hover:bg-cream hover:text-ink"
                           >
                             {child.label}
                           </Link>
@@ -101,10 +106,10 @@ export default function Header() {
           <Link
             href="/contact-us"
             className={cn(
-              'hidden rounded-sm border px-6 py-2.5 text-[13px] font-medium tracking-wide transition-colors lg:inline-block',
+              'btn-wipe hidden rounded-sm border px-6 py-2.5 text-[13px] font-medium tracking-wide lg:inline-block',
               dark
-                ? 'border-white/40 text-white hover:border-gold hover:text-gold'
-                : 'border-ink-warm/30 text-ink-warm hover:border-gold hover:text-gold'
+                ? 'border-white/40 text-white [--btn-wipe-fill:var(--color-cream)] hover:text-ink'
+                : 'border-ink-warm/30 text-ink-warm [--btn-wipe-fill:var(--color-ink)] hover:text-white'
             )}
           >
             Contact Us

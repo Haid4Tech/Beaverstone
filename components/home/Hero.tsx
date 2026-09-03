@@ -11,7 +11,7 @@ const socials = ['Instagram', 'LinkedIn', 'X'];
 
 export default function Hero() {
   return (
-    <section className="relative flex h-[70vh] min-h-[420px] w-full flex-col justify-end overflow-hidden bg-ink">
+    <section className="relative flex h-[95vh] min-h-[500px] w-full flex-col justify-end overflow-hidden bg-ink">
       <video
         className="absolute inset-0 h-full w-full object-cover"
         src="/videos/hero-placeholder.mp4"
@@ -32,7 +32,7 @@ export default function Hero() {
             key={s}
             href="#"
             aria-label={s}
-            className="text-[11px] tracking-wide transition-colors hover:text-gold"
+            className="text-[11px] tracking-wide transition-colors hover:text-white"
           >
             {s}
           </a>

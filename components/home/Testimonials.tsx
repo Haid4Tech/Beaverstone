@@ -36,7 +36,7 @@ function StarRow({ dark }: { dark: boolean }) {
         <svg
           key={i}
           viewBox="0 0 24 24"
-          className={`h-4 w-4 ${dark ? 'fill-gold-bright' : 'fill-gold'}`}
+          className={`h-4 w-4 ${dark ? 'fill-mist' : 'fill-ink'}`}
         >
           <polygon points="12,1 15.09,8.26 23,9.27 17,14.97 18.18,22.9 12,19.1 5.82,22.9 7,14.97 1,9.27 8.91,8.26" />
         </svg>
@@ -47,7 +47,7 @@ function StarRow({ dark }: { dark: boolean }) {
 
 function QuoteMark() {
   return (
-    <svg width="28" height="24" viewBox="0 0 35 30" className="fill-tan">
+    <svg width="28" height="24" viewBox="0 0 35 30" className="fill-line">
       <path d="M0 15V30H14.9996V15H4.99991C4.99991 9.48612 9.48589 5.00003 14.9996 5.00003V0C6.72834 0 0 6.7285 0 15Z" />
       <path d="M35.0001 5.00003V0C26.7288 0 20.0005 6.7285 20.0005 15V30H35.0001V15H25.0004C25.0004 9.48612 29.4864 5.00003 35.0001 5.00003Z" />
     </svg>
@@ -84,9 +84,9 @@ export default function Testimonials() {
       <div className="lg:hidden">
         <div className="mx-auto max-w-[1400px] px-6">
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               Testimonials
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-ink" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>

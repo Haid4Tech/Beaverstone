@@ -19,7 +19,7 @@ export default function TeamCard({
         />
         <div className="mt-4">
           <h3 className="font-display text-lg text-ink-warm">{member.name}</h3>
-          <p className="mt-1 text-[13px] tracking-wide text-gold">
+          <p className="mt-1 text-[13px] tracking-wide text-body">
             {member.role}
           </p>
           {member.bio && (

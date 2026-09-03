@@ -39,9 +39,9 @@ export default function Expertise() {
       />
       <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
         <Reveal>
-          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
             What We Do
-            <span className="h-px w-12 bg-gold" />
+            <span className="h-px w-12 bg-mist" />
           </p>
         </Reveal>
         <Reveal delay={0.1}>
@@ -63,7 +63,7 @@ export default function Expertise() {
                 strokeWidth={1.2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-9 w-9 text-gold"
+                className="h-9 w-9 text-mist"
                 aria-hidden="true"
               >
                 {item.icon}

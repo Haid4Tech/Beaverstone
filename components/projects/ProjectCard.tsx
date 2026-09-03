@@ -22,12 +22,12 @@ export default function ProjectCard({
             imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
           />
           {project.status === 'Currently Selling' && (
-            <span className="absolute top-4 left-4 z-20 bg-gold px-3 py-1.5 text-[11px] font-medium tracking-widest text-ink uppercase">
+            <span className="absolute top-4 left-4 z-20 bg-mist px-3 py-1.5 text-[11px] font-medium tracking-widest text-ink uppercase">
               {project.status}
             </span>
           )}
         </div>
-        <h3 className="mt-5 font-display text-2xl text-ink-warm transition-colors group-hover:text-gold">
+        <h3 className="mt-5 font-display text-2xl text-ink-warm transition-colors group-hover:text-body">
           {project.name}
         </h3>
         <p className="mt-1 text-[13px] tracking-wide text-body">

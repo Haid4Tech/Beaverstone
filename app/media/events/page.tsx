@@ -33,7 +33,7 @@ export default function EventsPage() {
             className={`py-20 lg:py-24 ${i > 0 ? 'border-t border-line' : ''}`}
           >
             <Reveal>
-              <p className="text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+              <p className="text-[13px] font-medium tracking-[0.3em] text-body uppercase">
                 <time dateTime={event.date}>{formatDate(event.date)}</time>
               </p>
               <h2

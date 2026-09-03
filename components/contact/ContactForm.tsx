@@ -1,7 +1,7 @@
 import { enquiryTypes } from '@/data/contact';
 
 const inputClass =
-  'w-full border-b border-line bg-transparent py-2.5 text-sm text-ink-warm placeholder:text-body/50 focus:border-gold focus:outline-none';
+  'w-full border-b border-line bg-transparent py-2.5 text-sm text-ink-warm placeholder:text-body/50 focus:border-ink focus:outline-none';
 
 export default function ContactForm() {
   return (
@@ -91,7 +91,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="justify-self-start rounded-sm bg-ink px-10 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:bg-gold hover:text-ink sm:col-span-2"
+        className="justify-self-start rounded-sm bg-ink px-10 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink sm:col-span-2"
       >
         Submit
       </button>

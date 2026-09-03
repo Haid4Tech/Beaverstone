@@ -63,9 +63,9 @@ export default function AboutPage() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
             <Reveal>
-              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
                 At the Core
-                <span className="h-px w-12 bg-gold" />
+                <span className="h-px w-12 bg-ink" />
               </p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -107,9 +107,9 @@ export default function AboutPage() {
         />
         <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
               Our Journey
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-mist" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -121,7 +121,7 @@ export default function AboutPage() {
           <Stagger className="mt-16 grid gap-10 border-t border-white/15 pt-10 sm:grid-cols-2 lg:grid-cols-4">
             {journey.map((j) => (
               <StaggerItem key={j.year}>
-                <p className="font-display text-4xl font-light text-gold">
+                <p className="font-display text-4xl font-light text-mist">
                   {j.year}
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
@@ -137,7 +137,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-[1100px] px-6 py-24 text-center lg:px-12 lg:py-32">
         <div className="grid gap-16 sm:grid-cols-2">
           <Reveal>
-            <p className="text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               Our Vision
             </p>
             <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
@@ -145,7 +145,7 @@ export default function AboutPage() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               Our Mission
             </p>
             <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
@@ -159,10 +159,10 @@ export default function AboutPage() {
       <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal className="text-center">
-            <p className="mb-4 flex items-center justify-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
-              <span className="h-px w-12 bg-gold" />
+            <p className="mb-4 flex items-center justify-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
+              <span className="h-px w-12 bg-ink" />
               Our Values
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-ink" />
             </p>
             <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               What We Hold To
@@ -184,7 +184,7 @@ export default function AboutPage() {
               >
                 <span
                   aria-hidden="true"
-                  className="w-14 shrink-0 text-center font-display text-5xl font-light text-gold lg:text-6xl"
+                  className="w-14 shrink-0 text-center font-display text-5xl font-light text-ink lg:text-6xl"
                 >
                   {v.letter}
                 </span>
@@ -205,7 +205,7 @@ export default function AboutPage() {
       {/* Our Commitment — centred statement */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 text-center lg:px-12 lg:py-32">
         <Reveal>
-          <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
             Our Commitment
           </p>
           <h2 className="mx-auto max-w-2xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">

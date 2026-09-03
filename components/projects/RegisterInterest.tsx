@@ -11,7 +11,7 @@ export default function RegisterInterest({
     <section className="bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[760px] px-6 lg:px-12">
         <Reveal className="text-center">
-          <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
             Register Interest
           </p>
           <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
@@ -37,7 +37,7 @@ export default function RegisterInterest({
                 name="name"
                 required
                 autoComplete="name"
-                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
               />
             </div>
             <div>
@@ -53,7 +53,7 @@ export default function RegisterInterest({
                 name="email"
                 required
                 autoComplete="email"
-                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
               />
             </div>
             <div>
@@ -68,7 +68,7 @@ export default function RegisterInterest({
                 type="tel"
                 name="phone"
                 autoComplete="tel"
-                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
               />
             </div>
             <div>
@@ -81,7 +81,7 @@ export default function RegisterInterest({
               <select
                 id="ri-unit"
                 name="unit"
-                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
               >
                 {unitTypes.map((u) => (
                   <option key={u}>{u}</option>
@@ -99,12 +99,12 @@ export default function RegisterInterest({
                 id="ri-message"
                 name="message"
                 rows={4}
-                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
               />
             </div>
             <button
               type="submit"
-              className="justify-self-start rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:bg-gold hover:text-ink sm:col-span-2"
+              className="justify-self-start rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink sm:col-span-2"
             >
               Submit Enquiry
             </button>

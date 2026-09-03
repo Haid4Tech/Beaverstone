@@ -47,9 +47,9 @@ export default function CareersPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
         <Reveal>
-          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
             Why Beaverstone
-            <span className="h-px w-12 bg-gold" />
+            <span className="h-px w-12 bg-ink" />
           </p>
         </Reveal>
         <Stagger className="mt-4 grid gap-10 sm:grid-cols-3">
@@ -86,7 +86,7 @@ export default function CareersPage() {
                 </div>
                 <a
                   href="mailto:careers@example.com"
-                  className="border-b border-gold pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-gold"
+                  className="border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
                 >
                   Apply Now
                 </a>

@@ -34,7 +34,7 @@ export default function MarqueeText({
               'text-[clamp(3rem,12vw,200px)]',
               variant === 'outline'
                 ? 'pm-marquee-outline-layered tracking-[0.06em]'
-                : 'text-white/10 tracking-[0.02em]'
+                : 'tracking-[0.02em] text-white/10'
             )}
           >
             {text}

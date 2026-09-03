@@ -61,7 +61,7 @@ export default function SocialLinks({ className }: { className?: string }) {
           <a
             href={s.href}
             aria-label={s.label}
-            className="flex h-9 w-9 items-center justify-center border border-white/20 text-white/70 transition-colors hover:border-gold hover:text-gold"
+            className="flex h-9 w-9 items-center justify-center border border-white/20 text-white/70 transition-colors hover:border-white hover:text-white"
           >
             <svg
               viewBox="0 0 24 24"

@@ -53,7 +53,7 @@ export default function AmenityIcon({ label }: { label: string }) {
       strokeWidth={1.2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-7 w-7 text-gold"
+      className="h-7 w-7 text-ink"
       aria-hidden="true"
     >
       {icon}

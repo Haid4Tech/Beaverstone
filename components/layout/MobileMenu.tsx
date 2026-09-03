@@ -81,7 +81,7 @@ export default function MobileMenu({
                               key={child.href}
                               href={child.href}
                               onClick={onClose}
-                              className="py-2 text-sm text-white/60 transition-colors hover:text-gold"
+                              className="py-2 text-sm text-white/60 transition-colors hover:text-white"
                             >
                               {child.label}
                             </Link>

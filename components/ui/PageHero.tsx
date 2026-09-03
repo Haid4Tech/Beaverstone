@@ -38,7 +38,7 @@ export default function PageHero({
                 {c.href ? (
                   <Link
                     href={c.href}
-                    className="transition-colors hover:text-gold"
+                    className="transition-colors hover:text-white"
                   >
                     {c.label}
                   </Link>
@@ -50,7 +50,7 @@ export default function PageHero({
           </nav>
         )}
         {eyebrow && (
-          <p className="mb-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
             {eyebrow}
           </p>
         )}

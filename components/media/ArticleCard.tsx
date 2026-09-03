@@ -23,9 +23,9 @@ export default function ArticleCard({
           />
         </Link>
 
-        <p className="mt-5 flex flex-wrap items-center gap-x-3 text-[11px] font-medium tracking-widest text-gold uppercase">
+        <p className="mt-5 flex flex-wrap items-center gap-x-3 text-[11px] font-medium tracking-widest text-body uppercase">
           {article.category}
-          <span aria-hidden className="h-px w-6 bg-gold/50" />
+          <span aria-hidden className="h-px w-6 bg-line" />
           <time dateTime={article.date} className="text-body">
             {formatDate(article.date)}
           </time>
@@ -34,7 +34,7 @@ export default function ArticleCard({
         <h2 className="mt-2 font-display text-2xl leading-snug text-ink-warm lg:text-3xl">
           <Link
             href={articleHref(article)}
-            className="transition-colors hover:text-gold"
+            className="transition-colors hover:text-ink"
           >
             {article.title}
           </Link>
@@ -46,7 +46,7 @@ export default function ArticleCard({
 
         <Link
           href={articleHref(article)}
-          className="mt-5 inline-flex items-center gap-2 border-b border-gold pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-gold"
+          className="mt-5 inline-flex items-center gap-2 border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
         >
           Read More <span aria-hidden>&rarr;</span>
         </Link>

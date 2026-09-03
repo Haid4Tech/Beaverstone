@@ -48,9 +48,9 @@ export default function HowItWorks() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
       <Reveal>
-        <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+        <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
           How It Works
-          <span className="h-px w-12 bg-gold" />
+          <span className="h-px w-12 bg-ink" />
         </p>
       </Reveal>
       <Reveal delay={0.1}>
@@ -75,7 +75,7 @@ export default function HowItWorks() {
                 'group relative basis-0 cursor-pointer overflow-hidden bg-ink text-left',
                 'transition-[flex-grow] duration-[900ms] motion-reduce:transition-none',
                 EASE,
-                'focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2',
+                'focus:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2',
                 isActive ? 'grow-[6]' : 'grow'
               )}
             >
@@ -93,7 +93,7 @@ export default function HowItWorks() {
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
 
               <div className="relative flex h-full flex-col p-6">
-                <span className="font-display text-3xl text-gold">
+                <span className="font-display text-3xl text-mist">
                   {step.n}
                 </span>
 
@@ -145,7 +145,7 @@ export default function HowItWorks() {
                 className="object-cover opacity-45"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-              <span className="absolute bottom-4 left-4 font-display text-3xl text-gold">
+              <span className="absolute bottom-4 left-4 font-display text-3xl text-mist">
                 {step.n}
               </span>
             </div>
@@ -166,7 +166,7 @@ export default function HowItWorks() {
           </p>
           <Link
             href="/contact-us"
-            className="rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:bg-gold hover:text-ink"
+            className="rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink"
           >
             Get In Touch
           </Link>

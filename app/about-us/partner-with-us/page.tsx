@@ -40,9 +40,9 @@ export default function PartnerWithUsPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
         <Reveal>
-          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
             Partnership Opportunities
-            <span className="h-px w-12 bg-gold" />
+            <span className="h-px w-12 bg-ink" />
           </p>
         </Reveal>
         <Reveal delay={0.1}>
@@ -57,7 +57,7 @@ export default function PartnerWithUsPage() {
               key={p.title}
               className="border-line bg-white p-8 sm:border-l first:sm:border-l-0"
             >
-              <span className="font-display text-3xl text-gold">
+              <span className="font-display text-3xl text-ink">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h3 className="mt-4 font-display text-xl text-ink-warm">
@@ -89,7 +89,7 @@ export default function PartnerWithUsPage() {
                   id="pw-name"
                   name="name"
                   required
-                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-gold focus:outline-none"
+                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
                 />
               </div>
               <div className="sm:col-span-1">
@@ -104,7 +104,7 @@ export default function PartnerWithUsPage() {
                   type="email"
                   name="email"
                   required
-                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-gold focus:outline-none"
+                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
                 />
               </div>
               <div className="sm:col-span-2">
@@ -117,7 +117,7 @@ export default function PartnerWithUsPage() {
                 <select
                   id="pw-type"
                   name="type"
-                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-gold focus:outline-none"
+                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
                 >
                   <option>Land Partnership</option>
                   <option>Investment Partnership</option>
@@ -136,12 +136,12 @@ export default function PartnerWithUsPage() {
                   name="message"
                   rows={4}
                   required
-                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-gold focus:outline-none"
+                  className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
                 />
               </div>
               <button
                 type="submit"
-                className="justify-self-start rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:bg-gold hover:text-ink sm:col-span-2"
+                className="justify-self-start rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink sm:col-span-2"
               >
                 Submit Enquiry
               </button>

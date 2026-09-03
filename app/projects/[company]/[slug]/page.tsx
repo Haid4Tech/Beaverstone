@@ -82,9 +82,9 @@ export default async function ProjectDetailPage(
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
             <Reveal>
-              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
                 About {project.name}
-                <span className="h-px w-12 bg-gold" />
+                <span className="h-px w-12 bg-ink" />
               </p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -116,9 +116,9 @@ export default async function ProjectDetailPage(
       <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               Project Summary
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-ink" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -156,7 +156,7 @@ export default async function ProjectDetailPage(
                   >
                     <span
                       aria-hidden
-                      className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold"
+                      className="mt-2 h-1 w-1 shrink-0 rounded-full bg-body"
                     />
                     {unit}
                   </li>
@@ -181,9 +181,9 @@ export default async function ProjectDetailPage(
           />
           <div>
             <Reveal>
-              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
                 The Location
-                <span className="h-px w-12 bg-gold" />
+                <span className="h-px w-12 bg-ink" />
               </p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -211,9 +211,9 @@ export default async function ProjectDetailPage(
         />
         <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
               Features &amp; Amenities
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-mist" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -239,9 +239,9 @@ export default async function ProjectDetailPage(
       {/* Neighbourhood map */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
         <Reveal>
-          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
             Neighbourhood
-            <span className="h-px w-12 bg-gold" />
+            <span className="h-px w-12 bg-ink" />
           </p>
           <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
             {project.neighbourhood.name}
@@ -266,9 +266,9 @@ export default async function ProjectDetailPage(
       <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               Gallery
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-ink" />
             </p>
             <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
               Inside {project.name}

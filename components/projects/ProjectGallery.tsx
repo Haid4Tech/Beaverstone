@@ -47,7 +47,7 @@ export default function ProjectGallery({
             type="button"
             onClick={() => setOpen(i)}
             aria-label={`Open image ${i + 1} of ${images.length} in full screen`}
-            className="group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+            className="group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
           >
             <ImageReveal
               src={src}
@@ -77,7 +77,7 @@ export default function ProjectGallery({
               type="button"
               onClick={close}
               aria-label="Close gallery"
-              className="absolute top-5 right-5 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-gold"
+              className="absolute top-5 right-5 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-white"
             >
               &times;
             </button>
@@ -89,7 +89,7 @@ export default function ProjectGallery({
                 step(-1);
               }}
               aria-label="Previous image"
-              className="absolute left-4 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-gold"
+              className="absolute left-4 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-white"
             >
               &#8249;
             </button>
@@ -118,7 +118,7 @@ export default function ProjectGallery({
                 step(1);
               }}
               aria-label="Next image"
-              className="absolute right-4 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-gold"
+              className="absolute right-4 z-10 flex h-11 w-11 items-center justify-center text-2xl text-white/70 transition-colors hover:text-white"
             >
               &#8250;
             </button>

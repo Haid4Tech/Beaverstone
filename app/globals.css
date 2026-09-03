@@ -1,23 +1,19 @@
 @import 'tailwindcss';
 
 :root {
-  --color-ink: #051b2e;
-  --color-ink-warm: #1a1208;
-  --color-gold: #c9a84c;
-  --color-gold-bright: #f9b418;
-  --color-tan: #b79b6f;
-  --color-cream: #f8f8f8;
-  --color-line: #e6e6e6;
-  --color-body: #666666;
+  --color-ink: #060730;
+  --color-ink-warm: #060730;
+  --color-cream: #f7f7f9;
+  --color-mist: #b4b5bf;
+  --color-line: #d9dae0;
+  --color-body: #5c5d6b;
 }
 
 @theme inline {
   --color-ink: var(--color-ink);
   --color-ink-warm: var(--color-ink-warm);
-  --color-gold: var(--color-gold);
-  --color-gold-bright: var(--color-gold-bright);
-  --color-tan: var(--color-tan);
   --color-cream: var(--color-cream);
+  --color-mist: var(--color-mist);
   --color-line: var(--color-line);
   --color-body: var(--color-body);
   --font-display: var(--font-cormorant);
@@ -39,6 +35,43 @@ body {
   font-family: var(--font-display);
 }
 
+/* Tailwind's Preflight resets buttons to `default`; restore the hand. */
+button:not(:disabled),
+[role='button']:not([aria-disabled='true']) {
+  cursor: pointer;
+}
+
+.btn-wipe {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  /* Delayed so the label flips only once the fill has passed under it. */
+  transition: color 0.15s ease 0.28s;
+}
+
+.btn-wipe::before {
+  content: '';
+  position: absolute;
+  inset: 0 -25%;
+  z-index: -1;
+  background: var(--btn-wipe-fill, var(--color-mist));
+  transform: scaleX(0) skewX(-12deg);
+  transform-origin: right center;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.btn-wipe:hover::before,
+.btn-wipe:focus-visible::before {
+  transform: scaleX(1) skewX(-12deg);
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-wipe::before {
+    transition: none;
+  }
+}
+
 @keyframes pm-marquee {
   from {
     transform: translate3d(0, 0, 0);
@@ -55,7 +88,7 @@ body {
 
 .pm-marquee-outline-layered {
   position: relative;
-  -webkit-text-stroke: 1.5px var(--color-tan);
+  -webkit-text-stroke: 1.5px var(--color-mist);
   -webkit-text-fill-color: transparent;
 }
 
@@ -71,7 +104,7 @@ body {
 
 @supports not (-webkit-text-stroke: 1px currentColor) {
   .pm-marquee-outline {
-    color: color-mix(in srgb, var(--color-tan) 35%, transparent);
+    color: color-mix(in srgb, var(--color-mist) 35%, transparent);
     -webkit-text-stroke: 0;
   }
 }

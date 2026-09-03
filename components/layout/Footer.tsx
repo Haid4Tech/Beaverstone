@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-8 px-6 py-14 lg:flex-row lg:items-center lg:px-12">
           <div>
             <h2 className="font-display text-3xl font-light text-white lg:text-4xl">
-              Stay <span className="text-gold">Informed</span>
+              Stay <span className="text-mist">Informed</span>
             </h2>
             <p className="mt-2 max-w-md text-sm leading-relaxed">
               New releases, project milestones and market insight, straight to
@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <form className="flex w-full max-w-md items-center border-b border-white/25 focus-within:border-gold">
+          <form className="flex w-full max-w-md items-center border-b border-white/25 focus-within:border-mist">
             <label htmlFor="footer-email" className="sr-only">
               Your email address
             </label>
@@ -51,7 +51,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="shrink-0 px-2 text-[13px] font-medium tracking-wide whitespace-nowrap text-gold transition-colors hover:text-white"
+              className="shrink-0 px-2 text-[13px] font-medium tracking-wide whitespace-nowrap text-mist transition-colors hover:text-white"
             >
               Subscribe
             </button>
@@ -64,7 +64,7 @@ export default function Footer() {
         <div>
           <Link href="/" className="font-display text-2xl text-white">
             Beaverstone
-            <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-gold">
+            <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-mist">
               HOLDINGS
             </span>
           </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="transition-colors hover:text-gold"
+                  className="transition-colors hover:text-white"
                 >
                   {link.label}
                 </Link>
@@ -104,7 +104,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="transition-colors hover:text-gold"
+                    className="transition-colors hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -121,13 +121,13 @@ export default function Footer() {
             <p className="leading-relaxed">{contactDetails.address}</p>
             <a
               href={`mailto:${contactDetails.email}`}
-              className="transition-colors hover:text-gold"
+              className="transition-colors hover:text-white"
             >
               {contactDetails.email}
             </a>
             <a
               href={`tel:${contactDetails.phoneHref}`}
-              className="transition-colors hover:text-gold"
+              className="transition-colors hover:text-white"
             >
               {contactDetails.phone}
             </a>

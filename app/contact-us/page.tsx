@@ -72,9 +72,9 @@ export default function ContactPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
         <Reveal>
-          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+          <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
             We&rsquo;d Love to Hear From You
-            <span className="h-px w-12 bg-gold" />
+            <span className="h-px w-12 bg-ink" />
           </p>
         </Reveal>
         <Reveal delay={0.1}>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                     strokeWidth={1.2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="mt-0.5 h-6 w-6 shrink-0 text-gold"
+                    className="mt-0.5 h-6 w-6 shrink-0 text-ink"
                     aria-hidden="true"
                   >
                     {d.icon}
@@ -111,7 +111,7 @@ export default function ContactPage() {
                     {d.href ? (
                       <a
                         href={d.href}
-                        className="mt-1 block text-[15px] text-ink-warm transition-colors hover:text-gold"
+                        className="mt-1 block text-[15px] text-ink-warm transition-colors hover:text-body"
                       >
                         {d.value}
                       </a>

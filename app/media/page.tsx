@@ -58,7 +58,7 @@ export default function MediaPage() {
                   sizes="(max-width: 640px) 100vw, 33vw"
                   imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <h2 className="mt-5 font-display text-2xl text-ink-warm transition-colors group-hover:text-gold">
+                <h2 className="mt-5 font-display text-2xl text-ink-warm transition-colors group-hover:text-body">
                   {s.label}
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-body">

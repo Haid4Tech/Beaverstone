@@ -13,14 +13,14 @@ export default function About() {
         />
         <div>
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               About Beaverstone
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-ink" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
-              The Preferred <span className="text-gold">Luxury</span> Real
+              The Preferred <span className="text-body">Luxury</span> Real
               Estate Brand.
             </h2>
           </Reveal>
@@ -39,7 +39,7 @@ export default function About() {
           <Reveal delay={0.3}>
             <Link
               href="/about"
-              className="mt-8 inline-flex items-center gap-2 border-b border-gold pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-gold"
+              className="mt-8 inline-flex items-center gap-2 border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
             >
               Learn More About Us <span aria-hidden>&rarr;</span>
             </Link>

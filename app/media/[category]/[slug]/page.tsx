@@ -114,7 +114,7 @@ export default async function ArticlePage(
           <article>
             <Reveal>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line pb-6 text-[13px] text-body">
-                <span className="font-medium tracking-widest text-gold uppercase">
+                <span className="font-medium tracking-widest text-body uppercase">
                   {article.category}
                 </span>
                 <time dateTime={article.date}>{formatDate(article.date)}</time>
@@ -144,7 +144,7 @@ export default async function ArticlePage(
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-b border-gold pb-0.5 text-[13px] text-body transition-colors hover:text-gold"
+                    className="border-b border-ink pb-0.5 text-[13px] text-body transition-colors hover:text-ink"
                   >
                     {s.label}
                   </a>
@@ -183,7 +183,7 @@ export default async function ArticlePage(
                       name="name"
                       required
                       autoComplete="name"
-                      className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                      className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
                     />
                   </div>
                   <div>
@@ -199,7 +199,7 @@ export default async function ArticlePage(
                       name="email"
                       required
                       autoComplete="email"
-                      className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                      className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
                     />
                   </div>
                   <div className="sm:col-span-2">
@@ -214,12 +214,12 @@ export default async function ArticlePage(
                       name="comment"
                       rows={4}
                       required
-                      className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-gold focus:outline-none"
+                      className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-warm focus:border-ink focus:outline-none"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="justify-self-start rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:bg-gold hover:text-ink sm:col-span-2"
+                    className="justify-self-start rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink sm:col-span-2"
                   >
                     Post Comment
                   </button>
@@ -229,7 +229,7 @@ export default async function ArticlePage(
 
             <Link
               href={`/media/${categorySlug[article.category]}`}
-              className="mt-14 inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-gold"
+              className="mt-14 inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
             >
               <span aria-hidden>&larr;</span> Back to {article.category}
             </Link>

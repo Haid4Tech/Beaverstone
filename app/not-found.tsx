@@ -57,7 +57,7 @@ export default function NotFound() {
           <form
             action="/media/news"
             role="search"
-            className="mt-10 flex w-full max-w-md items-center border-b border-white/25 focus-within:border-gold"
+            className="mt-10 flex w-full max-w-md items-center border-b border-white/25 focus-within:border-mist"
           >
             <label htmlFor="notfound-search" className="sr-only">
               Search the site
@@ -71,7 +71,7 @@ export default function NotFound() {
             />
             <button
               type="submit"
-              className="shrink-0 px-2 text-[13px] font-medium tracking-wide text-gold transition-colors hover:text-white"
+              className="shrink-0 px-2 text-[13px] font-medium tracking-wide text-mist transition-colors hover:text-white"
             >
               Search
             </button>
@@ -82,13 +82,13 @@ export default function NotFound() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/"
-              className="rounded-sm bg-gold px-8 py-3.5 text-[13px] font-medium tracking-wide text-ink transition-colors hover:bg-gold-bright"
+              className="rounded-sm bg-mist px-8 py-3.5 text-[13px] font-medium tracking-wide text-ink transition-colors hover:bg-white"
             >
               Go Home
             </Link>
             <Link
               href="/projects"
-              className="rounded-sm border border-white/30 px-8 py-3.5 text-[13px] font-medium tracking-wide text-white transition-colors hover:border-gold hover:text-gold"
+              className="rounded-sm border border-white/30 px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe [--btn-wipe-fill:var(--color-cream)] hover:text-ink"
             >
               View Projects
             </Link>
@@ -108,7 +108,7 @@ export default function NotFound() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-sm text-white/70 transition-colors hover:text-gold"
+                    className="text-sm text-white/70 transition-colors hover:text-white"
                   >
                     {s.label}
                   </Link>

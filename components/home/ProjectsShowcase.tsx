@@ -31,9 +31,9 @@ export default function ProjectsShowcase() {
         <div className="mb-16 flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
             <Reveal>
-              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
                 Our Projects
-                <span className="h-px w-12 bg-gold" />
+                <span className="h-px w-12 bg-ink" />
               </p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -45,7 +45,7 @@ export default function ProjectsShowcase() {
           <Reveal delay={0.2}>
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 border-b border-gold pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-gold"
+              className="inline-flex items-center gap-2 border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
             >
               View All Projects <span aria-hidden>&rarr;</span>
             </Link>
@@ -53,8 +53,8 @@ export default function ProjectsShowcase() {
         </div>
 
         <div className="grid gap-x-8 gap-y-16 lg:grid-cols-12">
-          {projects.map((project, i) => {
-            const l = layout[i] ?? layout[0];
+          {projects.slice(0, layout.length).map((project, i) => {
+            const l = layout[i];
             return (
               <div key={project.slug} className={`${l.span} ${l.offset}`}>
                 <ShowcaseCard project={project} ratio={l.ratio} index={i} />
@@ -62,6 +62,17 @@ export default function ProjectsShowcase() {
             );
           })}
         </div>
+
+        <Reveal>
+          <div className="mt-20 flex justify-center">
+            <Link
+              href="/projects"
+              className="rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink"
+            >
+              See More Projects
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

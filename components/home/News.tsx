@@ -9,9 +9,9 @@ export default function News() {
       <div className="mb-14 flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
         <div>
           <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-gold uppercase">
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
               Latest Updates
-              <span className="h-px w-12 bg-gold" />
+              <span className="h-px w-12 bg-ink" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -23,7 +23,7 @@ export default function News() {
         <Reveal delay={0.2}>
           <Link
             href="/media/news"
-            className="inline-flex items-center gap-2 border-b border-gold pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-gold"
+            className="inline-flex items-center gap-2 border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
           >
             View All News <span aria-hidden>&rarr;</span>
           </Link>
@@ -40,7 +40,7 @@ export default function News() {
                 className="aspect-[4/3] w-full"
                 imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
               />
-              <p className="mt-4 text-[11px] font-medium tracking-widest text-gold uppercase">
+              <p className="mt-4 text-[11px] font-medium tracking-widest text-body uppercase">
                 {article.category} &middot;{' '}
                 {new Date(article.date).toLocaleDateString('en-US', {
                   month: 'short',
