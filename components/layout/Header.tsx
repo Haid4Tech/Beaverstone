@@ -39,7 +39,7 @@ export default function Header() {
       )}
     >
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex flex-col items-center">
           <Image
             src={
               dark
@@ -52,7 +52,7 @@ export default function Header() {
             priority
             className="h-8 w-auto"
           />
-          <span className="font-display text-xl tracking-wide">
+          <span className="font-display text-[12px] tracking-wide uppercase">
             <span className={dark ? 'text-white' : 'text-ink-warm'}>
               Beaverstone
             </span>
