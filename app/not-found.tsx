@@ -88,7 +88,7 @@ export default function NotFound() {
             </Link>
             <Link
               href="/projects"
-              className="rounded-sm border border-white/30 px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe [--btn-wipe-fill:var(--color-cream)] hover:text-ink"
+              className="btn-wipe rounded-sm border border-white/30 px-8 py-3.5 text-[13px] font-medium tracking-wide text-white [--btn-wipe-fill:var(--color-cream)] hover:text-ink"
             >
               View Projects
             </Link>

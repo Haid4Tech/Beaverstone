@@ -11,7 +11,12 @@ const socials = [
   {
     label: 'Instagram',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      >
         <rect x="3" y="3" width="18" height="18" rx="5" />
         <circle cx="12" cy="12" r="4" />
         <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
@@ -50,7 +55,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/20" />
 
       <div className="absolute top-1/2 right-6 z-10 hidden -translate-y-1/2 flex-col items-center gap-3 text-white/60 lg:right-12 lg:flex">
-        <span className="[writing-mode:vertical-lr] text-[11px] tracking-[0.25em] uppercase">
+        <span className="text-[11px] tracking-[0.25em] uppercase [writing-mode:vertical-lr]">
           Follow Us
         </span>
         <span className="h-8 w-px bg-white/30" />

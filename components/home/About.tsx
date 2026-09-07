@@ -38,7 +38,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.3}>
             <Link
-              href="/about"
+              href="/about-us"
               className="mt-8 inline-flex items-center gap-2 border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
             >
               Learn More About Us <span aria-hidden>&rarr;</span>

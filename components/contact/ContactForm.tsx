@@ -91,7 +91,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="justify-self-start rounded-sm bg-ink px-10 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink sm:col-span-2"
+        className="btn-wipe justify-self-start rounded-sm bg-ink px-10 py-3.5 text-[13px] font-medium tracking-wide text-white hover:text-ink sm:col-span-2"
       >
         Submit
       </button>

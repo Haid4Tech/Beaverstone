@@ -21,7 +21,7 @@ export default function ContactCTA({
         <p className="max-w-md text-sm leading-relaxed text-body">{copy}</p>
         <Link
           href={href}
-          className="mt-2 rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink"
+          className="btn-wipe mt-2 rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white hover:text-ink"
         >
           {label}
         </Link>

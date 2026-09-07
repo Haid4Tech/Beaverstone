@@ -166,7 +166,7 @@ export default function HowItWorks() {
           </p>
           <Link
             href="/contact-us"
-            className="rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white btn-wipe hover:text-ink"
+            className="btn-wipe rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white hover:text-ink"
           >
             Get In Touch
           </Link>
