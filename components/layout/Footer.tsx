@@ -7,24 +7,22 @@ import { contactDetails } from '@/data/contact';
 
 const memberCompanies = navigation.find((n) => n.label === 'Member Companies');
 
-// Column-major so the two rendered columns read down, matching the reference.
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about-us' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Work With Us', href: '/about-us/careers' },
+  // { label: 'Work With Us', href: '/about-us/careers' },
   { label: 'Partner With Us', href: '/about-us/partner-with-us' },
   { label: 'Contact', href: '/contact-us' },
   { label: 'Blog', href: '/media/blogs' },
-  { label: 'News', href: '/media/news' },
-  { label: 'Events', href: '/media/events' },
+  // { label: 'News', href: '/media/news' },
+  // { label: 'Events', href: '/media/events' },
   { label: 'Privacy Policy', href: '/privacy-policy' },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-ink text-white/70">
-      {/* Stay Informed */}
       <div className="border-b border-white/10">
         <div className="mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-8 px-6 py-14 lg:flex-row lg:items-center lg:px-12">
           <div>
