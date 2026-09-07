@@ -48,26 +48,28 @@ export const navigation: NavItem[] = [
     href: '/projects',
     children: [
       { label: 'All Projects', href: '/projects' },
-      { label: 'Kadars Gate', href: '/projects/grenadines-homes/kadars-gate' },
-      {
-        label: 'The Rockhampton',
-        href: '/projects/grenadines-homes/the-rockhampton',
-      },
-      { label: 'L5 Banana', href: '/projects/grenadines-homes/l5-banana' },
-      {
-        label: 'Paramount Twin Towers',
-        href: '/projects/grenadines-homes/paramount-twin-towers',
-      },
-      { label: 'The Meadows', href: '/projects/propertymart/the-meadows' },
+      { label: 'Roceilli', href: '/projects/grenadines-homes/roceilli' },
+      { label: 'Brooksville', href: '/projects/grenadines-homes/brooksville' },
+      // { label: 'Kadars Gate', href: '/projects/grenadines-homes/kadars-gate' },
+      // {
+      //   label: 'The Rockhampton',
+      //   href: '/projects/grenadines-homes/the-rockhampton',
+      // },
+      // { label: 'L5 Banana', href: '/projects/grenadines-homes/l5-banana' },
+      // {
+      //   label: 'Paramount Twin Towers',
+      //   href: '/projects/grenadines-homes/paramount-twin-towers',
+      // },
+      // { label: 'The Meadows', href: '/projects/propertymart/the-meadows' },
     ],
   },
   {
     label: 'Media',
     href: '/media',
     children: [
-      { label: 'News', href: '/media/news' },
+      // { label: 'News', href: '/media/news' },
       { label: 'Blog', href: '/media/blogs' },
-      { label: 'Events', href: '/media/events' },
+      // { label: 'Events', href: '/media/events' },
     ],
   },
   { label: 'Contact Us', href: '/contact-us' },

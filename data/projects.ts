@@ -1,7 +1,3 @@
-// Project names, locations and member-company groupings mirror the real
-// Beaverstone portfolio. Prices, unit counts, descriptions and imagery are
-// PLACEHOLDER content for this build — not official company figures.
-
 export type ProjectStatus =
   'Currently Selling' | 'Ongoing' | 'Completed' | 'Coming Soon';
 
@@ -275,16 +271,16 @@ export const projects: Project[] = [
     mapQuery: 'Ibeju-Lekki, Lagos, Nigeria',
   },
   {
-    slug: 'cerulean-towers',
+    slug: 'roceilli',
     company: grenadines,
-    name: 'Cerulean Towers',
-    location: 'Water Corporation Rd, Victoria Island',
+    name: 'Roceilli',
+    location: 'Grace City Estate 1, off Dei-Dei Kubwa Expressway, Abuja',
     status: 'Ongoing',
-    category: 'Apartment Towers',
+    category: 'Gated Townhomes',
     tagline: "Vertical living, close to the water's edge.",
-    summary: 'Apartment towers on Water Corporation Drive, Victoria Island.',
+    summary: 'A gated township of townhomes off the Dei-Dei Kubwa Expressway, Abuja.',
     description: [
-      "Cerulean Towers takes a narrow waterfront plot and turns it upward, stacking apartments so that every home holds a view rather than a neighbour's wall.",
+      "Roceilli takes a narrow waterfront plot and turns it upward, stacking apartments so that every home holds a view rather than a neighbour's wall.",
       'Shared amenity floors sit part-way up the building, keeping the ground plane clear for arrival and landscaping.',
     ],
     startingPrice: 'From ₦960,000,000',
@@ -294,9 +290,14 @@ export const projects: Project[] = [
       '4 Bedroom Apartments',
       'Sky Penthouses',
     ],
-    heroImage: u(IMG.cerulean, 2400),
-    thumbImage: u(IMG.cerulean, 1200),
-    gallery: [u(IMG.l5), u(IMG.paramount), u(IMG.kadars), u(IMG.extraA)],
+    heroImage: '/projects/roceilli/exterior-gate.jpeg',
+    thumbImage: '/projects/roceilli/exterior-gate.jpeg',
+    gallery: [
+      '/projects/roceilli/living-room.jpg',
+      '/projects/roceilli/kitchen.jpg',
+      '/projects/roceilli/dining.jpg',
+      '/projects/roceilli/bedroom.jpg',
+    ],
     amenities: [
       '24/7 Security',
       'CCTV',
@@ -314,15 +315,15 @@ export const projects: Project[] = [
       { label: 'Land Title', value: "Governor's Consent" },
     ],
     neighbourhood: {
-      name: 'Victoria Island',
-      copy: 'Water Corporation Drive sits on the quieter western edge of Victoria Island, with marina frontage and quick access to Ikoyi across the bridge.',
+      name: 'Dei-Dei, Abuja',
+      copy: 'Grace City Estate sits off the Dei-Dei Kubwa Expressway, a fast-growing corridor on the northern edge of Abuja.',
     },
-    mapQuery: 'Water Corporation Road, Victoria Island, Lagos, Nigeria',
+    mapQuery: 'Grace City Estate 1, Dei-Dei Kubwa Expressway, Abuja, Nigeria',
   },
   {
-    slug: 'skyvilla',
+    slug: 'brooksville',
     company: grenadines,
-    name: 'Skyvilla',
+    name: 'Brooksville',
     location: 'Probyn Close, Ikoyi',
     status: 'Currently Selling',
     category: 'Sky Villas',
@@ -496,6 +497,10 @@ export function getProject(company: string, slug: string) {
   return projects.find((p) => p.slug === slug && p.company.slug === company);
 }
 
+const liveSlugs = ['roceilli', 'brooksville'];
+
 export function otherProjects(current: Project, count = 3) {
-  return projects.filter((p) => p.slug !== current.slug).slice(0, count);
+  return projects
+    .filter((p) => p.slug !== current.slug && liveSlugs.includes(p.slug))
+    .slice(0, count);
 }
