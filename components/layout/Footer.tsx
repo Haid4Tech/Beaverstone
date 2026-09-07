@@ -66,7 +66,7 @@ export default function Footer() {
           <Link href="/" className="inline-block">
             <Image
               src="/logo/beaverstone-white.png"
-              alt="Beaverstone Holdings"
+              alt="Beaverstone"
               width={190}
               height={91}
               className="h-auto w-[190px]"

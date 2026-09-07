@@ -39,8 +39,7 @@ export default function Header() {
       )}
     >
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
-        <Link href="/" className="flex items-center gap-3">
-          {/* Decorative: the wordmark beside it already names the company. */}
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src={
               dark
@@ -56,14 +55,6 @@ export default function Header() {
           <span className="font-display text-xl tracking-wide">
             <span className={dark ? 'text-white' : 'text-ink-warm'}>
               Beaverstone
-            </span>
-            <span
-              className={cn(
-                'ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em]',
-                dark ? 'text-mist' : 'text-body'
-              )}
-            >
-              HOLDINGS
             </span>
           </span>
         </Link>
