@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import SocialLinks from './SocialLinks';
 import MarqueeText from './MarqueeText';
 import { navigation, isNavGroup } from '@/data/navigation';
@@ -62,11 +63,14 @@ export default function Footer() {
       {/* Main columns */}
       <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-16 lg:grid-cols-[1.3fr_1.4fr_1fr_1.1fr] lg:px-12">
         <div>
-          <Link href="/" className="font-display text-2xl text-white">
-            Beaverstone
-            <span className="ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em] text-mist">
-              HOLDINGS
-            </span>
+          <Link href="/" className="inline-block">
+            <Image
+              src="/logo/beaverstone-white.png"
+              alt="Beaverstone Holdings"
+              width={190}
+              height={91}
+              className="h-auto w-[190px]"
+            />
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
             A luxury real estate group creating exceptional living spaces across

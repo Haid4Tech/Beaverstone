@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { navigation, isNavGroup } from '@/data/navigation';
@@ -38,17 +39,32 @@ export default function Header() {
       )}
     >
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
-        <Link href="/" className="font-display text-xl tracking-wide">
-          <span className={dark ? 'text-white' : 'text-ink-warm'}>
-            Beaverstone
-          </span>
-          <span
-            className={cn(
-              'ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em]',
-              dark ? 'text-mist' : 'text-body'
-            )}
-          >
-            HOLDINGS
+        <Link href="/" className="flex items-center gap-3">
+          {/* Decorative: the wordmark beside it already names the company. */}
+          <Image
+            src={
+              dark
+                ? '/logo/beaverstone-mark-white.png'
+                : '/logo/beaverstone-mark-navy.png'
+            }
+            alt=""
+            width={86}
+            height={32}
+            priority
+            className="h-8 w-auto"
+          />
+          <span className="font-display text-xl tracking-wide">
+            <span className={dark ? 'text-white' : 'text-ink-warm'}>
+              Beaverstone
+            </span>
+            <span
+              className={cn(
+                'ml-2 align-middle font-sans text-[10px] font-medium tracking-[0.3em]',
+                dark ? 'text-mist' : 'text-body'
+              )}
+            >
+              HOLDINGS
+            </span>
           </span>
         </Link>
 
