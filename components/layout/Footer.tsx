@@ -144,7 +144,20 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-5 px-6 py-6 text-xs text-white/40 sm:flex-row lg:px-12">
           <p>Copyright &copy; Beaverstone {new Date().getFullYear()}</p>
-          <SocialLinks />
+          <div className="flex items-center gap-5">
+            <div>
+              <span>Built by </span>
+              <a
+                href="https://haidtechnologies.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-white"
+              >
+                HAID Technologies
+              </a>
+            </div>
+            <SocialLinks />
+          </div>
         </div>
       </div>
     </footer>
