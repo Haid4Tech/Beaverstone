@@ -4,7 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { WhatsappIcon } from '@hugeicons/core-free-icons';
 import { navigation, isNavGroup } from '@/data/navigation';
+import { contactDetails } from '@/data/contact';
 import { cn } from '@/lib/utils';
 import MobileMenu from './MobileMenu';
 
@@ -110,6 +113,15 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <a
+            href={contactDetails.whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366] text-white transition-opacity hover:opacity-85"
+          >
+            <HugeiconsIcon icon={WhatsappIcon} size={20} strokeWidth={2} />
+          </a>
           <Link
             href="/contact-us"
             className={cn(

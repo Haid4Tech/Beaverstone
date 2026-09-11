@@ -28,7 +28,6 @@ export default function MarqueeText({
         {copies.map((i) => (
           <span
             key={i}
-            data-text={text}
             className={cn(
               'block pr-[0.28em] leading-none font-black whitespace-nowrap uppercase',
               'text-[clamp(3rem,12vw,200px)]',

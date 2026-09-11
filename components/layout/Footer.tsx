@@ -121,12 +121,12 @@ export default function Footer() {
           </h2>
           <address className="flex flex-col gap-3 text-sm not-italic">
             <p className="leading-relaxed">{contactDetails.address}</p>
-            <a
+            {/* <a
               href={`mailto:${contactDetails.email}`}
               className="transition-colors hover:text-white"
             >
               {contactDetails.email}
-            </a>
+            </a> */}
             <a
               href={`tel:${contactDetails.phoneHref}`}
               className="transition-colors hover:text-white"
