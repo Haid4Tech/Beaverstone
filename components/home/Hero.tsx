@@ -8,6 +8,7 @@ import {
   NewTwitterIcon,
 } from '@hugeicons/core-free-icons';
 import { contactDetails } from '@/data/contact';
+import { video } from '@/data/media';
 
 const stats = [
   { value: '7,000+', label: 'Lands & Houses Sold' },
@@ -41,7 +42,7 @@ export default function Hero() {
     <section className="relative flex h-[95vh] min-h-[500px] w-full flex-col justify-end overflow-hidden bg-ink">
       <video
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/hero-placeholder.mp4"
+        src={video.heroBrooksville}
         autoPlay
         loop
         muted

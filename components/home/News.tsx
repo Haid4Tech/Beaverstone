@@ -16,16 +16,16 @@ export default function News() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="max-w-xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
-              News &amp; Insights
+              Blogs &amp; Insights
             </h2>
           </Reveal>
         </div>
         <Reveal delay={0.2}>
           <Link
-            href="/media/news"
+            href="/media/blogs"
             className="inline-flex items-center gap-2 border-b border-ink pb-1 text-[13px] font-medium tracking-wide text-ink-warm transition-colors hover:text-body"
           >
-            View All News <span aria-hidden>&rarr;</span>
+            View All Blogs <span aria-hidden>&rarr;</span>
           </Link>
         </Reveal>
       </div>

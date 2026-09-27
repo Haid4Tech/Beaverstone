@@ -4,6 +4,7 @@ import SocialLinks from './SocialLinks';
 import MarqueeText from './MarqueeText';
 import { navigation, isNavGroup } from '@/data/navigation';
 import { contactDetails } from '@/data/contact';
+import { logo } from '@/data/media';
 
 const memberCompanies = navigation.find((n) => n.label === 'Member Companies');
 
@@ -63,7 +64,7 @@ export default function Footer() {
         <div>
           <Link href="/" className="inline-block">
             <Image
-              src="/logo/beaverstone-white.png"
+              src={logo.fullWhite}
               alt="Beaverstone"
               width={190}
               height={91}

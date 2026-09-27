@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
 import MediaSidebar from '@/components/media/MediaSidebar';
+import { cn } from '@/lib/utils';
 import ArticleCard from '@/components/media/ArticleCard';
 import {
   articles,
@@ -17,6 +18,26 @@ const SLUG_TO_CATEGORY: Record<string, MediaCategory> = {
   news: 'News',
   blogs: 'Blogs',
 };
+
+// Renders `[label](href)` markdown-style links inline within prose.
+function renderInline(text: string) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+    const [, label, href] = match;
+    return (
+      <a
+        key={i}
+        href={href}
+        target={href.startsWith('/') ? undefined : '_blank'}
+        rel={href.startsWith('/') ? undefined : 'noopener noreferrer'}
+        className="border-b border-ink text-ink-warm transition-colors hover:text-body"
+      >
+        {label}
+      </a>
+    );
+  });
+}
 
 export function generateStaticParams() {
   return articles.map((a) => ({
@@ -125,11 +146,56 @@ export default async function ArticlePage(
 
             <Reveal delay={0.1}>
               <div className="mt-8 flex flex-col gap-5">
-                {article.body.map((para) => (
-                  <p key={para} className="text-[16px] leading-[1.8] text-body">
-                    {para}
-                  </p>
-                ))}
+                {article.body.map((block, i) => {
+                  if (block.type === 'heading') {
+                    return (
+                      <h2
+                        key={i}
+                        className="mt-4 font-display text-2xl font-light text-ink-warm"
+                      >
+                        {block.text}
+                      </h2>
+                    );
+                  }
+                  if (block.type === 'list') {
+                    const List = block.style === 'number' ? 'ol' : 'ul';
+                    return (
+                      <List
+                        key={i}
+                        className={cn(
+                          'flex flex-col gap-3 pl-5 text-[16px] leading-[1.8] text-body',
+                          block.style === 'number' ? 'list-decimal' : 'list-disc'
+                        )}
+                      >
+                        {block.items.map((item, j) => (
+                          <li key={j}>{renderInline(item)}</li>
+                        ))}
+                      </List>
+                    );
+                  }
+                  if (block.type === 'link') {
+                    return (
+                      <a
+                        key={i}
+                        href={block.href}
+                        target={block.href.startsWith('/') ? undefined : '_blank'}
+                        rel={
+                          block.href.startsWith('/')
+                            ? undefined
+                            : 'noopener noreferrer'
+                        }
+                        className="w-fit border-b border-ink text-[16px] leading-[1.8] text-ink-warm transition-colors hover:text-body"
+                      >
+                        {block.text}
+                      </a>
+                    );
+                  }
+                  return (
+                    <p key={i} className="text-[16px] leading-[1.8] text-body">
+                      {renderInline(block.text)}
+                    </p>
+                  );
+                })}
               </div>
             </Reveal>
 

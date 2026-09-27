@@ -283,6 +283,32 @@ export default async function ProjectDetailPage(
         </div>
       </section>
 
+      {/* Construction Progress */}
+      {project.progressVideo && (
+        <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
+          <Reveal>
+            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-ink uppercase">
+              Progress
+              <span className="h-px w-12 bg-ink" />
+            </p>
+            <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
+              Watch {project.name} Take Shape
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <video
+              className="mx-auto mt-10 aspect-[9/16] w-full max-w-sm border border-line object-cover"
+              src={project.progressVideo}
+              poster={project.thumbImage}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+          </Reveal>
+        </section>
+      )}
+
       <RegisterInterest
         projectName={project.name}
         unitTypes={project.unitTypes}

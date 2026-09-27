@@ -9,7 +9,7 @@ import {
   type MediaCategory,
 } from '@/data/news';
 
-const CATEGORIES: MediaCategory[] = ['News', 'Blogs'];
+const CATEGORIES: MediaCategory[] = ['Blogs'];
 
 export default function MediaSidebar({
   action = '/media/news',
@@ -93,14 +93,14 @@ export default function MediaSidebar({
               </Link>
             </li>
           ))}
-          <li>
+          {/* <li>
             <Link
               href="/media/events"
               className="flex items-center justify-between border-b border-line pb-2 text-sm text-body transition-colors hover:text-ink"
             >
               Events
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </aside>

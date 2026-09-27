@@ -1,3 +1,5 @@
+import { roceilli, brooksville, beavertonHeights, video } from './media';
+
 export type ProjectStatus =
   'Currently Selling' | 'Ongoing' | 'Completed' | 'Coming Soon';
 
@@ -17,6 +19,7 @@ export type Project = {
   heroImage: string;
   thumbImage: string;
   gallery: string[];
+  progressVideo?: string;
   amenities: string[];
   facts: { label: string; value: string }[];
   neighbourhood: { name: string; copy: string };
@@ -291,13 +294,18 @@ export const projects: Project[] = [
       '4 Bedroom Apartments',
       'Sky Penthouses',
     ],
-    heroImage: '/projects/roceilli/exterior-gate.jpeg',
-    thumbImage: '/projects/roceilli/exterior-gate.jpeg',
+    heroImage: roceilli.exteriorGate,
+    thumbImage: roceilli.exteriorGate,
     gallery: [
-      '/projects/roceilli/living-room.jpg',
-      '/projects/roceilli/kitchen.jpg',
-      '/projects/roceilli/dining.jpg',
-      '/projects/roceilli/bedroom.jpg',
+      roceilli.livingRoom,
+      roceilli.kitchen,
+      roceilli.dining,
+      roceilli.bedroom,
+      roceilli.entrance,
+      roceilli.homefront,
+      roceilli.sideView,
+      roceilli.aerialView,
+      roceilli.exteriorGate,
     ],
     amenities: [
       '24/7 Security',
@@ -337,9 +345,15 @@ export const projects: Project[] = [
     startingPrice: 'From ₦1,750,000,000',
     availableUnits: '8 Available Units',
     unitTypes: ['4 Bedroom Full-Floor Villas', 'Duplex Penthouse'],
-    heroImage: u(IMG.skyvilla, 2400),
-    thumbImage: u(IMG.skyvilla, 1200),
-    gallery: [u(IMG.extraA), u(IMG.kadars), u(IMG.cerulean), u(IMG.extraB)],
+    heroImage: brooksville.siteGateway,
+    thumbImage: brooksville.siteGateway,
+    gallery: [
+      brooksville.sunsetPortrait,
+      brooksville.sunsetLandscape,
+      brooksville.sunsetLandscapeBranded,
+      brooksville.siteGateway,
+    ],
+    progressVideo: video.brooksvilleProgress,
     amenities: [
       '24/7 Security',
       'Private Lift Lobby',
@@ -361,6 +375,60 @@ export const projects: Project[] = [
       copy: 'Hutu Pent Haven sits along Airport Road in Lugbe, a fast-developing district close to the Nnamdi Azikiwe International Airport.',
     },
     mapQuery: 'Hutu Pent Haven, Airport Road, Lugbe, Abuja, Nigeria',
+  },
+  {
+    // Placeholder location, status, unit types, amenities and neighbourhood
+    // copy — only the pricing below has been confirmed. Update once the
+    // real project details are available.
+    slug: 'beaverton-heights',
+    company: grenadines,
+    name: 'Beaverton Heights',
+    location: 'Location to be confirmed, Abuja',
+    status: 'Currently Selling',
+    category: 'Terraces',
+    tagline: 'A gated terrace community, thoughtfully designed.',
+    summary: 'A gated terrace estate in Abuja.',
+    description: [
+      'Beaverton Heights brings six terrace homes together behind a single gated entrance, with a shared gym centre and playground at the front of the estate.',
+      'Location and full specification details for this project are still being finalised.',
+    ],
+    startingPrice: 'From ₦155,700,000',
+    availableUnits: '6 Available Units',
+    unitTypes: ['Middle Unit Terrace', 'Corner Unit Terrace'],
+    heroImage: beavertonHeights.gateway,
+    thumbImage: beavertonHeights.gateway,
+    gallery: [
+      beavertonHeights.streetDusk,
+      beavertonHeights.aerialDay,
+      beavertonHeights.streetRowDusk,
+      beavertonHeights.facadeAngle,
+      beavertonHeights.aerialTopDown,
+      beavertonHeights.gymCentre,
+      beavertonHeights.rowDusk,
+      beavertonHeights.gatewayAlt,
+      beavertonHeights.gateway,
+    ],
+    amenities: [
+      '24/7 Security',
+      'Gated Estate',
+      'Gym Centre',
+      "Children's Playground",
+      'Landscaped Compound',
+      'Paved Access Roads',
+    ],
+    facts: [
+      { label: 'Project Type', value: 'Terrace Homes' },
+      { label: 'Total Units', value: '6' },
+      { label: 'Middle Unit Price', value: '₦155,700,000' },
+      { label: 'Corner Unit Price', value: '₦165,000,000' },
+      { label: 'Project Status', value: 'Currently Selling' },
+      { label: 'Land Title', value: 'To be confirmed' },
+    ],
+    neighbourhood: {
+      name: 'Abuja',
+      copy: 'Neighbourhood details for this location are still being finalised.',
+    },
+    mapQuery: 'Abuja, Nigeria',
   },
   // {
   //   slug: 'claren-villas',

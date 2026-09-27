@@ -50,6 +50,10 @@ export const navigation: NavItem[] = [
       { label: 'All Projects', href: '/projects' },
       { label: 'Roceilli', href: '/projects/grenadines-homes/roceilli' },
       { label: 'Brooksville', href: '/projects/grenadines-homes/brooksville' },
+      {
+        label: 'Beaverton Heights',
+        href: '/projects/grenadines-homes/beaverton-heights',
+      },
       // { label: 'Kadars Gate', href: '/projects/grenadines-homes/kadars-gate' },
       // {
       //   label: 'The Rockhampton',

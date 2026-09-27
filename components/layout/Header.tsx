@@ -8,6 +8,7 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { WhatsappIcon } from '@hugeicons/core-free-icons';
 import { navigation, isNavGroup } from '@/data/navigation';
 import { contactDetails } from '@/data/contact';
+import { logo } from '@/data/media';
 import { cn } from '@/lib/utils';
 import MobileMenu from './MobileMenu';
 
@@ -44,11 +45,7 @@ export default function Header() {
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <Link href="/" className="flex flex-col items-center">
           <Image
-            src={
-              dark
-                ? '/logo/beaverstone-mark-white.png'
-                : '/logo/beaverstone-mark-navy.png'
-            }
+            src={dark ? logo.markWhite : logo.markNavy}
             alt=""
             width={86}
             height={32}
