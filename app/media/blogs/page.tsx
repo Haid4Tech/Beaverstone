@@ -21,7 +21,7 @@ export default async function BlogsPage(props: PageProps<'/media/blogs'>) {
       <PageHero
         eyebrow="Media"
         title="Blog"
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2400&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2400&auto=format&fit=crop"
         crumbs={[
           { label: 'Home', href: '/' },
           { label: 'Media' },
