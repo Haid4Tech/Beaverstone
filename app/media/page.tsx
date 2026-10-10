@@ -25,7 +25,7 @@ const sections = [
     label: 'Blog',
     copy: 'Guides and market insight for buyers, builders and investors.',
     image:
-      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1600&auto=format&fit=crop',
   },
   // {
   //   href: '/media/events',
