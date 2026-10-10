@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import SocialLinks from './SocialLinks';
+import MailtoForm from '@/components/ui/MailtoForm';
 import MarqueeText from './MarqueeText';
-import { memberCompanies } from '@/data/navigation';
 import { contactDetails } from '@/data/contact';
 import { logo } from '@/data/media';
 
@@ -16,7 +16,7 @@ const quickLinks = [
   { label: 'Blog', href: '/media/blogs' },
   // { label: 'News', href: '/media/news' },
   // { label: 'Events', href: '/media/events' },
-  { label: 'Privacy Policy', href: '/privacy-policy' },
+  // { label: 'Privacy Policy', href: '/privacy-policy' },
 ];
 
 export default function Footer() {
@@ -34,7 +34,10 @@ export default function Footer() {
             </p>
           </div>
 
-          <form className="flex w-full max-w-md items-center border-b border-white/25 focus-within:border-mist">
+          <MailtoForm
+            subject="Newsletter Subscription"
+            className="flex w-full max-w-md items-center border-b border-white/25 focus-within:border-mist"
+          >
             <label htmlFor="footer-email" className="sr-only">
               Your email address
             </label>
@@ -53,7 +56,7 @@ export default function Footer() {
             >
               Subscribe
             </button>
-          </form>
+          </MailtoForm>
         </div>
       </div>
 
@@ -80,7 +83,7 @@ export default function Footer() {
           <h2 className="mb-5 text-[13px] font-medium tracking-widest text-white uppercase">
             Quick Links
           </h2>
-          <ul className="grid grid-flow-col grid-cols-2 grid-rows-5 gap-x-8 gap-y-3 text-sm">
+          <ul className="grid grid-flow-col grid-cols-2 grid-rows-6 gap-x-8 gap-y-3 text-sm">
             {quickLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -94,7 +97,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <h2 className="mb-5 text-[13px] font-medium tracking-widest text-white uppercase">
             Subsidiaries
           </h2>
@@ -110,7 +113,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         <div>
           <h2 className="mb-5 text-[13px] font-medium tracking-widest text-white uppercase">

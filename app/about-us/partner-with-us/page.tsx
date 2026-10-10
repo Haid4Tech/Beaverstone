@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
+import MailtoForm from '@/components/ui/MailtoForm';
 import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 export const metadata: Metadata = {
@@ -77,7 +78,11 @@ export default function PartnerWithUsPage() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <form className="mt-10 grid gap-6 sm:grid-cols-2">
+            <MailtoForm
+              subject="Partnership Enquiry"
+              subjectField="type"
+              className="mt-10 grid gap-6 sm:grid-cols-2"
+            >
               <div className="sm:col-span-1">
                 <label
                   htmlFor="pw-name"
@@ -145,7 +150,7 @@ export default function PartnerWithUsPage() {
               >
                 Submit Enquiry
               </button>
-            </form>
+            </MailtoForm>
           </Reveal>
         </div>
       </section>

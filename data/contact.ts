@@ -1,5 +1,5 @@
 export const contactDetails = {
-  email: 'hello@example.com',
+  email: 'ochejaebi@gmail.com',
   phone: '0806 072 5726',
   phoneHref: '+2348060725726',
   address: 'House 54, Laropa Suites, 21 Road, 2nd Avenue, Gwarimpa, Abuja',
@@ -13,6 +13,6 @@ export const enquiryTypes = [
   'General Enquiry',
   'Project & Sales Enquiry',
   'Partnership Enquiry',
-  'Careers',
+  // 'Careers',
   'Press & Media',
 ];

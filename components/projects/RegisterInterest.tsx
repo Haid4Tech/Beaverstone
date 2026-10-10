@@ -1,3 +1,4 @@
+import MailtoForm from '@/components/ui/MailtoForm';
 import Reveal from '@/components/animation/Reveal';
 
 export default function RegisterInterest({
@@ -24,7 +25,11 @@ export default function RegisterInterest({
         </Reveal>
 
         <Reveal delay={0.1}>
-          <form className="mt-12 grid gap-6 sm:grid-cols-2">
+          <MailtoForm
+            subject={`Register Interest – ${projectName}`}
+            subjectField="unit"
+            className="mt-12 grid gap-6 sm:grid-cols-2"
+          >
             <div>
               <label
                 htmlFor="ri-name"
@@ -108,7 +113,7 @@ export default function RegisterInterest({
             >
               Submit Enquiry
             </button>
-          </form>
+          </MailtoForm>
         </Reveal>
       </div>
     </section>

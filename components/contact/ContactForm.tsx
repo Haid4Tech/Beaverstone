@@ -1,3 +1,4 @@
+import MailtoForm from '@/components/ui/MailtoForm';
 import { enquiryTypes } from '@/data/contact';
 
 const inputClass =
@@ -5,7 +6,11 @@ const inputClass =
 
 export default function ContactForm() {
   return (
-    <form className="grid gap-6 sm:grid-cols-2">
+    <MailtoForm
+      subject="Website Enquiry"
+      subjectField="subject"
+      className="grid gap-6 sm:grid-cols-2"
+    >
       <div>
         <label htmlFor="cf-first" className="mb-2 block text-[13px] text-body">
           First Name
@@ -95,6 +100,6 @@ export default function ContactForm() {
       >
         Submit
       </button>
-    </form>
+    </MailtoForm>
   );
 }

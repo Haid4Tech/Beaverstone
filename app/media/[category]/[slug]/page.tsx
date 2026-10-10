@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
 import MediaSidebar from '@/components/media/MediaSidebar';
+import MailtoForm from '@/components/ui/MailtoForm';
 import { cn } from '@/lib/utils';
 import ArticleCard from '@/components/media/ArticleCard';
 import {
@@ -240,7 +241,10 @@ export default async function ArticlePage(
                 <h2 className="font-display text-2xl font-light text-ink-warm">
                   Leave a Comment
                 </h2>
-                <form className="mt-6 grid gap-6 sm:grid-cols-2">
+                <MailtoForm
+                  subject={`Comment on: ${article.title}`}
+                  className="mt-6 grid gap-6 sm:grid-cols-2"
+                >
                   <div>
                     <label
                       htmlFor="c-name"
@@ -293,7 +297,7 @@ export default async function ArticlePage(
                   >
                     Post Comment
                   </button>
-                </form>
+                </MailtoForm>
               </div>
             </Reveal>
 
