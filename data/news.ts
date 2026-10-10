@@ -52,12 +52,17 @@ export const articles: Article[] = [
   {
     slug: 'real-estate-nigeria',
     category: 'Blogs',
-    title: "Why Real Estate Remains One of Nigeria’s Most Reliable Wealth-Building Assets",
+    title:
+      'Why Real Estate Remains One of Nigeria’s Most Reliable Wealth-Building Assets',
     excerpt:
-      "Real estate has long been regarded as one of the most powerful ways to preserve and grow wealth. In Nigeria, where population growth, urbanisation and increasing demand for housing continue to shape the property market, real estate remains an attractive investment option for individuals, families and businesses.",
+      'Real estate has long been regarded as one of the most powerful ways to preserve and grow wealth. In Nigeria, where population growth, urbanisation and increasing demand for housing continue to shape the property market, real estate remains an attractive investment option for individuals, families and businesses.',
     body: [
-      p('Real estate has long been regarded as one of the most powerful ways to preserve and grow wealth. In Nigeria, where population growth, urbanisation and increasing demand for housing continue to shape the property market, real estate remains an attractive investment option for individuals, families and businesses.'),
-      p('Unlike some investments that can fluctuate significantly within short periods, strategically acquired property can appreciate in value over time, particularly when it is located in an area experiencing economic and infrastructural development.'),
+      p(
+        'Real estate has long been regarded as one of the most powerful ways to preserve and grow wealth. In Nigeria, where population growth, urbanisation and increasing demand for housing continue to shape the property market, real estate remains an attractive investment option for individuals, families and businesses.'
+      ),
+      p(
+        'Unlike some investments that can fluctuate significantly within short periods, strategically acquired property can appreciate in value over time, particularly when it is located in an area experiencing economic and infrastructural development.'
+      ),
       { type: 'heading', text: 'Why Do People Invest in Real Estate?' },
       {
         type: 'list',
@@ -70,13 +75,19 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'The Importance of Strategy' },
-      p('Not every property is automatically a good investment. Location, title documentation, accessibility, infrastructure, development plans and market demand all influence the potential performance of a property.'),
-      p('The key is not simply to buy property, but to buy the right property in the right location at the right price.'),
-      p('At Beaverstone, we believe strategic real estate investment begins with informed decisions, proper due diligence and a clear understanding of the market. Take a look at [our current projects](/projects) to see where we are building next.'),
+      p(
+        'Not every property is automatically a good investment. Location, title documentation, accessibility, infrastructure, development plans and market demand all influence the potential performance of a property.'
+      ),
+      p(
+        'The key is not simply to buy property, but to buy the right property in the right location at the right price.'
+      ),
+      p(
+        'At Beaverstone, we believe strategic real estate investment begins with informed decisions, proper due diligence and a clear understanding of the market. Take a look at [our current projects](/projects) to see where we are building next.'
+      ),
     ],
     date: '2026-05-12',
     author: 'Beaverstone',
-    image: u(A.market),
+    image: u('1618828665347-d870c38c95c7'),
   },
   {
     slug: 'property-title-documents-nigeria',
@@ -85,16 +96,32 @@ export const articles: Article[] = [
     excerpt:
       'Buying land or property in Nigeria is a major investment. Before you make that payment, you must be able to answer one question: what exactly proves that this person has the right to sell this property to me?',
     body: [
-      p('Buying land or property in Nigeria is a major investment. But before you make that payment, there is one question you must be able to answer: "What exactly proves that this person has the right to sell this property to me?"'),
-      p('A beautiful house, an attractive estate, or a seemingly cheap plot of land does not automatically mean the property is legally safe to purchase.'),
-      p('In Nigeria, land administration is governed largely by the [Land Use Act](https://lawsofnigeria.placng.org/view2.php?sn=228), under which land in each state is vested in the Governor to hold in trust for the people, subject to the Act. In the Federal Capital Territory, land administration is handled by the FCT authorities, including the department responsible for land titles and registration.'),
-      p('This is why understanding property title documents — and conducting proper due diligence — is essential.'),
+      p(
+        'Buying land or property in Nigeria is a major investment. But before you make that payment, there is one question you must be able to answer: "What exactly proves that this person has the right to sell this property to me?"'
+      ),
+      p(
+        'A beautiful house, an attractive estate, or a seemingly cheap plot of land does not automatically mean the property is legally safe to purchase.'
+      ),
+      p(
+        'In Nigeria, land administration is governed largely by the [Land Use Act](https://lawsofnigeria.placng.org/view2.php?sn=228), under which land in each state is vested in the Governor to hold in trust for the people, subject to the Act. In the Federal Capital Territory, land administration is handled by the FCT authorities, including the department responsible for land titles and registration.'
+      ),
+      p(
+        'This is why understanding property title documents — and conducting proper due diligence — is essential.'
+      ),
 
       { type: 'heading', text: '1. Certificate of Occupancy (C of O)' },
-      p('The Certificate of Occupancy, commonly called a C of O, is one of the most recognized statutory land documents in Nigeria.'),
-      p('It is evidence of a statutory right of occupancy granted over a defined parcel of land. Government land agencies describe the [C of O](https://bengis.benuestate.gov.ng/services/) as a statutory title document evidencing the right granted to the holder to occupy and use the land.'),
-      p("A C of O can provide strong evidence of the holder's interest in the land and is an important document when dealing with subsequent transactions, financing, development and registration."),
-      p('However, seeing a C of O is not the end of your due diligence. You still need to verify:'),
+      p(
+        'The Certificate of Occupancy, commonly called a C of O, is one of the most recognized statutory land documents in Nigeria.'
+      ),
+      p(
+        'It is evidence of a statutory right of occupancy granted over a defined parcel of land. Government land agencies describe the [C of O](https://bengis.benuestate.gov.ng/services/) as a statutory title document evidencing the right granted to the holder to occupy and use the land.'
+      ),
+      p(
+        "A C of O can provide strong evidence of the holder's interest in the land and is an important document when dealing with subsequent transactions, financing, development and registration."
+      ),
+      p(
+        'However, seeing a C of O is not the end of your due diligence. You still need to verify:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -108,45 +135,94 @@ export const articles: Article[] = [
           'Whether the person selling has the legal authority to transfer the interest',
         ],
       },
-      p("For example, the [FCT's land administration system](https://www.fcta.gov.ng/ova_dep/land-administration-department/) handles the registration and management of land titles and documents affecting land in Abuja."),
+      p(
+        "For example, the [FCT's land administration system](https://www.fcta.gov.ng/ova_dep/land-administration-department/) handles the registration and management of land titles and documents affecting land in Abuja."
+      ),
 
       { type: 'heading', text: '2. Right of Occupancy (R of O)' },
-      p('A Right of Occupancy, commonly called an R of O, is another important document you may encounter, particularly in land allocations.'),
-      p('In the FCT, [AGIS](https://www.agis.fcta.gov.ng/title-collections/) specifically provides for the collection of Rights of Occupancy/Land Allocation Letters and subsequently lists an original R of O among the requirements associated with C of O processing.'),
-      p('Simply put, an R of O is evidence of a granted right of occupancy over a particular property. But don\'t make the mistake of assuming "R of O = automatically safe to buy."'),
-      p('The document still needs to be verified, and the transaction itself may require additional documentation and government consent/registration depending on the circumstances.'),
+      p(
+        'A Right of Occupancy, commonly called an R of O, is another important document you may encounter, particularly in land allocations.'
+      ),
+      p(
+        'In the FCT, [AGIS](https://www.agis.fcta.gov.ng/title-collections/) specifically provides for the collection of Rights of Occupancy/Land Allocation Letters and subsequently lists an original R of O among the requirements associated with C of O processing.'
+      ),
+      p(
+        'Simply put, an R of O is evidence of a granted right of occupancy over a particular property. But don\'t make the mistake of assuming "R of O = automatically safe to buy."'
+      ),
+      p(
+        'The document still needs to be verified, and the transaction itself may require additional documentation and government consent/registration depending on the circumstances.'
+      ),
 
       { type: 'heading', text: '3. Deed of Assignment' },
-      p('A Deed of Assignment is a legal instrument used to transfer an interest in land or property from one party to another — for example, seller to buyer. The deed documents the transaction and the interest being transferred.'),
-      p("This is particularly important when you're purchasing an existing property from someone who already holds an interest in the land."),
-      p('In Abuja, [AGIS lists specific requirements](https://agis.fcta.gov.ng/Processes%20and%20payments%20requirements/) for Deeds of Assignment/Gift and related title processing.'),
-      p('Why should you care? Because paying someone for land is not the same thing as properly documenting and perfecting your interest in that land.'),
-      p('A proper property transaction should establish: who owned it, what interest they have, what they are transferring, to whom, under what terms, and whether the required consent/registration has been obtained.'),
+      p(
+        'A Deed of Assignment is a legal instrument used to transfer an interest in land or property from one party to another — for example, seller to buyer. The deed documents the transaction and the interest being transferred.'
+      ),
+      p(
+        "This is particularly important when you're purchasing an existing property from someone who already holds an interest in the land."
+      ),
+      p(
+        'In Abuja, [AGIS lists specific requirements](https://agis.fcta.gov.ng/Processes%20and%20payments%20requirements/) for Deeds of Assignment/Gift and related title processing.'
+      ),
+      p(
+        'Why should you care? Because paying someone for land is not the same thing as properly documenting and perfecting your interest in that land.'
+      ),
+      p(
+        'A proper property transaction should establish: who owned it, what interest they have, what they are transferring, to whom, under what terms, and whether the required consent/registration has been obtained.'
+      ),
 
       { type: 'heading', text: "4. Governor's Consent" },
       p('This is one that many first-time property buyers overlook.'),
-      p("Under Section 22 of the [Land Use Act](https://lawsofnigeria.placng.org/view2.php?sn=228), the holder of a statutory right of occupancy generally cannot alienate the right through assignment, mortgage, transfer of possession, sublease or similar transaction without the Governor's consent first being obtained."),
-      p('In simple terms: someone having a valid interest in a property does not mean they can simply transfer it however they want without complying with the required legal process.'),
-      p('For property transactions in Abuja, the relevant consent process involves the FCT authorities. A transaction can have a seemingly impressive title document but still require proper consent and registration to perfect the transfer — which is why buyers should have a qualified property lawyer examine the transaction rather than relying solely on what a salesperson or seller says.'),
+      p(
+        "Under Section 22 of the [Land Use Act](https://lawsofnigeria.placng.org/view2.php?sn=228), the holder of a statutory right of occupancy generally cannot alienate the right through assignment, mortgage, transfer of possession, sublease or similar transaction without the Governor's consent first being obtained."
+      ),
+      p(
+        'In simple terms: someone having a valid interest in a property does not mean they can simply transfer it however they want without complying with the required legal process.'
+      ),
+      p(
+        'For property transactions in Abuja, the relevant consent process involves the FCT authorities. A transaction can have a seemingly impressive title document but still require proper consent and registration to perfect the transfer — which is why buyers should have a qualified property lawyer examine the transaction rather than relying solely on what a salesperson or seller says.'
+      ),
 
       { type: 'heading', text: '5. Survey Plan' },
-      p("A Survey Plan is one of the most important documents you should pay attention to when purchasing land. It helps identify the property's:"),
+      p(
+        "A Survey Plan is one of the most important documents you should pay attention to when purchasing land. It helps identify the property's:"
+      ),
       {
         type: 'list',
         style: 'bullet',
-        items: ['Location', 'Boundaries', 'Dimensions', 'Coordinates', 'Plot information', 'Survey details'],
+        items: [
+          'Location',
+          'Boundaries',
+          'Dimensions',
+          'Coordinates',
+          'Plot information',
+          'Survey details',
+        ],
       },
-      p('Think of it as the property\'s geographical identity card. A seller may tell you "This is Plot 25" — but your question should be "Can the plot be independently identified and verified on the ground and in the relevant land records?"'),
-      p('A proper survey and title search can help uncover issues such as overlapping claims, wrong plot numbers, encumbrances or land that is not where the seller claims it is.'),
+      p(
+        'Think of it as the property\'s geographical identity card. A seller may tell you "This is Plot 25" — but your question should be "Can the plot be independently identified and verified on the ground and in the relevant land records?"'
+      ),
+      p(
+        'A proper survey and title search can help uncover issues such as overlapping claims, wrong plot numbers, encumbrances or land that is not where the seller claims it is.'
+      ),
 
       { type: 'heading', text: '6. Allocation Letter / Offer Letter' },
-      p('Government-allotted land may come with an Allocation Letter or Offer Letter. It is evidence that the relevant government authority has made an allocation or offer to the named person or entity, subject to the applicable conditions.'),
-      p('In the FCT, [AGIS identifies](https://www.agis.fcta.gov.ng/title-collections/) Right of Occupancy/Land Allocation documentation as part of its land administration processes.'),
-      p('However, an allocation or offer letter should not be treated as though it automatically eliminates the need for further title verification.'),
+      p(
+        'Government-allotted land may come with an Allocation Letter or Offer Letter. It is evidence that the relevant government authority has made an allocation or offer to the named person or entity, subject to the applicable conditions.'
+      ),
+      p(
+        'In the FCT, [AGIS identifies](https://www.agis.fcta.gov.ng/title-collections/) Right of Occupancy/Land Allocation documentation as part of its land administration processes.'
+      ),
+      p(
+        'However, an allocation or offer letter should not be treated as though it automatically eliminates the need for further title verification.'
+      ),
 
       { type: 'heading', text: '7. Deed of Assignment + Registered Title' },
-      p('One of the biggest mistakes buyers make is focusing only on the document sitting in front of them. A property transaction involves more than a piece of paper.'),
-      p('For example, a buyer may receive a Deed of Assignment, but the important questions include:'),
+      p(
+        'One of the biggest mistakes buyers make is focusing only on the document sitting in front of them. A property transaction involves more than a piece of paper.'
+      ),
+      p(
+        'For example, a buyer may receive a Deed of Assignment, but the important questions include:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -159,16 +235,31 @@ export const articles: Article[] = [
           'Are there outstanding charges or restrictions?',
         ],
       },
-      p('The [FCT land administration process](https://www.fcta.gov.ng/ova_dep/land-administration-department/), for example, includes registration and management of land titles and documents affecting land.'),
+      p(
+        'The [FCT land administration process](https://www.fcta.gov.ng/ova_dep/land-administration-department/), for example, includes registration and management of land titles and documents affecting land.'
+      ),
 
       { type: 'heading', text: '8. Gazette and Excision' },
-      p('These terms are particularly important when dealing with land that is said to have been excised or released from government acquisition.'),
-      p('An excision generally refers to land being carved out of an area that was previously subject to government acquisition and formally released through the relevant government process. A Gazette is an official government publication through which government decisions, notices and other official information may be published.'),
-      p('If a seller tells you "This land is excised," don\'t simply take their word for it. Ask: "What is the official evidence of that excision, and can it be verified with the relevant authority?"'),
-      p('This is especially important because land can be marketed using impressive-sounding title terminology that does not necessarily mean the specific plot you are buying is covered.'),
+      p(
+        'These terms are particularly important when dealing with land that is said to have been excised or released from government acquisition.'
+      ),
+      p(
+        'An excision generally refers to land being carved out of an area that was previously subject to government acquisition and formally released through the relevant government process. A Gazette is an official government publication through which government decisions, notices and other official information may be published.'
+      ),
+      p(
+        'If a seller tells you "This land is excised," don\'t simply take their word for it. Ask: "What is the official evidence of that excision, and can it be verified with the relevant authority?"'
+      ),
+      p(
+        'This is especially important because land can be marketed using impressive-sounding title terminology that does not necessarily mean the specific plot you are buying is covered.'
+      ),
 
-      { type: 'heading', text: 'Why You Must Be Careful When Buying Property in Nigeria' },
-      p('The biggest mistake a property buyer can make is falling in love with the property before verifying the title. A beautiful location doesn\'t guarantee good title. A cheap price doesn\'t guarantee a good deal. A colourful brochure doesn\'t guarantee ownership. And even a document presented by a seller should be independently verified.'),
+      {
+        type: 'heading',
+        text: 'Why You Must Be Careful When Buying Property in Nigeria',
+      },
+      p(
+        "The biggest mistake a property buyer can make is falling in love with the property before verifying the title. A beautiful location doesn't guarantee good title. A cheap price doesn't guarantee a good deal. A colourful brochure doesn't guarantee ownership. And even a document presented by a seller should be independently verified."
+      ),
       p('Some common risks include:'),
       {
         type: 'list',
@@ -183,11 +274,21 @@ export const articles: Article[] = [
         ],
       },
 
-      { type: 'heading', text: 'Don\'t Let "Urgency" Make You Lose Your Money' },
-      p('One of the biggest red flags in real estate is pressure: "Pay today or the price increases tomorrow." "Someone else is already waiting." "Don\'t worry about the documents; everything is sorted." "Just pay the commitment fee first."'),
-      p('A genuine investment deserves proper verification. Government processes themselves emphasize documentation, verification and proper processing — for example, [AGIS publishes specific requirements](https://www.agis.fcta.gov.ng/title-collections/) for Rights of Occupancy, Certificates of Occupancy and title transactions in the FCT.'),
+      {
+        type: 'heading',
+        text: 'Don\'t Let "Urgency" Make You Lose Your Money',
+      },
+      p(
+        'One of the biggest red flags in real estate is pressure: "Pay today or the price increases tomorrow." "Someone else is already waiting." "Don\'t worry about the documents; everything is sorted." "Just pay the commitment fee first."'
+      ),
+      p(
+        'A genuine investment deserves proper verification. Government processes themselves emphasize documentation, verification and proper processing — for example, [AGIS publishes specific requirements](https://www.agis.fcta.gov.ng/title-collections/) for Rights of Occupancy, Certificates of Occupancy and title transactions in the FCT.'
+      ),
 
-      { type: 'heading', text: '7 Things You Should Do Before Paying for Property' },
+      {
+        type: 'heading',
+        text: '7 Things You Should Do Before Paying for Property',
+      },
       {
         type: 'list',
         style: 'number',
@@ -202,7 +303,10 @@ export const articles: Article[] = [
         ],
       },
 
-      { type: 'heading', text: 'The Smart Property Buyer Doesn\'t Just Ask, "How Much?"' },
+      {
+        type: 'heading',
+        text: 'The Smart Property Buyer Doesn\'t Just Ask, "How Much?"',
+      },
       p('They ask:'),
       {
         type: 'list',
@@ -217,16 +321,24 @@ export const articles: Article[] = [
           'Has the transaction been properly documented and perfected?',
         ],
       },
-      p('These questions can save you from turning what should have been a profitable investment into a long and expensive legal battle.'),
+      p(
+        'These questions can save you from turning what should have been a profitable investment into a long and expensive legal battle.'
+      ),
 
       { type: 'heading', text: 'Final Thoughts' },
-      p('Real estate can be one of the most powerful ways to build and preserve wealth — but the quality of your investment is not determined by the property alone. It is also determined by the quality of the title and the due diligence behind the transaction.'),
-      p('At Beaverstone, we believe property investment should be built on more than beautiful locations and attractive offers. It should be built on transparency, proper documentation, professional due diligence and informed decision-making.'),
-      p("Don't just buy property. Understand what you're buying. Verify before you commit. Invest with confidence."),
+      p(
+        'Real estate can be one of the most powerful ways to build and preserve wealth — but the quality of your investment is not determined by the property alone. It is also determined by the quality of the title and the due diligence behind the transaction.'
+      ),
+      p(
+        'At Beaverstone, we believe property investment should be built on more than beautiful locations and attractive offers. It should be built on transparency, proper documentation, professional due diligence and informed decision-making.'
+      ),
+      p(
+        "Don't just buy property. Understand what you're buying. Verify before you commit. Invest with confidence."
+      ),
     ],
     date: '2026-08-05',
     author: 'Beaverstone',
-    image: u(A.hills),
+    image: u('1759310610775-b298f34f73aa'),
   },
   {
     slug: 'from-land-to-home-property-development',
@@ -235,34 +347,69 @@ export const articles: Article[] = [
     excerpt:
       'A completed building may look simple when viewed from the outside, but bringing a property from a piece of land to a finished home requires careful planning, technical expertise and coordinated execution.',
     body: [
-      p('A completed building may look simple when viewed from the outside, but bringing a property from a piece of land to a finished home requires careful planning, technical expertise and coordinated execution.'),
-      p('Every successful development begins long before the first block is laid.'),
+      p(
+        'A completed building may look simple when viewed from the outside, but bringing a property from a piece of land to a finished home requires careful planning, technical expertise and coordinated execution.'
+      ),
+      p(
+        'Every successful development begins long before the first block is laid.'
+      ),
       { type: 'heading', text: 'Step 1: Land Acquisition and Due Diligence' },
       p('The process begins with identifying and securing suitable land.'),
-      p('Before development, important factors such as ownership, title documentation, land use, accessibility, planning requirements, soil conditions and surrounding infrastructure must be carefully assessed.'),
+      p(
+        'Before development, important factors such as ownership, title documentation, land use, accessibility, planning requirements, soil conditions and surrounding infrastructure must be carefully assessed.'
+      ),
       { type: 'heading', text: 'Step 2: Site Investigation' },
-      p('Understanding the site is essential before design and construction decisions are finalised.'),
-      p('Professionals assess the soil, terrain, drainage conditions and other characteristics that may influence the building.'),
+      p(
+        'Understanding the site is essential before design and construction decisions are finalised.'
+      ),
+      p(
+        'Professionals assess the soil, terrain, drainage conditions and other characteristics that may influence the building.'
+      ),
       { type: 'heading', text: 'Step 3: Architectural and Engineering Design' },
-      p('Architects and engineers transform the development concept into detailed plans.'),
-      p('Architectural drawings establish the appearance, functionality and layout of the building, while structural and other engineering designs ensure that the proposed development is technically sound.'),
-      { type: 'heading', text: 'Step 4: Approvals and Pre-Construction Planning' },
-      p('Relevant drawings and documents are submitted for the necessary approvals.'),
-      p('At the same time, budgets, schedules, materials, labour and construction methodologies are planned.'),
+      p(
+        'Architects and engineers transform the development concept into detailed plans.'
+      ),
+      p(
+        'Architectural drawings establish the appearance, functionality and layout of the building, while structural and other engineering designs ensure that the proposed development is technically sound.'
+      ),
+      {
+        type: 'heading',
+        text: 'Step 4: Approvals and Pre-Construction Planning',
+      },
+      p(
+        'Relevant drawings and documents are submitted for the necessary approvals.'
+      ),
+      p(
+        'At the same time, budgets, schedules, materials, labour and construction methodologies are planned.'
+      ),
       { type: 'heading', text: 'Step 5: Foundation and Structural Works' },
-      p('Construction begins on site with setting out, excavation and foundation works.'),
-      p("The foundation transfers the building's loads safely into the ground and therefore requires careful execution."),
-      p('The structural frame then progresses through stages such as columns, beams, slabs and walls.'),
+      p(
+        'Construction begins on site with setting out, excavation and foundation works.'
+      ),
+      p(
+        "The foundation transfers the building's loads safely into the ground and therefore requires careful execution."
+      ),
+      p(
+        'The structural frame then progresses through stages such as columns, beams, slabs and walls.'
+      ),
       { type: 'heading', text: 'Step 6: Roofing, Services and Finishing' },
-      p('Once the main structure is established, the project progresses into roofing, plumbing, electrical installations, plastering, screeding, tiling, painting, cabinetry and other finishing works.'),
+      p(
+        'Once the main structure is established, the project progresses into roofing, plumbing, electrical installations, plastering, screeding, tiling, painting, cabinetry and other finishing works.'
+      ),
       { type: 'heading', text: 'Step 7: Quality Control and Handover' },
-      p('Before completion, the development undergoes inspections to identify defects, incomplete works and areas requiring correction.'),
-      p('Only after the necessary checks and finishing works are completed should the property be prepared for handover.'),
-      p('A quality property is not created by chance. It is the result of a well-managed process.'),
+      p(
+        'Before completion, the development undergoes inspections to identify defects, incomplete works and areas requiring correction.'
+      ),
+      p(
+        'Only after the necessary checks and finishing works are completed should the property be prepared for handover.'
+      ),
+      p(
+        'A quality property is not created by chance. It is the result of a well-managed process.'
+      ),
     ],
     date: '2026-08-06',
     author: 'Beaverstone',
-    image: u(A.site),
+    image: u('1685266325960-8ea392f6f026'),
   },
   {
     slug: 'complete-journey-building-house-nigeria',
@@ -271,8 +418,12 @@ export const articles: Article[] = [
     excerpt:
       'Building a house is one of the biggest investments many people will make in their lifetime. Understanding the process can help property owners make better decisions and avoid costly mistakes.',
     body: [
-      p('Building a house is one of the biggest investments many people will make in their lifetime.'),
-      p('Understanding the process can help property owners make better decisions, manage expectations and avoid costly mistakes.'),
+      p(
+        'Building a house is one of the biggest investments many people will make in their lifetime.'
+      ),
+      p(
+        'Understanding the process can help property owners make better decisions, manage expectations and avoid costly mistakes.'
+      ),
       {
         type: 'list',
         style: 'number',
@@ -294,7 +445,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-07',
     author: 'Beaverstone',
-    image: u(A.villa),
+    image: u('1668609268461-4f6a15269ff1'),
   },
   {
     slug: 'what-happens-before-construction-begins',
@@ -304,28 +455,48 @@ export const articles: Article[] = [
       'Construction does not begin when the excavator arrives on site. Some of the most important decisions are made before construction starts.',
     body: [
       p('Construction does not begin when the excavator arrives on site.'),
-      p('Some of the most important decisions are made before construction starts.'),
+      p(
+        'Some of the most important decisions are made before construction starts.'
+      ),
       { type: 'heading', text: 'Land Verification' },
-      p('The ownership and documentation of the property must be properly investigated.'),
+      p(
+        'The ownership and documentation of the property must be properly investigated.'
+      ),
       { type: 'heading', text: 'Site Survey' },
-      p("A survey establishes important information about the site's boundaries, levels and physical characteristics."),
+      p(
+        "A survey establishes important information about the site's boundaries, levels and physical characteristics."
+      ),
       { type: 'heading', text: 'Soil Investigation' },
-      p('Soil conditions can influence the appropriate foundation system and other structural decisions.'),
+      p(
+        'Soil conditions can influence the appropriate foundation system and other structural decisions.'
+      ),
       { type: 'heading', text: 'Architectural Design' },
-      p('The architect develops the building concept, floor plans, elevations and other required drawings.'),
+      p(
+        'The architect develops the building concept, floor plans, elevations and other required drawings.'
+      ),
       { type: 'heading', text: 'Structural Design' },
-      p('Structural engineers determine how the building will safely support and transfer its loads.'),
+      p(
+        'Structural engineers determine how the building will safely support and transfer its loads.'
+      ),
       { type: 'heading', text: 'Cost Planning' },
-      p('A realistic project budget should be developed based on the design, materials, labour and scope of work.'),
+      p(
+        'A realistic project budget should be developed based on the design, materials, labour and scope of work.'
+      ),
       { type: 'heading', text: 'Construction Planning' },
-      p('A project schedule, procurement plan and construction methodology help establish how the project will be executed.'),
+      p(
+        'A project schedule, procurement plan and construction methodology help establish how the project will be executed.'
+      ),
       { type: 'heading', text: 'Approvals' },
-      p('The required regulatory approvals should be obtained before construction proceeds.'),
-      p('The better the preparation, the fewer surprises a project is likely to encounter.'),
+      p(
+        'The required regulatory approvals should be obtained before construction proceeds.'
+      ),
+      p(
+        'The better the preparation, the fewer surprises a project is likely to encounter.'
+      ),
     ],
     date: '2026-08-08',
     author: 'Beaverstone',
-    image: u(A.lobby),
+    image: u('1685266325553-56094896ce47'),
   },
   {
     slug: 'why-site-investigation-matters',
@@ -334,10 +505,16 @@ export const articles: Article[] = [
     excerpt:
       'What lies beneath a building can be just as important as what you see above ground. Two sites that look almost identical on the surface can have completely different soil and groundwater conditions.',
     body: [
-      p('What lies beneath a building can be just as important as what you see above ground.'),
-      p('Two sites that look almost identical on the surface can have completely different soil and groundwater conditions.'),
+      p(
+        'What lies beneath a building can be just as important as what you see above ground.'
+      ),
+      p(
+        'Two sites that look almost identical on the surface can have completely different soil and groundwater conditions.'
+      ),
       { type: 'heading', text: 'What Is Site Investigation?' },
-      p('Site investigation involves examining the physical and engineering characteristics of a proposed construction site.'),
+      p(
+        'Site investigation involves examining the physical and engineering characteristics of a proposed construction site.'
+      ),
       p('Depending on the project, this may involve:'),
       {
         type: 'list',
@@ -353,7 +530,9 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'Why Is It Important?' },
-      p('Proper investigation helps professionals understand the conditions they are designing for. It can help identify:'),
+      p(
+        'Proper investigation helps professionals understand the conditions they are designing for. It can help identify:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -365,12 +544,16 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'The Cost of Getting It Wrong' },
-      p('Inadequate site investigation can contribute to inappropriate foundation decisions, excessive settlement, cracking and other structural or construction problems.'),
-      p('The cost of investigation is therefore not simply another project expense. It is an investment in informed design and construction.'),
+      p(
+        'Inadequate site investigation can contribute to inappropriate foundation decisions, excessive settlement, cracking and other structural or construction problems.'
+      ),
+      p(
+        'The cost of investigation is therefore not simply another project expense. It is an investment in informed design and construction.'
+      ),
     ],
     date: '2026-08-09',
     author: 'Beaverstone',
-    image: u(A.water),
+    image: u('1593621409155-545c2cc6a90b'),
   },
   {
     slug: 'common-construction-mistakes',
@@ -379,7 +562,9 @@ export const articles: Article[] = [
     excerpt:
       'Construction mistakes can be expensive to correct — especially when they are discovered after the building has progressed significantly. Here are five common mistakes property owners should avoid.',
     body: [
-      p('Construction mistakes can be expensive to correct — especially when they are discovered after the building has progressed significantly.'),
+      p(
+        'Construction mistakes can be expensive to correct — especially when they are discovered after the building has progressed significantly.'
+      ),
       p('Here are five common mistakes property owners should avoid.'),
       {
         type: 'list',
@@ -393,12 +578,14 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'The Bigger Lesson' },
-      p("Saving money during construction should not mean compromising the elements that determine the building's safety, durability and performance."),
+      p(
+        "Saving money during construction should not mean compromising the elements that determine the building's safety, durability and performance."
+      ),
       p('Build correctly the first time.'),
     ],
     date: '2026-08-10',
     author: 'Beaverstone',
-    image: u(A.tower),
+    image: u('1740825961434-e9287638592b'),
   },
   {
     slug: 'poor-foundation-work-effects',
@@ -408,8 +595,13 @@ export const articles: Article[] = [
       'A building is only as reliable as the system supporting it. The foundation transfers the loads from the structure into the ground, making foundation design and construction one of the most critical stages of a building project.',
     body: [
       p('A building is only as reliable as the system supporting it.'),
-      p('The foundation transfers the loads from the structure into the ground, making foundation design and construction one of the most critical stages of a building project.'),
-      { type: 'heading', text: 'Problems Associated With Poor Foundation Work' },
+      p(
+        'The foundation transfers the loads from the structure into the ground, making foundation design and construction one of the most critical stages of a building project.'
+      ),
+      {
+        type: 'heading',
+        text: 'Problems Associated With Poor Foundation Work',
+      },
       p('Poor foundation construction can contribute to:'),
       {
         type: 'list',
@@ -441,24 +633,35 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: "Don't Cut Corners Below Ground" },
-      p('Foundation works are often hidden once construction is complete. That makes quality control during this stage particularly important.'),
-      p('What you cannot see after construction can still determine how the building performs for decades.'),
+      p(
+        'Foundation works are often hidden once construction is complete. That makes quality control during this stage particularly important.'
+      ),
+      p(
+        'What you cannot see after construction can still determine how the building performs for decades.'
+      ),
     ],
     date: '2026-08-11',
     author: 'Beaverstone',
-    image: u(A.interior),
+    image: u('1661332628548-082c0b446ee1'),
   },
   {
     slug: 'understanding-building-foundations',
     category: 'Blogs',
-    title: 'Understanding Building Foundations: What Every Property Owner Should Know',
+    title:
+      'Understanding Building Foundations: What Every Property Owner Should Know',
     excerpt:
       'The foundation is the interface between a building and the ground beneath it. Its purpose is to safely transfer the loads of the structure to the soil without unacceptable movement or failure.',
     body: [
-      p('The foundation is the interface between a building and the ground beneath it.'),
-      p('Its purpose is to safely transfer the loads of the structure to the soil without unacceptable movement or failure.'),
+      p(
+        'The foundation is the interface between a building and the ground beneath it.'
+      ),
+      p(
+        'Its purpose is to safely transfer the loads of the structure to the soil without unacceptable movement or failure.'
+      ),
       { type: 'heading', text: 'Common Foundation Types' },
-      p('Depending on the building and site conditions, foundations may include:'),
+      p(
+        'Depending on the building and site conditions, foundations may include:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -470,7 +673,9 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'There Is No Universal Foundation' },
-      p('A foundation should not be selected simply because it was used successfully on another project. The appropriate foundation depends on factors such as:'),
+      p(
+        'A foundation should not be selected simply because it was used successfully on another project. The appropriate foundation depends on factors such as:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -487,7 +692,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-12',
     author: 'Beaverstone',
-    image: u(A.market),
+    image: u('1777919393730-463e2c0b7f4c'),
   },
   {
     slug: 'quality-materials-property-development',
@@ -496,10 +701,16 @@ export const articles: Article[] = [
     excerpt:
       'Construction materials directly influence the durability, safety, appearance and performance of a building. Every component contributes to the final result.',
     body: [
-      p('Construction materials directly influence the durability, safety, appearance and performance of a building.'),
-      p('From cement and aggregates to reinforcement steel, blocks, roofing materials, windows, doors and finishing products, every component contributes to the final result.'),
+      p(
+        'Construction materials directly influence the durability, safety, appearance and performance of a building.'
+      ),
+      p(
+        'From cement and aggregates to reinforcement steel, blocks, roofing materials, windows, doors and finishing products, every component contributes to the final result.'
+      ),
       { type: 'heading', text: 'Quality Is More Than Appearance' },
-      p('A material may look good but still perform poorly if it does not meet the required specifications. Quality construction requires:'),
+      p(
+        'A material may look good but still perform poorly if it does not meet the required specifications. Quality construction requires:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -513,14 +724,20 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'The Cost of Poor Materials' },
-      p('Using unsuitable materials can result in premature deterioration, increased maintenance costs, poor finishes and potentially serious construction defects.'),
+      p(
+        'Using unsuitable materials can result in premature deterioration, increased maintenance costs, poor finishes and potentially serious construction defects.'
+      ),
       { type: 'heading', text: 'Building for the Long Term' },
-      p('A property should not simply look impressive when completed. It should be designed and constructed to perform over time.'),
-      p('At Beaverstone, our philosophy is simple: quality should be built into a property — not added as an afterthought.'),
+      p(
+        'A property should not simply look impressive when completed. It should be designed and constructed to perform over time.'
+      ),
+      p(
+        'At Beaverstone, our philosophy is simple: quality should be built into a property — not added as an afterthought.'
+      ),
     ],
     date: '2026-08-13',
     author: 'Beaverstone',
-    image: u(A.estate),
+    image: u('1765378025221-3ed7eadc6def'),
   },
   {
     slug: 'identify-poor-construction-work',
@@ -529,28 +746,48 @@ export const articles: Article[] = [
     excerpt:
       'A finished building can look attractive while concealing underlying construction problems. Learning what to look for can help you make better decisions.',
     body: [
-      p('A finished building can look attractive while concealing underlying construction problems.'),
-      p('Whether you are buying a newly completed property or inspecting an existing building, learning what to look for can help you make better decisions.'),
+      p(
+        'A finished building can look attractive while concealing underlying construction problems.'
+      ),
+      p(
+        'Whether you are buying a newly completed property or inspecting an existing building, learning what to look for can help you make better decisions.'
+      ),
       { type: 'heading', text: 'Look at the Walls' },
-      p('Watch for significant cracks, damp patches, uneven surfaces and poor finishing.'),
-      p('Not every crack indicates structural failure, but unusual or progressive cracking deserves professional assessment.'),
+      p(
+        'Watch for significant cracks, damp patches, uneven surfaces and poor finishing.'
+      ),
+      p(
+        'Not every crack indicates structural failure, but unusual or progressive cracking deserves professional assessment.'
+      ),
       { type: 'heading', text: 'Examine Floors' },
-      p('Look for excessive unevenness, hollow-sounding tiles, poor slopes and water ponding.'),
+      p(
+        'Look for excessive unevenness, hollow-sounding tiles, poor slopes and water ponding.'
+      ),
       { type: 'heading', text: 'Check Doors and Windows' },
-      p('Difficulty opening or closing doors and windows may sometimes indicate poor installation, movement or other building issues.'),
+      p(
+        'Difficulty opening or closing doors and windows may sometimes indicate poor installation, movement or other building issues.'
+      ),
       { type: 'heading', text: 'Inspect Plumbing' },
-      p('Check for leaks, poor drainage, inadequate water pressure and signs of moisture.'),
+      p(
+        'Check for leaks, poor drainage, inadequate water pressure and signs of moisture.'
+      ),
       { type: 'heading', text: 'Examine Electrical Installations' },
-      p('Electrical installations should be properly executed and protected according to applicable requirements.'),
+      p(
+        'Electrical installations should be properly executed and protected according to applicable requirements.'
+      ),
       { type: 'heading', text: 'Look at Finishes' },
-      p('Poor alignment, inconsistent joints, uneven plastering and low-quality finishing can indicate inadequate workmanship.'),
+      p(
+        'Poor alignment, inconsistent joints, uneven plastering and low-quality finishing can indicate inadequate workmanship.'
+      ),
       { type: 'heading', text: 'Get Professional Advice' },
       p('A visual inspection is useful, but it cannot reveal every problem.'),
-      p('For significant property purchases, professional inspection can provide a much more comprehensive assessment.'),
+      p(
+        'For significant property purchases, professional inspection can provide a much more comprehensive assessment.'
+      ),
     ],
     date: '2026-08-14',
     author: 'Beaverstone',
-    image: u(A.p1),
+    image: u('1661332626502-b04dcba03e5f'),
   },
   {
     slug: 'importance-professional-project-supervision',
@@ -559,9 +796,13 @@ export const articles: Article[] = [
     excerpt:
       'A construction project can have excellent drawings and quality materials and still produce poor results if execution is not properly supervised.',
     body: [
-      p('A construction project can have excellent drawings and quality materials and still produce poor results if execution is not properly supervised.'),
+      p(
+        'A construction project can have excellent drawings and quality materials and still produce poor results if execution is not properly supervised.'
+      ),
       { type: 'heading', text: 'What Does Project Supervision Involve?' },
-      p('Professional supervision helps ensure that construction activities are carried out in accordance with approved drawings, specifications, quality requirements and project plans. This can include monitoring:'),
+      p(
+        'Professional supervision helps ensure that construction activities are carried out in accordance with approved drawings, specifications, quality requirements and project plans. This can include monitoring:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -579,15 +820,23 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'Why Does It Matter?' },
-      p('Effective supervision can help identify problems early rather than allowing them to become expensive defects.'),
-      p('It also helps coordinate contractors, artisans, suppliers and other project stakeholders.'),
+      p(
+        'Effective supervision can help identify problems early rather than allowing them to become expensive defects.'
+      ),
+      p(
+        'It also helps coordinate contractors, artisans, suppliers and other project stakeholders.'
+      ),
       { type: 'heading', text: 'Supervision Protects the Investment' },
-      p('For property owners, professional supervision provides greater confidence that money is being spent according to the intended design and construction requirements.'),
-      p('A construction project needs more than workers. It needs competent oversight.'),
+      p(
+        'For property owners, professional supervision provides greater confidence that money is being spent according to the intended design and construction requirements.'
+      ),
+      p(
+        'A construction project needs more than workers. It needs competent oversight.'
+      ),
     ],
     date: '2026-08-15',
     author: 'Beaverstone',
-    image: u(A.p2),
+    image: u('1729843823577-40db41a5e8c9'),
   },
   {
     slug: 'construction-quality-property-value',
@@ -597,7 +846,9 @@ export const articles: Article[] = [
       "Property value is influenced by more than location and land size. The quality of construction can have a significant effect on a property's desirability, durability and long-term performance.",
     body: [
       p('Property value is influenced by more than location and land size.'),
-      p("The quality of construction can have a significant effect on a property's desirability, durability and long-term performance."),
+      p(
+        "The quality of construction can have a significant effect on a property's desirability, durability and long-term performance."
+      ),
       { type: 'heading', text: 'Quality Construction Can Provide' },
       {
         type: 'list',
@@ -610,12 +861,16 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'Construction Is an Investment' },
-      p('Cutting corners during construction may reduce initial expenditure, but it can create higher costs later through repairs, maintenance and reduced property appeal.'),
-      p("For developers, homeowners and investors alike: construction quality is part of the property's value proposition."),
+      p(
+        'Cutting corners during construction may reduce initial expenditure, but it can create higher costs later through repairs, maintenance and reduced property appeal.'
+      ),
+      p(
+        "For developers, homeowners and investors alike: construction quality is part of the property's value proposition."
+      ),
     ],
     date: '2026-08-16',
     author: 'Beaverstone',
-    image: u(A.p3),
+    image: u('1648840887119-a9d33c964054'),
   },
   {
     slug: 'what-makes-well-designed-home',
@@ -625,26 +880,38 @@ export const articles: Article[] = [
       'A beautiful home is not necessarily a well-designed home. Good residential design combines aesthetics, functionality, comfort, safety and efficient use of space.',
     body: [
       p('A beautiful home is not necessarily a well-designed home.'),
-      p('Good residential design combines aesthetics, functionality, comfort, safety and efficient use of space.'),
+      p(
+        'Good residential design combines aesthetics, functionality, comfort, safety and efficient use of space.'
+      ),
       { type: 'heading', text: 'Functionality' },
       p('Rooms should be arranged according to how people actually use them.'),
       { type: 'heading', text: 'Natural Light and Ventilation' },
-      p('Thoughtful placement of windows and openings can improve indoor comfort and reduce reliance on artificial lighting and mechanical ventilation.'),
+      p(
+        'Thoughtful placement of windows and openings can improve indoor comfort and reduce reliance on artificial lighting and mechanical ventilation.'
+      ),
       { type: 'heading', text: 'Efficient Space Planning' },
       p('Good design makes every square metre useful.'),
       { type: 'heading', text: 'Privacy' },
-      p('Bedrooms, living areas, service spaces and outdoor areas should be arranged with appropriate consideration for privacy.'),
+      p(
+        'Bedrooms, living areas, service spaces and outdoor areas should be arranged with appropriate consideration for privacy.'
+      ),
       { type: 'heading', text: 'Circulation' },
-      p('Movement through the house should feel natural rather than confusing or restrictive.'),
+      p(
+        'Movement through the house should feel natural rather than confusing or restrictive.'
+      ),
       { type: 'heading', text: 'Climate Responsiveness' },
-      p("In Nigeria's climate, factors such as solar exposure, shading, ventilation, rainwater management and material selection deserve careful consideration."),
+      p(
+        "In Nigeria's climate, factors such as solar exposure, shading, ventilation, rainwater management and material selection deserve careful consideration."
+      ),
       { type: 'heading', text: 'Beauty and Performance' },
       p('The best homes combine visual appeal with practical performance.'),
-      p('A well-designed home should not only look good — it should live well.'),
+      p(
+        'A well-designed home should not only look good — it should live well.'
+      ),
     ],
     date: '2026-08-17',
     author: 'Beaverstone',
-    image: u(A.p4),
+    image: u('1628144688607-c373d8e3f31b'),
   },
   {
     slug: 'inspect-property-before-buying',
@@ -654,7 +921,9 @@ export const articles: Article[] = [
       'Buying property is a significant financial commitment. A property may look perfect during a brief viewing, but a proper inspection can reveal issues that are not immediately visible.',
     body: [
       p('Buying property is a significant financial commitment.'),
-      p('A property may look perfect during a brief viewing, but a proper inspection can reveal issues that are not immediately visible.'),
+      p(
+        'A property may look perfect during a brief viewing, but a proper inspection can reveal issues that are not immediately visible.'
+      ),
       { type: 'heading', text: 'What Should You Inspect?' },
       p('Look at:'),
       {
@@ -676,25 +945,38 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'Why Inspection Matters' },
-      p('An inspection can help you identify defects, estimate potential repair costs and make a more informed purchasing decision.'),
-      p('It can also help you negotiate when significant defects are discovered.'),
+      p(
+        'An inspection can help you identify defects, estimate potential repair costs and make a more informed purchasing decision.'
+      ),
+      p(
+        'It can also help you negotiate when significant defects are discovered.'
+      ),
       { type: 'heading', text: "Don't Inspect With Your Eyes Alone" },
-      p('For substantial property purchases, consider engaging qualified professionals who can assess the building from technical and legal perspectives.'),
-      p('A few hours of professional inspection can help protect an investment worth millions of naira.'),
+      p(
+        'For substantial property purchases, consider engaging qualified professionals who can assess the building from technical and legal perspectives.'
+      ),
+      p(
+        'A few hours of professional inspection can help protect an investment worth millions of naira.'
+      ),
     ],
     date: '2026-08-18',
     author: 'Beaverstone',
-    image: u(A.p5),
+    image: u('1661332626584-2ef99ddd6794'),
   },
   {
     slug: 'architectural-design-to-construction-process',
     category: 'Blogs',
-    title: 'From Architectural Design to Construction: The Development Process Explained',
+    title:
+      'From Architectural Design to Construction: The Development Process Explained',
     excerpt:
       'Successful property development requires multiple professionals and disciplines working together. The journey from an idea to a completed building typically follows several stages.',
     body: [
-      p('Successful property development requires multiple professionals and disciplines working together.'),
-      p('The journey from an idea to a completed building typically follows several stages.'),
+      p(
+        'Successful property development requires multiple professionals and disciplines working together.'
+      ),
+      p(
+        'The journey from an idea to a completed building typically follows several stages.'
+      ),
       {
         type: 'list',
         style: 'number',
@@ -710,62 +992,98 @@ export const articles: Article[] = [
           'Completion and Handover — The finished property is inspected, outstanding issues are addressed and the property is prepared for occupation or delivery.',
         ],
       },
-      p('Great buildings begin as ideas, but they become valuable assets through disciplined design and execution.'),
+      p(
+        'Great buildings begin as ideas, but they become valuable assets through disciplined design and execution.'
+      ),
     ],
     date: '2026-08-19',
     author: 'Beaverstone',
-    image: u(A.p6),
+    image: u('1720723317092-a0fe23f6c4bd'),
   },
   {
     slug: 'beaverstone-builds-behind-the-scenes',
     category: 'Blogs',
-    title: 'BEAVERSTONE BUILDS: Behind the Scenes of How We Design, Develop & Deliver',
+    title:
+      'BEAVERSTONE BUILDS: Behind the Scenes of How We Design, Develop & Deliver',
     excerpt:
       'A building is more than concrete, blocks and finishes. Through BEAVERSTONE BUILDS, we take you behind the scenes of our development process — from the first concept on paper to the finished property.',
     body: [
       p('A building is more than concrete, blocks and finishes.'),
-      p('Behind every completed Beaverstone property is a process of planning, design, engineering, construction, supervision and attention to detail.'),
-      p('Through BEAVERSTONE BUILDS, we take you behind the scenes of our development process — from the first concept on paper to the finished property.'),
+      p(
+        'Behind every completed Beaverstone property is a process of planning, design, engineering, construction, supervision and attention to detail.'
+      ),
+      p(
+        'Through BEAVERSTONE BUILDS, we take you behind the scenes of our development process — from the first concept on paper to the finished property.'
+      ),
       { type: 'heading', text: 'Concept' },
       p('Every project begins with a vision.'),
-      p("We identify the purpose of the development, understand the target market and establish the project's design and investment objectives."),
+      p(
+        "We identify the purpose of the development, understand the target market and establish the project's design and investment objectives."
+      ),
       { type: 'heading', text: 'Design' },
       p('Ideas become detailed plans.'),
-      p('Our architectural and engineering processes transform concepts into functional, practical and aesthetically considered designs.'),
+      p(
+        'Our architectural and engineering processes transform concepts into functional, practical and aesthetically considered designs.'
+      ),
       { type: 'heading', text: 'Site & Foundation' },
       p('Before a building rises, the ground beneath it matters.'),
-      p('Site preparation, setting out, excavation and foundation works establish the base upon which the structure will stand.'),
+      p(
+        'Site preparation, setting out, excavation and foundation works establish the base upon which the structure will stand.'
+      ),
       { type: 'heading', text: 'Structure' },
       p('This is where the building begins to take shape.'),
-      p('Columns, beams, slabs, walls and other structural elements are carefully executed according to the project\'s technical requirements.'),
+      p(
+        "Columns, beams, slabs, walls and other structural elements are carefully executed according to the project's technical requirements."
+      ),
       { type: 'heading', text: 'Finishing' },
       p('The structure becomes a home.'),
-      p('Roofing, doors, windows, electrical and plumbing installations, flooring, painting, ceilings, landscaping and other finishing elements bring the development to life.'),
+      p(
+        'Roofing, doors, windows, electrical and plumbing installations, flooring, painting, ceilings, landscaping and other finishing elements bring the development to life.'
+      ),
       { type: 'heading', text: 'Completion' },
       p('The details come together.'),
-      p('After inspections, quality checks and final corrections, the completed property is prepared for delivery.'),
+      p(
+        'After inspections, quality checks and final corrections, the completed property is prepared for delivery.'
+      ),
       { type: 'heading', text: 'The Result' },
-      p('A property designed not only to look good, but to serve its purpose, perform over time and create lasting value.'),
-      p('BEAVERSTONE BUILDS is our opportunity to show you what happens behind the finished walls.'),
-      p("Because at Beaverstone, we don't just sell property. We understand how it is designed. We understand how it is built. And we understand why quality matters."),
+      p(
+        'A property designed not only to look good, but to serve its purpose, perform over time and create lasting value.'
+      ),
+      p(
+        'BEAVERSTONE BUILDS is our opportunity to show you what happens behind the finished walls.'
+      ),
+      p(
+        "Because at Beaverstone, we don't just sell property. We understand how it is designed. We understand how it is built. And we understand why quality matters."
+      ),
     ],
     date: '2026-08-20',
     author: 'Beaverstone',
-    image: u(A.p1, 1200),
+    image: u('1687422810663-c316494f725a'),
   },
   {
     slug: 'why-abuja-attractive-real-estate-market',
     category: 'Blogs',
-    title: "Why Abuja Remains One of Nigeria's Most Attractive Real Estate Markets",
+    title:
+      "Why Abuja Remains One of Nigeria's Most Attractive Real Estate Markets",
     excerpt:
-      'Abuja is more than Nigeria\'s capital city. It is a rapidly developing urban centre with growing demand for residential, commercial and investment properties.',
+      "Abuja is more than Nigeria's capital city. It is a rapidly developing urban centre with growing demand for residential, commercial and investment properties.",
     body: [
-      p("Abuja is more than Nigeria's capital city. It is a rapidly developing urban centre with growing demand for residential, commercial and investment properties."),
-      p('As the seat of government, Abuja attracts civil servants, diplomats, business owners, professionals, entrepreneurs, investors and families from across Nigeria and beyond. This continuous influx of people creates sustained demand for housing and other forms of real estate.'),
+      p(
+        "Abuja is more than Nigeria's capital city. It is a rapidly developing urban centre with growing demand for residential, commercial and investment properties."
+      ),
+      p(
+        'As the seat of government, Abuja attracts civil servants, diplomats, business owners, professionals, entrepreneurs, investors and families from across Nigeria and beyond. This continuous influx of people creates sustained demand for housing and other forms of real estate.'
+      ),
       { type: 'heading', text: 'A City Designed for Growth' },
-      p('Unlike many older cities, Abuja was planned with distinct districts, major road networks and designated areas for residential, commercial and institutional development.'),
-      p('Over the years, development has continued to expand beyond the traditional city centre into areas such as Kubwa, Lugbe, Dei-Dei, Gwarinpa and other emerging districts.'),
-      p('This expansion creates opportunities for property investors who understand where development is heading.'),
+      p(
+        'Unlike many older cities, Abuja was planned with distinct districts, major road networks and designated areas for residential, commercial and institutional development.'
+      ),
+      p(
+        'Over the years, development has continued to expand beyond the traditional city centre into areas such as Kubwa, Lugbe, Dei-Dei, Gwarinpa and other emerging districts.'
+      ),
+      p(
+        'This expansion creates opportunities for property investors who understand where development is heading.'
+      ),
       { type: 'heading', text: 'Why Investors Look to Abuja' },
       {
         type: 'list',
@@ -780,12 +1098,16 @@ export const articles: Article[] = [
       },
       { type: 'heading', text: "Look Beyond Today's Price" },
       p('A property should not be judged only by how much it costs today.'),
-      p('Investors should also consider what the surrounding location could become in five, ten or fifteen years.'),
-      p('At Beaverstone, we believe the best real estate decisions combine location, quality, due diligence and long-term vision.'),
+      p(
+        'Investors should also consider what the surrounding location could become in five, ten or fifteen years.'
+      ),
+      p(
+        'At Beaverstone, we believe the best real estate decisions combine location, quality, due diligence and long-term vision.'
+      ),
     ],
     date: '2026-08-21',
     author: 'Beaverstone',
-    image: u(A.market),
+    image: u('1721076685541-2739cb6ba9fc'),
   },
   {
     slug: 'emerging-areas-real-estate-investment-abuja',
@@ -795,10 +1117,16 @@ export const articles: Article[] = [
       "Abuja's real estate landscape is constantly evolving. As the city expands, previously less-developed areas can gradually become more connected, populated and commercially active.",
     body: [
       p("Abuja's real estate landscape is constantly evolving."),
-      p('As the city expands, previously less-developed areas can gradually become more connected, populated and commercially active.'),
-      p('For investors, this creates an important question: where is Abuja growing next?'),
+      p(
+        'As the city expands, previously less-developed areas can gradually become more connected, populated and commercially active.'
+      ),
+      p(
+        'For investors, this creates an important question: where is Abuja growing next?'
+      ),
       { type: 'heading', text: 'What Makes an Emerging Area Attractive?' },
-      p('Rather than focusing solely on a particular district, investors should look for certain indicators.'),
+      p(
+        'Rather than focusing solely on a particular district, investors should look for certain indicators.'
+      ),
       {
         type: 'list',
         style: 'number',
@@ -811,13 +1139,17 @@ export const articles: Article[] = [
         ],
       },
       { type: 'heading', text: 'Invest Before the Crowd?' },
-      p('Buying into an emerging area can provide investors with an opportunity to enter the market before prices potentially rise significantly.'),
+      p(
+        'Buying into an emerging area can provide investors with an opportunity to enter the market before prices potentially rise significantly.'
+      ),
       p('However, emerging does not automatically mean profitable.'),
-      p('Always investigate title documentation, accessibility, infrastructure plans, development patterns and market demand before investing.'),
+      p(
+        'Always investigate title documentation, accessibility, infrastructure plans, development patterns and market demand before investing.'
+      ),
     ],
     date: '2026-08-22',
     author: 'Beaverstone',
-    image: u(A.tower),
+    image: u('1537372023620-37161b1ad8ac'),
   },
   {
     slug: 'abuja-kubwa-corridor-property-investors',
@@ -826,23 +1158,41 @@ export const articles: Article[] = [
     excerpt:
       "The Abuja–Kubwa corridor has become an increasingly important part of the Federal Capital Territory's residential and commercial growth.",
     body: [
-      p("The Abuja–Kubwa corridor has become an increasingly important part of the Federal Capital Territory's residential and commercial growth."),
-      p("Its connection to Abuja's wider road network, established communities and expanding development has made the corridor an area worth watching."),
+      p(
+        "The Abuja–Kubwa corridor has become an increasingly important part of the Federal Capital Territory's residential and commercial growth."
+      ),
+      p(
+        "Its connection to Abuja's wider road network, established communities and expanding development has made the corridor an area worth watching."
+      ),
       { type: 'heading', text: 'Accessibility Matters' },
-      p('One of the biggest factors influencing real estate value is accessibility.'),
-      p('People want homes and businesses that allow them to conveniently connect to workplaces, commercial centres and other parts of the city.'),
-      p('The Abuja–Kubwa axis provides access to several important parts of the FCT and surrounding areas.'),
+      p(
+        'One of the biggest factors influencing real estate value is accessibility.'
+      ),
+      p(
+        'People want homes and businesses that allow them to conveniently connect to workplaces, commercial centres and other parts of the city.'
+      ),
+      p(
+        'The Abuja–Kubwa axis provides access to several important parts of the FCT and surrounding areas.'
+      ),
       { type: 'heading', text: 'Development Creates Opportunity' },
-      p('As population and construction activity increase along a corridor, demand for residential properties, land, commercial spaces, retail outlets and rental accommodation can also increase.'),
-      p('This makes the corridor relevant to both owner-occupiers and investors.'),
+      p(
+        'As population and construction activity increase along a corridor, demand for residential properties, land, commercial spaces, retail outlets and rental accommodation can also increase.'
+      ),
+      p(
+        'This makes the corridor relevant to both owner-occupiers and investors.'
+      ),
       { type: 'heading', text: 'Why Investors Should Pay Attention' },
-      p('Real estate opportunities are often created by the interaction between location, infrastructure and demand.'),
-      p('For investors considering the Abuja–Kubwa axis, the important question is not simply "Is property available here?" It is "What is happening here, and where is development heading?"'),
+      p(
+        'Real estate opportunities are often created by the interaction between location, infrastructure and demand.'
+      ),
+      p(
+        'For investors considering the Abuja–Kubwa axis, the important question is not simply "Is property available here?" It is "What is happening here, and where is development heading?"'
+      ),
       p('That distinction can help investors make more strategic decisions.'),
     ],
     date: '2026-08-23',
     author: 'Beaverstone',
-    image: u(A.site),
+    image: u('1637288099468-93ae6e3124e7'),
   },
   {
     slug: 'dei-dei-kubwa-lugbe-gwarinpa-comparison',
@@ -852,19 +1202,37 @@ export const articles: Article[] = [
       'There is no single "best" location in Abuja. The right location depends on your budget, lifestyle, investment objective and preferred level of development.',
     body: [
       p('There is no single "best" location in Abuja.'),
-      p('The right location depends on your budget, lifestyle, investment objective and preferred level of development.'),
+      p(
+        'The right location depends on your budget, lifestyle, investment objective and preferred level of development.'
+      ),
       { type: 'heading', text: 'Dei-Dei' },
-      p('Dei-Dei and its surrounding areas are associated with significant commercial and residential activity.'),
-      p('For investors, developing areas around major transportation routes can be worth considering because accessibility and commercial activity can influence future demand.'),
+      p(
+        'Dei-Dei and its surrounding areas are associated with significant commercial and residential activity.'
+      ),
+      p(
+        'For investors, developing areas around major transportation routes can be worth considering because accessibility and commercial activity can influence future demand.'
+      ),
       { type: 'heading', text: 'Kubwa' },
-      p("Kubwa is one of Abuja's established satellite communities, offering a large residential population and extensive supporting infrastructure."),
-      p('It can appeal to people looking for established communities and investors interested in residential demand.'),
+      p(
+        "Kubwa is one of Abuja's established satellite communities, offering a large residential population and extensive supporting infrastructure."
+      ),
+      p(
+        'It can appeal to people looking for established communities and investors interested in residential demand.'
+      ),
       { type: 'heading', text: 'Lugbe' },
-      p("Lugbe's proximity to the airport corridor and major transportation routes has contributed to its residential growth."),
-      p('The area offers a mixture of established communities and developing estates.'),
+      p(
+        "Lugbe's proximity to the airport corridor and major transportation routes has contributed to its residential growth."
+      ),
+      p(
+        'The area offers a mixture of established communities and developing estates.'
+      ),
       { type: 'heading', text: 'Gwarinpa' },
-      p("Gwarinpa is one of Abuja's prominent residential districts, known for its established housing market, businesses and amenities."),
-      p('Properties in more established neighbourhoods may command higher prices, but they can also benefit from existing infrastructure and demand.'),
+      p(
+        "Gwarinpa is one of Abuja's prominent residential districts, known for its established housing market, businesses and amenities."
+      ),
+      p(
+        'Properties in more established neighbourhoods may command higher prices, but they can also benefit from existing infrastructure and demand.'
+      ),
       { type: 'heading', text: 'So Which One Should You Choose?' },
       {
         type: 'list',
@@ -878,11 +1246,13 @@ export const articles: Article[] = [
           'Future development — look at infrastructure and expansion corridors.',
         ],
       },
-      p("The best location isn't necessarily the most expensive one. It's the one that best matches your investment strategy."),
+      p(
+        "The best location isn't necessarily the most expensive one. It's the one that best matches your investment strategy."
+      ),
     ],
     date: '2026-08-24',
     author: 'Beaverstone',
-    image: u(A.interior),
+    image: u('1685266326473-5b99c3d08a7e'),
   },
   {
     slug: 'roads-infrastructure-property-values-abuja',
@@ -891,15 +1261,27 @@ export const articles: Article[] = [
     excerpt:
       'Infrastructure is one of the most important forces shaping real estate development. A new road can do more than reduce travel time.',
     body: [
-      p('Infrastructure is one of the most important forces shaping real estate development.'),
-      p('A new road can do more than reduce travel time. It can change how people perceive and interact with an entire neighbourhood.'),
+      p(
+        'Infrastructure is one of the most important forces shaping real estate development.'
+      ),
+      p(
+        'A new road can do more than reduce travel time. It can change how people perceive and interact with an entire neighbourhood.'
+      ),
       { type: 'heading', text: 'Accessibility Creates Demand' },
-      p('When a previously difficult-to-reach area becomes easier to access, it can attract residents, businesses, developers, investors and service providers.'),
-      p('As activity increases, demand for land and property may also increase.'),
-      { type: 'heading', text: "Infrastructure Can Unlock Development" },
+      p(
+        'When a previously difficult-to-reach area becomes easier to access, it can attract residents, businesses, developers, investors and service providers.'
+      ),
+      p(
+        'As activity increases, demand for land and property may also increase.'
+      ),
+      { type: 'heading', text: 'Infrastructure Can Unlock Development' },
       p('Roads often encourage other forms of development.'),
-      p('New residential estates may emerge. Businesses may open. Schools, supermarkets, healthcare facilities and other services may follow.'),
-      p('This creates a development cycle: Infrastructure → Accessibility → Population Growth → Business Activity → Increased Property Demand.'),
+      p(
+        'New residential estates may emerge. Businesses may open. Schools, supermarkets, healthcare facilities and other services may follow.'
+      ),
+      p(
+        'This creates a development cycle: Infrastructure → Accessibility → Population Growth → Business Activity → Increased Property Demand.'
+      ),
       { type: 'heading', text: "But Infrastructure Alone Isn't Enough" },
       p('A new road does not automatically guarantee property appreciation.'),
       p('Investors should also consider:'),
@@ -920,7 +1302,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-25',
     author: 'Beaverstone',
-    image: u(A.hills),
+    image: u('1744907895363-d351aa6019ef'),
   },
   {
     slug: 'future-residential-development-abuja',
@@ -930,9 +1312,13 @@ export const articles: Article[] = [
       "Abuja's residential landscape is changing. As the population grows and lifestyles evolve, demand is shifting toward developments that combine accessibility, functionality, security, comfort and modern design.",
     body: [
       p("Abuja's residential landscape is changing."),
-      p('As the population grows and lifestyles evolve, demand is shifting toward residential developments that combine accessibility, functionality, security, comfort and modern design.'),
+      p(
+        'As the population grows and lifestyles evolve, demand is shifting toward residential developments that combine accessibility, functionality, security, comfort and modern design.'
+      ),
       { type: 'heading', text: 'From Houses to Communities' },
-      p('Modern buyers increasingly want more than four walls and a roof. They are looking for communities with:'),
+      p(
+        'Modern buyers increasingly want more than four walls and a roof. They are looking for communities with:'
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -946,16 +1332,24 @@ export const articles: Article[] = [
           'Proximity to essential services',
         ],
       },
-      p('This is encouraging developers to think beyond individual buildings and focus on well-planned communities.'),
+      p(
+        'This is encouraging developers to think beyond individual buildings and focus on well-planned communities.'
+      ),
       { type: 'heading', text: 'The Rise of Emerging Districts' },
-      p('As established areas become increasingly expensive, developers and investors are exploring emerging districts where land may be more accessible and larger developments can be planned.'),
+      p(
+        'As established areas become increasingly expensive, developers and investors are exploring emerging districts where land may be more accessible and larger developments can be planned.'
+      ),
       { type: 'heading', text: 'The Future Is Strategic' },
-      p('Successful residential development will increasingly depend on understanding where people want to live, how they want to live, and what they can afford.'),
-      p('At Beaverstone, our approach to development is centred on creating spaces that combine thoughtful planning, quality construction and long-term value.'),
+      p(
+        'Successful residential development will increasingly depend on understanding where people want to live, how they want to live, and what they can afford.'
+      ),
+      p(
+        'At Beaverstone, our approach to development is centred on creating spaces that combine thoughtful planning, quality construction and long-term value.'
+      ),
     ],
     date: '2026-08-26',
     author: 'Beaverstone',
-    image: u(A.water),
+    image: u('1783260606332-23546f99b8c8'),
   },
   {
     slug: 'what-makes-location-premium-abuja',
@@ -965,7 +1359,9 @@ export const articles: Article[] = [
       'The word "premium" is often used when describing Abuja properties. But what actually makes a location premium? It is rarely just the appearance of the neighbourhood.',
     body: [
       p('The word "premium" is often used when describing Abuja properties.'),
-      p('But what actually makes a location premium? It is rarely just the appearance of the neighbourhood.'),
+      p(
+        'But what actually makes a location premium? It is rarely just the appearance of the neighbourhood.'
+      ),
       {
         type: 'list',
         style: 'number',
@@ -978,21 +1374,28 @@ export const articles: Article[] = [
           'Future Potential — a location can also be considered premium because of what it is likely to become.',
         ],
       },
-      p("This is why experienced investors don't only examine the current state of a location. They study its development trajectory."),
+      p(
+        "This is why experienced investors don't only examine the current state of a location. They study its development trajectory."
+      ),
     ],
     date: '2026-08-27',
     author: 'Beaverstone',
-    image: u(A.estate),
+    image: u('1639774274707-09c80b4f53e3'),
   },
   {
     slug: 'buying-property-abuja-diaspora-nigerians',
     category: 'Blogs',
-    title: 'Buying Property in Abuja as a Diaspora Nigerian: What You Should Know',
+    title:
+      'Buying Property in Abuja as a Diaspora Nigerian: What You Should Know',
     excerpt:
       'Living outside Nigeria should not prevent you from investing in Nigerian real estate. However, buying property remotely requires careful planning and proper verification.',
     body: [
-      p('Living outside Nigeria should not prevent you from investing in Nigerian real estate.'),
-      p('However, buying property remotely requires careful planning and proper verification.'),
+      p(
+        'Living outside Nigeria should not prevent you from investing in Nigerian real estate.'
+      ),
+      p(
+        'However, buying property remotely requires careful planning and proper verification.'
+      ),
       {
         type: 'list',
         style: 'number',
@@ -1005,11 +1408,13 @@ export const articles: Article[] = [
           'Consider Your Investment Objective — are you buying for your future home, rental income, capital appreciation, your family, or development? Your objective should determine the property you choose.',
         ],
       },
-      p('Distance should not prevent you from investing — but it should make due diligence even more important.'),
+      p(
+        'Distance should not prevent you from investing — but it should make due diligence even more important.'
+      ),
     ],
     date: '2026-08-28',
     author: 'Beaverstone',
-    image: u(A.villa),
+    image: u('1554457606-ed16c39db884'),
   },
   {
     slug: 'developing-areas-better-investment-opportunities',
@@ -1018,14 +1423,24 @@ export const articles: Article[] = [
     excerpt:
       'Established neighbourhoods often come with established infrastructure, amenities and higher property prices. Developing areas can provide access to property at earlier stages of growth.',
     body: [
-      p('Established neighbourhoods often come with established infrastructure, amenities and higher property prices.'),
-      p("Developing areas, on the other hand, can provide investors with access to property at earlier stages of an area's growth."),
+      p(
+        'Established neighbourhoods often come with established infrastructure, amenities and higher property prices.'
+      ),
+      p(
+        "Developing areas, on the other hand, can provide investors with access to property at earlier stages of an area's growth."
+      ),
       { type: 'heading', text: 'The Growth Opportunity' },
-      p('Imagine buying property when an area has few developments, limited commercial activity, developing roads and relatively low demand.'),
-      p('Over time, infrastructure improves, developers arrive, businesses open and more residents move in.'),
+      p(
+        'Imagine buying property when an area has few developments, limited commercial activity, developing roads and relatively low demand.'
+      ),
+      p(
+        'Over time, infrastructure improves, developers arrive, businesses open and more residents move in.'
+      ),
       p('Demand can increase — and property values may respond accordingly.'),
       { type: 'heading', text: 'The Important Question' },
-      p("The goal isn't to buy in any developing area. It is to identify a developing area with strong fundamentals. Look for:"),
+      p(
+        "The goal isn't to buy in any developing area. It is to identify a developing area with strong fundamentals. Look for:"
+      ),
       {
         type: 'list',
         style: 'bullet',
@@ -1039,11 +1454,13 @@ export const articles: Article[] = [
           'Long-term development potential',
         ],
       },
-      p('Early investment can create opportunity, but informed early investment is even more powerful.'),
+      p(
+        'Early investment can create opportunity, but informed early investment is even more powerful.'
+      ),
     ],
     date: '2026-08-29',
     author: 'Beaverstone',
-    image: u(A.lobby),
+    image: u('1637019916030-9f851c2eca13'),
   },
   {
     slug: 'buying-land-developing-estate-checklist',
@@ -1052,7 +1469,9 @@ export const articles: Article[] = [
     excerpt:
       "Buying land in a developing estate can be an excellent way to enter the real estate market. But investors should look beyond the estate's marketing materials.",
     body: [
-      p('Buying land in a developing estate can be an excellent way to enter the real estate market.'),
+      p(
+        'Buying land in a developing estate can be an excellent way to enter the real estate market.'
+      ),
       p("But investors should look beyond the estate's marketing materials."),
       {
         type: 'list',
@@ -1071,7 +1490,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-30',
     author: 'Beaverstone',
-    image: u(A.p2),
+    image: u('1685266325930-ffe4937f6eb9'),
   },
   {
     slug: 'abuja-property-investment-first-time-buyers',
@@ -1082,8 +1501,12 @@ export const articles: Article[] = [
     body: [
       p('Buying your first property is exciting.'),
       p('It can also be overwhelming.'),
-      p('There are many properties on the market, different locations, different prices and numerous documents to consider.'),
-      p('Here are some fundamental principles every first-time buyer should understand.'),
+      p(
+        'There are many properties on the market, different locations, different prices and numerous documents to consider.'
+      ),
+      p(
+        'Here are some fundamental principles every first-time buyer should understand.'
+      ),
       {
         type: 'list',
         style: 'number',
@@ -1097,15 +1520,26 @@ export const articles: Article[] = [
           'Work With Trusted Professionals — real estate involves significant financial commitments. Independent legal and professional advice can help you identify potential risks before completing a transaction.',
         ],
       },
-      { type: 'heading', text: 'Your Next Property Decision Should Be Built on Vision' },
-      p("Abuja's real estate market continues to evolve, creating opportunities for homeowners, investors and developers. But finding the right opportunity requires more than simply finding a property at the right price."),
-      p('It requires understanding location, infrastructure, documentation, market demand and long-term potential.'),
-      p('At Beaverstone, we are committed to creating and identifying real estate opportunities that combine strategic locations, quality development and lasting value.'),
-      p("Whether you're purchasing your first plot of land, looking for your next investment, building your dream home or expanding your property portfolio, we are ready to help you make a more informed decision."),
+      {
+        type: 'heading',
+        text: 'Your Next Property Decision Should Be Built on Vision',
+      },
+      p(
+        "Abuja's real estate market continues to evolve, creating opportunities for homeowners, investors and developers. But finding the right opportunity requires more than simply finding a property at the right price."
+      ),
+      p(
+        'It requires understanding location, infrastructure, documentation, market demand and long-term potential.'
+      ),
+      p(
+        'At Beaverstone, we are committed to creating and identifying real estate opportunities that combine strategic locations, quality development and lasting value.'
+      ),
+      p(
+        "Whether you're purchasing your first plot of land, looking for your next investment, building your dream home or expanding your property portfolio, we are ready to help you make a more informed decision."
+      ),
     ],
     date: '2026-08-31',
     author: 'Beaverstone',
-    image: u(A.p3),
+    image: u('1716399233137-5f18a8e3520d'),
   },
 ];
 

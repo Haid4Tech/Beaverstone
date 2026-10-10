@@ -2,11 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SocialLinks from './SocialLinks';
 import MarqueeText from './MarqueeText';
-import { navigation, isNavGroup } from '@/data/navigation';
+import { memberCompanies } from '@/data/navigation';
 import { contactDetails } from '@/data/contact';
 import { logo } from '@/data/media';
-
-const memberCompanies = navigation.find((n) => n.label === 'Member Companies');
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -101,18 +99,16 @@ export default function Footer() {
             Subsidiaries
           </h2>
           <ul className="flex flex-col gap-3 text-sm">
-            {memberCompanies &&
-              isNavGroup(memberCompanies) &&
-              memberCompanies.children.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+            {memberCompanies.children.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="transition-colors hover:text-white"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

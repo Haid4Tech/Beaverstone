@@ -70,7 +70,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
-                A Group Built on Six Companies, One Standard
+                BUILD. BEYOND. BETTER
               </h2>
             </Reveal>
             <Reveal delay={0.2}>

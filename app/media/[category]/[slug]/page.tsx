@@ -164,7 +164,9 @@ export default async function ArticlePage(
                         key={i}
                         className={cn(
                           'flex flex-col gap-3 pl-5 text-[16px] leading-[1.8] text-body',
-                          block.style === 'number' ? 'list-decimal' : 'list-disc'
+                          block.style === 'number'
+                            ? 'list-decimal'
+                            : 'list-disc'
                         )}
                       >
                         {block.items.map((item, j) => (
@@ -178,7 +180,9 @@ export default async function ArticlePage(
                       <a
                         key={i}
                         href={block.href}
-                        target={block.href.startsWith('/') ? undefined : '_blank'}
+                        target={
+                          block.href.startsWith('/') ? undefined : '_blank'
+                        }
                         rel={
                           block.href.startsWith('/')
                             ? undefined

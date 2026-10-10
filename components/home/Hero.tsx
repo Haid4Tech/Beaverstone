@@ -10,12 +10,12 @@ import {
 import { contactDetails } from '@/data/contact';
 import { video } from '@/data/media';
 
-const stats = [
-  { value: '7,000+', label: 'Lands & Houses Sold' },
-  { value: '20+', label: 'Completed Projects' },
-  { value: '500+', label: 'Staff Members' },
-  { value: '6', label: 'Member Companies' },
-];
+// const stats = [
+//   { value: '7,000+', label: 'Lands & Houses Sold' },
+//   { value: '20+', label: 'Completed Projects' },
+//   { value: '500+', label: 'Staff Members' },
+//   { value: '6', label: 'Member Companies' },
+// ];
 
 const socials = [
   {
@@ -69,7 +69,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <Stagger className="relative z-10 mx-auto grid w-full max-w-[1400px] grid-cols-2 gap-8 border-t border-white/10 px-6 py-10 lg:grid-cols-4 lg:px-12">
+      {/* <Stagger className="relative z-10 mx-auto grid w-full max-w-[1400px] grid-cols-2 gap-8 border-t border-white/10 px-6 py-10 lg:grid-cols-4 lg:px-12">
         {stats.map((stat) => (
           <StaggerItem key={stat.label}>
             <p className="font-display text-3xl font-light text-white lg:text-4xl">
@@ -80,7 +80,7 @@ export default function Hero() {
             </p>
           </StaggerItem>
         ))}
-      </Stagger>
+      </Stagger> */}
     </section>
   );
 }

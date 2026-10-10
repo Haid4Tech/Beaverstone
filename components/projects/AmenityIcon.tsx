@@ -18,6 +18,12 @@ const ICONS: { match: RegExp; path: ReactNode }[] = [
     path: <path d="M4 9v6M8 7v10M16 7v10M20 9v6M8 12h8" />,
   },
   {
+    match: /court|tennis|basketball|football|pitch|playground|sport/i,
+    path: (
+      <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM3 12h18M12 3v18M5.6 5.6c3.5 3.5 3.5 9.3 0 12.8M18.4 5.6c-3.5 3.5-3.5 9.3 0 12.8" />
+    ),
+  },
+  {
     match: /smart|automation|lift|concierge/i,
     path: <path d="M4 21V10l8-6 8 6v11M9 21v-6h6v6M12 8v.01" />,
   },

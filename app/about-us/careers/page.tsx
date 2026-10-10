@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     "Explore career opportunities across Beaverstone' member companies.",
 };
 
-const openings = [
-  { title: 'Site Engineer', team: 'Construction', location: 'Lagos' },
-  { title: 'Sales Executive', team: 'Brokerage', location: 'Lagos' },
-  { title: 'Quantity Surveyor', team: 'Development', location: 'Abuja' },
-  { title: 'Interior Designer', team: 'Development', location: 'Lagos' },
-];
+// const openings = [
+//   { title: 'Site Engineer', team: 'Construction', location: 'Lagos' },
+//   { title: 'Sales Executive', team: 'Brokerage', location: 'Lagos' },
+//   { title: 'Quantity Surveyor', team: 'Development', location: 'Abuja' },
+//   { title: 'Interior Designer', team: 'Development', location: 'Lagos' },
+// ];
 
 const benefits = [
   {
@@ -62,7 +62,7 @@ export default function CareersPage() {
         </Stagger>
       </section>
 
-      <section className="bg-cream py-24 lg:py-32">
+      {/* <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal>
             <h2 className="max-w-xl font-display text-3xl leading-tight font-light text-ink-warm lg:text-5xl">
@@ -94,7 +94,7 @@ export default function CareersPage() {
             ))}
           </Stagger>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

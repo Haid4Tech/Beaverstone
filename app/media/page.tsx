@@ -4,7 +4,7 @@ import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
 import ImageReveal from '@/components/animation/ImageReveal';
 import ArticleCard from '@/components/media/ArticleCard';
-import { articles, events, recentArticles } from '@/data/news';
+import { articles, /* events, */ recentArticles } from '@/data/news';
 
 export const metadata: Metadata = {
   title: 'Media',
@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 };
 
 const sections = [
-  {
-    href: '/media/news',
-    label: 'News',
-    copy: 'Company announcements, awards and construction milestones.',
-    image:
-      'https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1600&auto=format&fit=crop',
-  },
+  // {
+  //   href: '/media/news',
+  //   label: 'News',
+  //   copy: 'Company announcements, awards and construction milestones.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1600&auto=format&fit=crop',
+  // },
   {
     href: '/media/blogs',
     label: 'Blog',
@@ -27,13 +27,13 @@ const sections = [
     image:
       'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop',
   },
-  {
-    href: '/media/events',
-    label: 'Events',
-    copy: 'Life across the group, from retreats to office openings.',
-    image:
-      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop',
-  },
+  // {
+  //   href: '/media/events',
+  //   label: 'Events',
+  //   copy: 'Life across the group, from retreats to office openings.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop',
+  // },
 ];
 
 export default function MediaPage() {
@@ -70,7 +70,8 @@ export default function MediaPage() {
         </div>
 
         <p className="mt-10 text-[13px] tracking-widest text-body uppercase">
-          {articles.length} articles &middot; {events.length} events
+          {articles.length} articles
+          {/* &middot; {events.length} events */}
         </p>
       </section>
 
