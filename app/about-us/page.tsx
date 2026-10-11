@@ -13,19 +13,19 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    letter: 'I',
-    title: 'Integrity',
-    copy: 'Transparent pricing, clear documentation and honest timelines on every transaction, from first enquiry to final title.',
-  },
-  {
-    letter: 'C',
-    title: 'Craft',
+    letter: 'B',
+    title: 'Build',
     copy: 'Specification and detailing are decided early and held to, because the quality of a home is settled long before handover.',
   },
   {
-    letter: 'E',
-    title: 'Excellence',
-    copy: 'One standard of design and delivery across all six member companies, regardless of price point or address.',
+    letter: 'B',
+    title: 'Beyond',
+    copy: 'Luxury that goes past the brochure: considered spaces, refined finishes and the quiet comforts that make excellent living an everyday experience.',
+  },
+  {
+    letter: 'B',
+    title: 'Better',
+    copy: 'One standard of design and delivery on every project, regardless of price point or address.',
   },
 ];
 
