@@ -4,26 +4,29 @@ import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 
 const expertise = [
   {
-    title: 'Development',
-    copy: 'End-to-end delivery of residential and mixed-use developments, from land acquisition to handover.',
-    icon: <path d="M4 21V10l8-6 8 6v11M9 21v-7h6v7" />,
+    title: 'Architecture & Construction',
+    copy: 'We deliver innovative architectural designs & high-quality construction services, ensuring durable structures that meet modern standards and client expectations.',
+    icon: <path d="M2 18h20M4 18a8 8 0 0 1 16 0M12 6v5M8.5 8v3M15.5 8v3" />,
   },
   {
-    title: 'Brokerage',
-    copy: 'A dedicated sales arm connecting buyers and investors with verified, titled property across Nigeria.',
-    icon: (
-      <path d="M3 10h18M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4M4 10v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V10" />
-    ),
+    title: 'Residential Development',
+    copy: 'We create well-planned residential communities that offer comform, security, and long-term value for homeowners and investors.',
+    icon: <path d="M3 11 12 3l9 8M5 9.5V21h14V9.5M10 21v-6h4v6" />,
   },
   {
-    title: 'Contracting',
-    copy: 'In-house construction and project management, keeping quality and timelines under one roof.',
-    icon: <path d="m14.5 3.5 6 6L9 21H3v-6zM12 6l6 6" />,
+    title: 'Landscape & Interior Design',
+    copy: 'We design functional & aesthetic spaces, blending natural landscapes & interior elegance to enhance living & work environments.',
+    icon: <path d="M12 22v-6M7 16h10l-3-5h2l-4-7-4 7h2z" />,
   },
   {
-    title: 'Capital',
-    copy: 'Structured financing and investment vehicles for individuals and institutions entering real estate.',
-    icon: <path d="M3 17V9l9-6 9 6v8M3 21h18M7 21v-6h4v6" />,
+    title: 'Real Estate Investment Advisory',
+    copy: 'We guide clients on profitable real estate opportunities, helping them make informed high-yield investment decisions.',
+    icon: <path d="M3 3v18h18M7 15l4-4 3 3 5-6M15 8h4v4" />,
+  },
+  {
+    title: 'Commercial Development',
+    copy: 'We develop strategic commercial properties that support business growth, invesment returns, and sustainable urban development.',
+    icon: <path d="M5 21V4h9v17M14 9h5v12M3 21h18M8 8h3M8 12h3M8 16h3" />,
   },
 ];
 
@@ -50,7 +53,7 @@ export default function Expertise() {
           </h2>
         </Reveal>
 
-        <Stagger className="mt-16 grid gap-px overflow-hidden border border-white/10 sm:grid-cols-2 lg:grid-cols-4">
+        <Stagger className="mt-16 grid gap-px overflow-hidden border border-white/10 sm:grid-cols-2 lg:grid-cols-3">
           {expertise.map((item, i) => (
             <StaggerItem
               key={item.title}

@@ -39,7 +39,7 @@ export const navigation: NavItem[] = [
     children: [
       { label: 'About Beaverstone', href: '/about-us' },
       // { label: 'Board of Directors', href: '/about-us/board-of-directors' },
-      // { label: 'Management Team', href: '/about-us/management-team' },
+      { label: 'Management Team', href: '/about-us/management-team' },
       { label: 'Partner With Us', href: '/about-us/partner-with-us' },
       { label: 'Work With Us', href: '/about-us/careers' },
     ],
@@ -54,7 +54,7 @@ export const navigation: NavItem[] = [
       { label: 'Brooksville', href: '/projects/beaverstone/brooksville' },
       {
         label: 'Beaverton Heights',
-        href: '/projects/grenadines-homes/beaverton-heights',
+        href: '/projects/beaverstone/beaverton-heights',
       },
     ],
   },

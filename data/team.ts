@@ -39,45 +39,38 @@ export const boardOfDirectors: TeamMember[] = [
 
 export const managementTeam: TeamMember[] = [
   {
-    name: 'Chukwuemeka Nwosu',
-    role: 'Group Managing Director',
+    name: 'Izuchukwu Godswill Joseph',
+    role: 'Managing Director/ CEO',
     image:
       'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
     bio: 'Leads strategy and day-to-day operations across all member companies.',
   },
   {
-    name: 'Amara Eze',
-    role: 'Chief Financial Officer',
+    name: 'Emmanuel Izuchukwu Asomugha',
+    role: 'Executive Director',
     image:
       'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop',
     bio: 'Oversees financial planning, reporting and capital structuring for the group.',
   },
   {
-    name: 'Segun Balogun',
-    role: 'Head of Development',
+    name: 'Delight Kehinde Olusegun',
+    role: 'Operations Manager',
     image:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=800&auto=format&fit=crop',
     bio: 'Manages the development pipeline from land acquisition through delivery.',
   },
   {
-    name: 'Bimpe Okonkwo',
-    role: 'Head of Sales & Marketing',
+    name: 'Samuel Ebi Ocheja',
+    role: 'Project Manager',
     image:
       'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop',
     bio: 'Leads client relations, brand and go-to-market for every project launch.',
   },
   {
-    name: 'Tunde Fashola',
-    role: 'Head of Construction',
+    name: 'Faith Nkechinyere Nwajiobi',
+    role: 'Secretary',
     image:
       'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop',
     bio: 'Directs on-site delivery, quality control and contractor management.',
-  },
-  {
-    name: 'Halima Suleiman',
-    role: 'Head of Legal & Compliance',
-    image:
-      'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop',
-    bio: 'Oversees title documentation, regulatory compliance and contracts.',
   },
 ];

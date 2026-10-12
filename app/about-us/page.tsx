@@ -8,44 +8,43 @@ import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 export const metadata: Metadata = {
   title: 'About Beaverstone',
   description:
-    'Learn about Beaverstone — our history, vision, mission and values as a luxury real estate group in Nigeria.',
+    'Learn about Beaverstone — our target market, vision, mission and values as a luxury real estate group in Nigeria.',
 };
 
 const values = [
   {
-    letter: 'B',
-    title: 'Build',
-    copy: 'Specification and detailing are decided early and held to, because the quality of a home is settled long before handover.',
+    letter: 'E',
+    title: 'Excellence',
+    copy: 'We deliver beyond expectations.',
   },
   {
-    letter: 'B',
-    title: 'Beyond',
-    copy: 'Luxury that goes past the brochure: considered spaces, refined finishes and the quiet comforts that make excellent living an everyday experience.',
+    letter: 'I',
+    title: 'Integrity',
+    copy: 'Transparency and honesty in all dealings.',
   },
   {
-    letter: 'B',
-    title: 'Better',
-    copy: 'One standard of design and delivery on every project, regardless of price point or address.',
+    letter: 'I',
+    title: 'Innovation',
+    copy: 'Modern designs and forward-thinking solutions.',
+  },
+  {
+    letter: 'C',
+    title: 'Customer-Centricity',
+    copy: 'Clients are at the heart of every project.',
+  },
+  {
+    letter: 'Q',
+    title: 'Quality',
+    copy: 'Commitment to durability and superior standards.',
   },
 ];
 
-const journey = [
-  {
-    year: '2009',
-    copy: 'Founded with a single residential development in Lagos.',
-  },
-  {
-    year: '2014',
-    copy: 'Expanded into brokerage with the launch of a dedicated sales arm.',
-  },
-  {
-    year: '2018',
-    copy: 'Brought construction in-house to control quality end-to-end.',
-  },
-  {
-    year: '2023',
-    copy: 'Grew to six member companies spanning development, capital and contracting.',
-  },
+const markets = [
+  'High-net-worth individuals and investors',
+  'Families seeking premium residential properties',
+  'Luxury and upper-mid-segment housing market',
+  'Local and diaspora investors',
+  'Corporate clients and businesses',
 ];
 
 export default function AboutPage() {
@@ -96,7 +95,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Journey — timeline over a full-bleed image */}
+      {/* Target Market — intro beside a numbered list, over a full-bleed image */}
       <section className="relative overflow-hidden bg-ink py-24 text-white lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=2400&auto=format&fit=crop"
@@ -105,27 +104,35 @@ export default function AboutPage() {
           sizes="100vw"
           className="object-cover opacity-20"
         />
-        <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
-          <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
-              Our Journey
-              <span className="h-px w-12 bg-mist" />
-            </p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <h2 className="max-w-2xl font-display text-3xl leading-tight font-light lg:text-5xl">
-              Fifteen Years of Building Forward
-            </h2>
-          </Reveal>
+        <div className="relative mx-auto grid max-w-[1400px] gap-16 px-6 lg:grid-cols-[5fr_7fr] lg:px-12">
+          <div>
+            <Reveal>
+              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
+                Target Market
+                <span className="h-px w-12 bg-mist" />
+              </p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="font-display text-3xl leading-tight font-light lg:text-5xl">
+                Who We Build For
+              </h2>
+            </Reveal>
+            <Reveal delay={0.2}>
+              <p className="mt-6 max-w-md text-[15px] leading-relaxed text-white/60">
+                We focus on the luxury and upper-mid market, delivering comfort,
+                style, and lasting value.
+              </p>
+            </Reveal>
+          </div>
 
-          <Stagger className="mt-16 grid gap-10 border-t border-white/15 pt-10 sm:grid-cols-2 lg:grid-cols-4">
-            {journey.map((j) => (
-              <StaggerItem key={j.year}>
-                <p className="font-display text-4xl font-light text-mist">
-                  {j.year}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-white/60">
-                  {j.copy}
+          <Stagger className="divide-y divide-white/15 border-t border-b border-white/15">
+            {markets.map((m, i) => (
+              <StaggerItem key={m} className="flex items-baseline gap-6 py-6">
+                <span className="w-8 shrink-0 text-[11px] tracking-widest text-mist">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <p className="font-display text-xl font-light lg:text-2xl">
+                  {m}
                 </p>
               </StaggerItem>
             ))}
@@ -141,7 +148,9 @@ export default function AboutPage() {
               Our Vision
             </p>
             <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
-              To be Africa&rsquo;s most trusted name in luxury real estate.
+              To become a leading real estate development and investment firm
+              known for innovation, quality, and timeless architectural
+              excellence.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -149,7 +158,9 @@ export default function AboutPage() {
               Our Mission
             </p>
             <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
-              To create exceptional living spaces that stand the test of time.
+              To design, develop and deliver high-quality real estate solutions
+              that blend functionality, luxury, and long-term value with helping
+              clients build sustainable wealth through property investments.
             </p>
           </Reveal>
         </div>
