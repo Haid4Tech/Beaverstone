@@ -221,10 +221,8 @@ export function getProject(company: string, slug: string) {
   return projects.find((p) => p.slug === slug && p.company.slug === company);
 }
 
-const liveSlugs = ['roceilli', 'brooksville'];
+// const liveSlugs = ['roceilli', 'brooksville', 'beaverton-heights'];
 
 export function otherProjects(current: Project, count = 3) {
-  return projects
-    .filter((p) => p.slug !== current.slug && liveSlugs.includes(p.slug))
-    .slice(0, count);
+  return projects.filter((p) => p.slug !== current.slug).slice(0, count);
 }
