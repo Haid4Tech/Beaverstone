@@ -72,9 +72,12 @@ export default function Footer() {
               className="h-auto w-[190px]"
             />
           </Link>
-          <p className="mt-5 max-w-xs text-sm leading-relaxed">
-            A luxury real estate group creating exceptional living spaces across
-            Lagos and Abuja.
+          <p className="mt-5 text-[13px] font-medium tracking-[0.3em] text-white uppercase">
+            Build. Beyond. Better.
+          </p>
+          <p className="mt-3 max-w-xs text-sm leading-relaxed">
+            A luxury real estate firm creating exceptional living and commercial
+            spaces across Africa.
           </p>
           <SocialLinks className="mt-7" />
         </div>

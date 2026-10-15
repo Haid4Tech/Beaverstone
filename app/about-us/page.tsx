@@ -4,6 +4,7 @@ import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
 import ImageReveal from '@/components/animation/ImageReveal';
 import { Stagger, StaggerItem } from '@/components/animation/Stagger';
+import Expertise from '@/components/home/Expertise';
 
 export const metadata: Metadata = {
   title: 'About Beaverstone',
@@ -148,9 +149,8 @@ export default function AboutPage() {
               Our Vision
             </p>
             <p className="mt-5 font-display text-2xl leading-snug font-light text-ink-warm lg:text-3xl">
-              To become a leading real estate development and investment firm
-              known for innovation, quality, and timeless architectural
-              excellence.
+              To revolutionize real estate development through better
+              innovation, quality, and timeless architectural excellence.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -165,6 +165,8 @@ export default function AboutPage() {
           </Reveal>
         </div>
       </section>
+
+      <Expertise />
 
       {/* Our Values — centred, stacked rows with display initials */}
       <section className="bg-cream py-24 lg:py-32">

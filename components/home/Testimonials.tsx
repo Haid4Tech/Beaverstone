@@ -8,23 +8,44 @@ import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 const testimonials = [
   {
     quote:
-      'From reservation to handover, the process was transparent and well communicated. Our home was delivered exactly as shown.',
-    name: 'A. Bello',
-    role: 'Homeowner, Kadars Gate',
+      'From our initial enquiry to the construction updates, Beaverstone maintained clear communication throughout. We appreciate the professionalism and attention given to our investment at Nelmond Metropolis.',
+    name: 'Engr. Chinedu Okafor',
+    role: 'Homeowner, Roceilli',
     dark: false,
   },
   {
     quote:
-      'The build quality and attention to finishing detail stood out immediately compared to other developments we viewed.',
-    name: 'C. Okafor',
-    role: 'Homeowner, The Meadows',
+      'Gardenia Court offers the kind of luxury, space, and architectural elegance we were looking for. The completed property made our decision much easier.',
+    name: 'Mrs. Amina Ibrahim',
+    role: 'Homeowner, Gardenia Court',
     dark: true,
   },
   {
     quote:
-      'As an investor, the documentation and title process gave us confidence to commit early in construction.',
-    name: 'T. Adeyemi',
-    role: 'Investor, Paramount Twin Towers',
+      'What impressed us most was the clarity of the documentation and the guidance provided throughout the purchase process. Beaverstone made the experience feel structured and professional.',
+    name: 'Mr. Tunde Adeyemi',
+    role: 'Property Investor, Brooksville',
+    dark: false,
+  },
+  {
+    quote:
+      'The Eden Crown Estates stands out for its premium location and impressive development concept. We look forward to seeing the project completed to the expected standard.',
+    name: 'Mrs. Ngozi Eze',
+    role: 'Prospective Homeowner, The Eden Crown Estates',
+    dark: false,
+  },
+  {
+    quote:
+      'Beaverstone helped us understand the different development stages and pricing options available. Their explanations made it easier to evaluate the property opportunity against our budget.',
+    name: 'Mr. Ibrahim Musa',
+    role: 'Property Investor, Nelmond Metropolis',
+    dark: true,
+  },
+  {
+    quote:
+      "The combination of contemporary design, practical layouts, and a focus on quality makes Nelmond Court an attractive residential development. We value the team's professionalism and responsiveness.",
+    name: 'Mrs. Blessing Nwankwo',
+    role: 'Client, Brooksville',
     dark: false,
   },
 ];

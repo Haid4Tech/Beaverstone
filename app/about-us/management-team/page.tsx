@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/ui/PageHero';
-import Reveal from '@/components/animation/Reveal';
+import TeamProfile from '@/components/ui/TeamProfile';
 import ContactCTA from '@/components/ui/ContactCTA';
 import { managementTeam } from '@/data/team';
 
@@ -25,18 +25,9 @@ export default function ManagementTeamPage() {
       />
 
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
-        <div className="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {managementTeam.map((member, i) => (
-            <Reveal key={member.name} delay={i * 0.06}>
-              <div className="border-t border-line py-8">
-                <h3 className="font-display text-2xl font-light text-ink-warm">
-                  {member.name}
-                </h3>
-                <p className="mt-2 text-[13px] tracking-wide text-body">
-                  {member.role}
-                </p>
-              </div>
-            </Reveal>
+            <TeamProfile key={member.name} member={member} index={i} />
           ))}
         </div>
       </section>

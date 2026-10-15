@@ -9,21 +9,21 @@ import { cn } from '@/lib/utils';
 const steps = [
   {
     n: '01',
-    title: 'Discover',
+    title: 'Explore',
     copy: 'Browse the portfolio and shortlist the development that fits how you actually want to live or invest.',
     image:
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop',
   },
   {
     n: '02',
-    title: 'Consult',
+    title: 'Engage',
     copy: 'Sit down with an advisor to walk through available units, pricing and the payment structure that suits you.',
     image:
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop',
   },
   {
     n: '03',
-    title: 'Reserve',
+    title: 'Secure',
     copy: 'Hold your preferred unit with a reservation fee while our legal team prepares the purchase documentation.',
     image:
       'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop',

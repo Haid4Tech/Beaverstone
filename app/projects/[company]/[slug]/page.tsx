@@ -201,40 +201,42 @@ export default async function ProjectDetailPage(
       </section>
 
       {/* Features & Amenities */}
-      <section className="relative overflow-hidden bg-ink py-24 text-white lg:py-32">
-        <Image
-          src={project.gallery[2]}
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover opacity-15"
-        />
-        <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
-          <Reveal>
-            <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
-              Features &amp; Amenities
-              <span className="h-px w-12 bg-mist" />
-            </p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <h2 className="max-w-2xl font-display text-3xl leading-tight font-light lg:text-5xl">
-              Everything On Site
-            </h2>
-          </Reveal>
+      {project.amenities.length > 0 && (
+        <section className="relative overflow-hidden bg-ink py-24 text-white lg:py-32">
+          <Image
+            src={project.gallery[2]}
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover opacity-15"
+          />
+          <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
+            <Reveal>
+              <p className="mb-4 flex items-center gap-3 text-[13px] font-medium tracking-[0.3em] text-mist uppercase">
+                Features &amp; Amenities
+                <span className="h-px w-12 bg-mist" />
+              </p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="max-w-2xl font-display text-3xl leading-tight font-light lg:text-5xl">
+                Everything On Site
+              </h2>
+            </Reveal>
 
-          <Stagger className="mt-14 grid gap-px overflow-hidden border border-white/10 sm:grid-cols-2 lg:grid-cols-3">
-            {project.amenities.map((amenity) => (
-              <StaggerItem
-                key={amenity}
-                className="flex items-center gap-4 border-white/10 bg-ink p-6 sm:border-l"
-              >
-                <AmenityIcon label={amenity} />
-                <span className="text-sm text-white/80">{amenity}</span>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-      </section>
+            <Stagger className="mt-14 grid gap-px overflow-hidden border border-white/10 sm:grid-cols-2 lg:grid-cols-3">
+              {project.amenities.map((amenity) => (
+                <StaggerItem
+                  key={amenity}
+                  className="flex items-center gap-4 border-white/10 bg-ink p-6 sm:border-l"
+                >
+                  <AmenityIcon label={amenity} />
+                  <span className="text-sm text-white/80">{amenity}</span>
+                </StaggerItem>
+              ))}
+            </Stagger>
+          </div>
+        </section>
+      )}
 
       {/* Neighbourhood map */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">

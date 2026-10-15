@@ -5,27 +5,27 @@ import { Stagger, StaggerItem } from '@/components/animation/Stagger';
 const expertise = [
   {
     title: 'Architecture & Construction',
-    copy: 'We deliver innovative architectural designs & high-quality construction services, ensuring durable structures that meet modern standards and client expectations.',
+    copy: 'We provide innovative architectural solutions and premium construction services, combining thoughtful design, technical precision, and superior craftsmanship to deliver durable, functional, and aesthetically refined structures that meet modern standards and exceed client expectations.',
     icon: <path d="M2 18h20M4 18a8 8 0 0 1 16 0M12 6v5M8.5 8v3M15.5 8v3" />,
   },
   {
     title: 'Residential Development',
-    copy: 'We create well-planned residential communities that offer comform, security, and long-term value for homeowners and investors.',
+    copy: 'We develop thoughtfully planned residential communities that blend comfort, security, and modern living, creating exceptional homes and sustainable investment opportunities with lasting value for homeowners and investors.',
     icon: <path d="M3 11 12 3l9 8M5 9.5V21h14V9.5M10 21v-6h4v6" />,
   },
   {
     title: 'Landscape & Interior Design',
-    copy: 'We design functional & aesthetic spaces, blending natural landscapes & interior elegance to enhance living & work environments.',
+    copy: 'We craft sophisticated interior spaces and beautifully landscaped environments that harmonise functionality, aesthetics, and comfort, elevating residential and commercial spaces through thoughtful design and refined finishes.',
     icon: <path d="M12 22v-6M7 16h10l-3-5h2l-4-7-4 7h2z" />,
   },
   {
     title: 'Real Estate Investment Advisory',
-    copy: 'We guide clients on profitable real estate opportunities, helping them make informed high-yield investment decisions.',
+    copy: 'We provide strategic real estate advisory services, identifying promising investment opportunities and equipping clients with market insights and professional guidance to make informed property decisions and pursue sustainable returns.',
     icon: <path d="M3 3v18h18M7 15l4-4 3 3 5-6M15 8h4v4" />,
   },
   {
     title: 'Commercial Development',
-    copy: 'We develop strategic commercial properties that support business growth, invesment returns, and sustainable urban development.',
+    copy: 'We develop strategically located commercial properties designed to drive business growth, maximise investment potential, and contribute to sustainable urban development through innovative planning and quality construction.',
     icon: <path d="M5 21V4h9v17M14 9h5v12M3 21h18M8 8h3M8 12h3M8 16h3" />,
   },
 ];

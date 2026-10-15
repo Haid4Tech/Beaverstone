@@ -14,7 +14,7 @@ export default function TeamCard({
       <div className="group">
         <ImageReveal
           src={member.image}
-          alt={`${member.name} — placeholder portrait`}
+          alt={`Portrait of ${member.name}`}
           className="aspect-[3/4] w-full grayscale transition-[filter] duration-500 group-hover:grayscale-0"
         />
         <div className="mt-4">
@@ -22,11 +22,11 @@ export default function TeamCard({
           <p className="mt-1 text-[13px] tracking-wide text-body">
             {member.role}
           </p>
-          {member.bio && (
+          {/* {member.bio && (
             <p className="mt-2 text-sm leading-relaxed text-body">
               {member.bio}
             </p>
-          )}
+          )} */}
         </div>
       </div>
     </Reveal>

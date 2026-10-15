@@ -7,7 +7,7 @@ export function isNavGroup(item: NavItem): item is NavGroup {
 }
 
 export const memberCompanies: NavGroup = {
-  label: 'Member Companies',
+  label: 'Partners',
   href: '/member-companies',
   children: [
     { label: 'Grenadines Homes', href: '/member-companies/grenadines-homes' },
@@ -38,13 +38,11 @@ export const navigation: NavItem[] = [
     href: '/about-us',
     children: [
       { label: 'About Beaverstone', href: '/about-us' },
-      // { label: 'Board of Directors', href: '/about-us/board-of-directors' },
       { label: 'Management Team', href: '/about-us/management-team' },
       { label: 'Partner With Us', href: '/about-us/partner-with-us' },
       { label: 'Work With Us', href: '/about-us/careers' },
     ],
   },
-  // memberCompanies,
   {
     label: 'Projects',
     href: '/projects',
@@ -56,8 +54,25 @@ export const navigation: NavItem[] = [
         label: 'Beaverton Heights',
         href: '/projects/beaverstone/beaverton-heights',
       },
+      {
+        label: 'The Eden Crown Estates',
+        href: '/projects/beaverstone/eden-crown-estates',
+      },
+      {
+        label: 'Nelmond Metropolis',
+        href: '/projects/beaverstone/nelmond-metropolis',
+      },
+      {
+        label: 'Gardenia Court',
+        href: '/projects/beaverstone/gardenia-court',
+      },
+      {
+        label: 'Nelmond Court',
+        href: '/projects/beaverstone/nelmond-court',
+      },
     ],
   },
+  { label: 'Partners', href: '/partners' },
   {
     label: 'Media',
     href: '/media',

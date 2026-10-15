@@ -21,12 +21,19 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Luxury Real Estate Company in Lagos & Abuja | Beaverstone',
+    default: 'Africa’s Leading Real Estate Developer | Beaverstone',
     template: '%s | Beaverstone',
   },
   description:
     'Beaverstone is a luxury real estate company in Nigeria, creating exceptional living spaces across Lagos and Abuja.',
   metadataBase: new URL('https://example.com'),
+  icons: {
+    icon: [
+      { url: '/icon-light.png', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark.png', media: '(prefers-color-scheme: dark)' },
+    ],
+    shortcut: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
     siteName: 'Beaverstone',

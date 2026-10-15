@@ -39,6 +39,41 @@ export const brooksville = {
   sunsetLandscapeBranded: '/projects/brooksville/sunset-landscape-branded.png',
 };
 
+export const edenCrown = {
+  aerialView: '/projects/eden_crown_estate/1.png',
+  gateway: '/projects/eden_crown_estate/2.png',
+  interiors: '/projects/eden_crown_estate/3.png',
+  streetView: '/projects/eden_crown_estate/4.png',
+  courtyard: '/projects/eden_crown_estate/5.png',
+  courtyardLounge: '/projects/eden_crown_estate/6.png',
+};
+
+export const nelmond = {
+  aerialGateway: '/projects/nelmond_metropolis/1.png',
+  aerialStreet: '/projects/nelmond_metropolis/2.png',
+  aerialClose: '/projects/nelmond_metropolis/3.png',
+  livingRoom: '/projects/nelmond_metropolis/4.png',
+  frontView: '/projects/nelmond_metropolis/5.png',
+};
+
+export const gardenia = {
+  frontPortrait: '/projects/gardenia_court/1.png',
+  aerialView: '/projects/gardenia_court/2.png',
+  livingRoom: '/projects/gardenia_court/3.png',
+  frontView: '/projects/gardenia_court/4.png',
+  frontDusk: '/projects/gardenia_court/5.png',
+};
+
+export const nelmondCourt = {
+  aerialView: '/projects/nelmond_court/1.png',
+  livingRoom: '/projects/nelmond_court/2.png',
+  gateway: '/projects/nelmond_court/3.png',
+  aerialDusk: '/projects/nelmond_court/4.png',
+  frontNight: '/projects/nelmond_court/5.png',
+  driveway: '/projects/nelmond_court/6.png',
+  estateGate: '/projects/nelmond_court/7.png',
+};
+
 export const beavertonHeights = {
   gateway: '/projects/beaverton-heights/gateway.jpeg',
   gatewayAlt: '/projects/beaverton-heights/gateway-alt.jpeg',
