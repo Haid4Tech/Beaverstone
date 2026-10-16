@@ -67,8 +67,8 @@ export default function Footer() {
             <Image
               src={logo.fullWhite}
               alt="Beaverstone"
-              width={190}
-              height={91}
+              width={1647}
+              height={690}
               className="h-auto w-[190px]"
             />
           </Link>

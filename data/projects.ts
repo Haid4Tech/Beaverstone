@@ -10,7 +10,11 @@ import {
 } from './media';
 
 export type ProjectStatus =
-  'Currently Selling' | 'Ongoing' | 'Completed' | 'Coming Soon';
+  | 'Currently Selling'
+  | 'Almost Sold Out'
+  | 'Ongoing'
+  | 'Completed'
+  | 'Coming Soon';
 
 export type Project = {
   slug: string;
@@ -61,7 +65,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'Roceilli',
     location: 'Grace City Estate (Phase 1), Dakwa District, Abuja',
-    status: 'Ongoing',
+    status: 'Currently Selling',
     category: 'Luxury Duplexes',
     tagline: 'Elegance, comfort and lasting value.',
     summary:
@@ -109,7 +113,7 @@ export const projects: Project[] = [
       { label: 'Carcass Price', value: '₦90,000,000' },
       { label: 'Pre-finished Price', value: '₦150,000,000' },
       { label: 'Finished Price', value: '₦180,000,000' },
-      { label: 'Project Status', value: 'Under Construction' },
+      // { label: 'Project Status', value: 'Under Construction' },
       { label: 'Completion', value: 'Q2 2027' },
       { label: 'Land Title', value: 'Right of Occupancy' },
     ],
@@ -124,7 +128,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'The Brooksville Estate',
     location: 'Hutu Exclusive Phase 2, Lugbe, Airport Road, Abuja',
-    status: 'Currently Selling',
+    status: 'Almost Sold Out',
     category: 'Land & Terraced Duplexes',
     tagline: 'Own Your Land. Build Your Future.',
     summary:
@@ -164,7 +168,7 @@ export const projects: Project[] = [
       { label: 'Total Units', value: '12' },
       { label: 'Land Price', value: '₦22,150,000' },
       { label: 'Duplex Price', value: '₦150,000,000' },
-      { label: 'Project Status', value: 'Currently Selling' },
+      { label: 'Project Status', value: 'Almost Sold Out' },
       { label: 'Completion', value: 'Q2 2027' },
       { label: 'Land Title', value: 'Certificate of Occupancy' },
     ],
@@ -230,7 +234,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'Beaverstone Nok Residence',
     location: 'Grace City Estate (Phase 1), Dakwa District, Abuja',
-    status: 'Ongoing',
+    status: 'Currently Selling',
     category: 'Luxury Duplexes',
     tagline: 'Elegance, comfort and lasting value.',
     summary:
@@ -278,7 +282,7 @@ export const projects: Project[] = [
       { label: 'Carcass Price', value: '₦90,000,000' },
       { label: 'Pre-finished Price', value: '₦150,000,000' },
       { label: 'Finished Price', value: '₦180,000,000' },
-      { label: 'Project Status', value: 'Under Construction' },
+      // { label: 'Project Status', value: 'Under Construction' },
       { label: 'Completion', value: 'Q4 2027' },
       { label: 'Land Title', value: "Governor's Consent" },
     ],
@@ -293,7 +297,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'The Eden Crown Estates',
     location: 'Katampe Extension, Abuja',
-    status: 'Ongoing',
+    status: 'Currently Selling',
     category: 'Terraced Duplexes',
     tagline: 'Refined Living. Elevated by Design.',
     summary:
@@ -322,7 +326,7 @@ export const projects: Project[] = [
       { label: 'Floors', value: '3' },
       { label: 'Total Units', value: '10' },
       { label: 'Starting Price', value: '₦370,000,000' },
-      { label: 'Project Status', value: 'Under Construction' },
+      // { label: 'Project Status', value: 'Under Construction' },
       { label: 'Completion', value: 'Q3 2027' },
       { label: 'Land Title', value: 'Certificate of Occupancy' },
     ],
@@ -337,7 +341,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'Nelmond Metropolis',
     location: 'Efab Metropolis, Karsana, Abuja',
-    status: 'Ongoing',
+    status: 'Currently Selling',
     category: 'Detached Duplexes',
     tagline: 'Space to Live. Freedom to Build. Value to Own.',
     summary:
@@ -374,7 +378,7 @@ export const projects: Project[] = [
       { label: 'Land Price', value: '₦85,000,000' },
       { label: 'DPC Level Price', value: '₦160,000,000' },
       { label: 'Carcass Level Price', value: '₦350,000,000' },
-      { label: 'Project Status', value: 'Under Construction' },
+      // { label: 'Project Status', value: 'Under Construction' },
       { label: 'Completion', value: 'Q4 2027' },
       { label: 'Land Title', value: 'Right of Occupancy' },
     ],
@@ -389,7 +393,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'Gardenia Court',
     location: 'Life Camp, Abuja',
-    status: 'Completed',
+    status: 'Almost Sold Out',
     category: 'Luxury Duplexes',
     tagline: 'A Refined Address. A Place to Call Home.',
     summary:
@@ -418,7 +422,7 @@ export const projects: Project[] = [
       { label: 'Floors', value: '3' },
       { label: 'Total Units', value: '5' },
       { label: 'Starting Price', value: '₦270,000,000' },
-      { label: 'Project Status', value: 'Completed' },
+      { label: 'Project Status', value: 'Almost Sold Out' },
       { label: 'Land Title', value: 'Certificate of Occupancy' },
     ],
     neighbourhood: {
@@ -432,7 +436,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'Nelmond Court',
     location: 'F01 Layout Phase 1, Kubwa, Abuja',
-    status: 'Ongoing',
+    status: 'Currently Selling',
     category: 'Terraced Duplexes',
     tagline: 'Modern Living. Within Reach. Built for the Future.',
     summary:
@@ -469,7 +473,7 @@ export const projects: Project[] = [
       { label: 'Plot Size', value: '180 sqm' },
       { label: 'Carcass Level Price', value: '₦90,000,000' },
       { label: 'Finished Level Price', value: '₦130,000,000' },
-      { label: 'Project Status', value: 'Under Construction' },
+      // { label: 'Project Status', value: 'Under Construction' },
       { label: 'Completion', value: 'Q3 2027' },
       { label: 'Land Title', value: 'Right of Occupancy' },
     ],

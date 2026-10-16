@@ -77,6 +77,7 @@ export default function Hero() {
           }}
         />
       ))}
+      <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/20" />
 
       <div className="absolute top-1/2 right-6 z-10 hidden -translate-y-1/2 flex-col items-center gap-3 text-white/60 lg:right-12 lg:flex">

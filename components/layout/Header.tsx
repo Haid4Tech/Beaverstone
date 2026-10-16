@@ -43,20 +43,15 @@ export default function Header() {
       )}
     >
       <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-12">
-        <Link href="/" className="flex flex-col items-center">
+        <Link href="/">
           <Image
-            src={dark ? logo.markWhite : logo.markNavy}
-            alt=""
-            width={86}
-            height={32}
+            src={dark ? logo.fullWhite : logo.fullNavy}
+            alt="Beaverstone"
+            width={1647}
+            height={690}
             priority
-            className="h-8 w-auto"
+            className="h-14 w-auto"
           />
-          <span className="font-display text-[12px] tracking-wide uppercase">
-            <span className={dark ? 'text-white' : 'text-ink-warm'}>
-              Beaverstone
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center lg:flex" aria-label="Primary">
@@ -90,17 +85,32 @@ export default function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.2, ease: 'easeOut' }}
-                        className="absolute top-full left-0 min-w-[240px] border-t-2 border-ink bg-white py-3 shadow-xl"
+                        className={cn(
+                          'absolute top-full left-0 min-w-[240px] border-t-2 border-ink bg-white py-3 shadow-xl',
+                          item.children.length > 5 &&
+                            'grid w-[520px] grid-cols-2'
+                        )}
                       >
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="block px-6 py-2.5 text-[13px] text-ink-warm/70 transition-colors hover:bg-cream hover:text-ink"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                        {item.children.map((child) => {
+                          // Wide dropdowns pin their overview link to the bottom.
+                          const footer =
+                            item.children.length > 5 &&
+                            child.href === item.href;
+                          return (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className={cn(
+                                'block px-6 py-2.5 text-[13px] text-ink-warm/70 transition-colors hover:bg-cream hover:text-ink',
+                                footer &&
+                                  'order-last col-span-2 mt-2 border-t border-line pt-3 font-medium text-ink'
+                              )}
+                            >
+                              {child.label}
+                              {footer && ' →'}
+                            </Link>
+                          );
+                        })}
                       </motion.div>
                     )}
                   </AnimatePresence>

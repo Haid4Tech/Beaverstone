@@ -28,10 +28,8 @@ export const metadata: Metadata = {
     'Beaverstone is a luxury real estate company in Nigeria, creating exceptional living spaces across Lagos and Abuja.',
   metadataBase: new URL('https://example.com'),
   icons: {
-    icon: [
-      { url: '/icon-light.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark.png', media: '(prefers-color-scheme: dark)' },
-    ],
+    // Single SVG that recolours itself; Safari ignores `media` on icon links.
+    icon: { url: '/icon.svg', type: 'image/svg+xml' },
     shortcut: '/favicon.ico',
   },
   openGraph: {

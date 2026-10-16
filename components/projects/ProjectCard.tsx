@@ -21,7 +21,8 @@ export default function ProjectCard({
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
           />
-          {project.status === 'Currently Selling' && (
+          {(project.status === 'Currently Selling' ||
+            project.status === 'Almost Sold Out') && (
             <span className="absolute top-4 left-4 z-20 bg-mist px-3 py-1.5 text-[11px] font-medium tracking-widest text-ink uppercase">
               {project.status}
             </span>

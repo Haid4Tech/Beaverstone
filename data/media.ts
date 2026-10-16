@@ -6,8 +6,8 @@
 export const logo = {
   markWhite: '/logo/beaverstone-mark-white.png',
   markNavy: '/logo/beaverstone-mark-navy.png',
-  fullWhite: '/logo/beaverstone-white.png',
-  fullNavy: '/logo/beaverstone-navy.png',
+  fullWhite: '/logo/white.png',
+  fullNavy: '/logo/colored.png',
 };
 
 export const video = {
