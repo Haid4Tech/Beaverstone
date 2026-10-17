@@ -99,6 +99,12 @@ export default function Hero() {
         ))}
       </div>
 
+      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-1 items-center px-6 lg:px-12">
+        <h1 className="font-display text-5xl font-bold text-white sm:text-7xl lg:text-8xl">
+          Build. Beyond. Better.
+        </h1>
+      </div>
+
       <div className="relative z-10 w-full border-t border-white/10 bg-ink/90 backdrop-blur-sm">
         <Stagger className="mx-auto grid max-w-[1400px] divide-y divide-white/10 px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:px-12">
           {stats.map((stat) => (
