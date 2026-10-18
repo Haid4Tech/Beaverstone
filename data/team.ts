@@ -2,6 +2,7 @@ export type TeamMember = {
   name: string;
   role: string;
   image: string;
+  email?: string;
   bio?: string[];
 };
 
@@ -52,7 +53,8 @@ export const boardOfDirectors: TeamMember[] = [
 
 export const managementTeam: TeamMember[] = [
   {
-    name: 'Engr. Izuchukwu Godswill Joseph',
+    name: 'Izuchukwu Joseph',
+    email: 'jay@thebeaverstone.com',
     role: 'Managing Director/ CEO',
     image: '/staff/eng_joseph.jpeg',
     bio: [
@@ -63,7 +65,8 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Engr. Emmanuel Izuchukwu Asomugha',
+    name: 'Emmanuel Asomugha',
+    email: 'shoms@thebeaverstone.com',
     role: 'Executive Director/ COO',
     image: '/staff/eng_emmanuel.jpeg',
     bio: [
@@ -73,7 +76,8 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Engr. Ocheja Samuel Ebiojo',
+    name: 'Samuel Ocheja',
+    email: 'sam@thebeaverstone.com',
     role: 'Director of Projects & Development',
     image: '/staff/samuel.png',
     bio: [
@@ -82,7 +86,8 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Delight Kehinde Olusegun',
+    name: 'Delight Olusegun',
+    email: 'kehinde@thebeaverstone.com',
     role: 'Operations Manager',
     image: '/staff/delight_o.jpeg',
     bio: [
@@ -92,7 +97,8 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Nwajiobi Nkechinyere Faith',
+    name: 'Faith Nwajiobi',
+    email: 'faith@thebeaverstone.com',
     role: 'Human Resource Manager',
     image: '/staff/faith.png',
     bio: [
@@ -101,7 +107,8 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Brightstar Oluchi Emmanuella',
+    name: 'Brightstar Oluchi',
+    email: 'oluchi@thebeaverstone.com',
     role: 'Social Media Strategist',
     image: '/staff/brightstar.png',
     bio: [
@@ -111,6 +118,7 @@ export const managementTeam: TeamMember[] = [
   },
   {
     name: 'Delight Onyewuchi',
+    email: 'delight@thebeaverstone.com',
     role: 'Multimedia Producer | Graphic Designer',
     image: '/staff/delight.png',
     bio: [

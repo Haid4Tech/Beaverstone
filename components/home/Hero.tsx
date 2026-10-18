@@ -4,8 +4,8 @@ import {
   InstagramIcon,
   TiktokIcon,
   WhatsappIcon,
-  Linkedin01Icon,
-  NewTwitterIcon,
+  // Linkedin01Icon,
+  // NewTwitterIcon,
 } from '@hugeicons/core-free-icons';
 import { contactDetails } from '@/data/contact';
 import Image from 'next/image';
@@ -38,7 +38,18 @@ const socials = [
 ];
 
 // One image per project, deduped so projects sharing a photo only show once.
-const slides = [...new Map(projects.map((p) => [p.heroImage, p])).values()];
+// Roceilli's project heroImage is skipped; the custom slide below replaces it.
+const slides = [
+  {
+    slug: 'hero-1',
+    heroImage: '/projects/roceilli/1.png',
+    name: 'Beaverstone',
+    location: 'Abuja',
+  },
+  ...new Map(
+    projects.filter((p) => p.slug !== 'roceilli').map((p) => [p.heroImage, p])
+  ).values(),
+];
 
 // Pure-CSS crossfade: every slide runs the same keyframes, offset by its index.
 const SLIDE = 6; // seconds each image is fully visible

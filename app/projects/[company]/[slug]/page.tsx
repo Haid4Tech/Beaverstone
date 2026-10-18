@@ -57,6 +57,8 @@ export default async function ProjectDetailPage(
     },
   };
 
+  console.log('project Gallery', project.gallery);
+
   return (
     <>
       <script

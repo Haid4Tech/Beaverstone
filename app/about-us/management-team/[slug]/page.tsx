@@ -63,6 +63,14 @@ export default async function TeamMemberPage(
           <h2 className="mt-3 font-display text-3xl leading-tight font-light text-ink-warm lg:text-4xl">
             {member.name}
           </h2>
+          {member.email && (
+            <a
+              href={`mailto:${member.email}`}
+              className="mt-3 inline-block border-b border-ink pb-1 text-[14px] text-ink-warm transition-colors hover:text-body"
+            >
+              {member.email}
+            </a>
+          )}
           <div className="mt-8 space-y-4">
             {member.bio?.map((p) => (
               <p key={p} className="text-[15px] leading-relaxed text-body">

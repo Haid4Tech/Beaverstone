@@ -85,6 +85,8 @@ export const projects: Project[] = [
     heroImage: roceilli.exteriorGate,
     thumbImage: roceilli.buildingconstruction,
     gallery: [
+      roceilli.buildingconstruction,
+      roceilli.building,
       roceilli.livingRoom,
       roceilli.kitchen,
       roceilli.sideView,
@@ -94,7 +96,6 @@ export const projects: Project[] = [
       roceilli.homefront,
       roceilli.aerialView,
       roceilli.exteriorGate,
-      roceilli.buildingconstruction,
       roceilli.buildingconstructionx,
     ],
     brochure: document.roceilliBrochure,
