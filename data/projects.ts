@@ -388,7 +388,7 @@ export const projects: Project[] = [
     company: beaverstone,
     name: 'Gardenia Court',
     location: 'Life Camp, Abuja',
-    status: 'Almost Sold Out',
+    status: 'Completed',
     category: 'Luxury Duplexes',
     tagline: 'A Refined Address. A Place to Call Home.',
     summary:
