@@ -165,6 +165,15 @@ export default async function ProjectDetailPage(
               <p className="mt-8 text-[13px] tracking-widest text-ink-warm uppercase">
                 {project.startingPrice}
               </p>
+              {project.brochure && (
+                <a
+                  href={project.brochure}
+                  download
+                  className="btn-wipe mt-8 inline-flex items-center gap-2 rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white hover:text-ink"
+                >
+                  Download Brochure <span aria-hidden>&darr;</span>
+                </a>
+              )}
             </Reveal>
           </div>
         </div>

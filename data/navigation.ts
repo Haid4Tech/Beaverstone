@@ -1,3 +1,5 @@
+import { projects } from './projects';
+
 export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; href: string; children: NavLink[] };
 export type NavItem = NavLink | NavGroup;
@@ -48,28 +50,10 @@ export const navigation: NavItem[] = [
     href: '/projects',
     children: [
       { label: 'All Projects', href: '/projects' },
-      { label: 'Roceilli', href: '/projects/beaverstone/roceilli' },
-      { label: 'Brooksville', href: '/projects/beaverstone/brooksville' },
-      {
-        label: 'Beaverton Heights',
-        href: '/projects/beaverstone/beaverton-heights',
-      },
-      {
-        label: 'The Eden Crown Estates',
-        href: '/projects/beaverstone/eden-crown-estates',
-      },
-      {
-        label: 'Nelmond Metropolis',
-        href: '/projects/beaverstone/nelmond-metropolis',
-      },
-      {
-        label: 'Gardenia Court',
-        href: '/projects/beaverstone/gardenia-court',
-      },
-      {
-        label: 'Nelmond Court',
-        href: '/projects/beaverstone/nelmond-court',
-      },
+      ...projects.map((p) => ({
+        label: p.name,
+        href: `/projects/${p.company.slug}/${p.slug}`,
+      })),
     ],
   },
   { label: 'Partners', href: '/partners' },

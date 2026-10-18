@@ -8,6 +8,7 @@ type ImageRevealProps = {
   alt: string;
   className?: string;
   imgClassName?: string;
+  objectPosition?: string;
   sizes?: string;
   priority?: boolean;
   fill?: boolean;
@@ -20,6 +21,7 @@ export default function ImageReveal({
   alt,
   className,
   imgClassName,
+  objectPosition,
   sizes = '100vw',
   priority = false,
   fill = true,
@@ -50,6 +52,7 @@ export default function ImageReveal({
             sizes={sizes}
             priority={priority}
             className={`object-cover ${imgClassName ?? ''}`}
+            style={{ objectPosition }}
           />
         ) : (
           <Image
@@ -60,6 +63,7 @@ export default function ImageReveal({
             sizes={sizes}
             priority={priority}
             className={`h-full w-full object-cover ${imgClassName ?? ''}`}
+            style={{ objectPosition }}
           />
         )}
       </motion.div>

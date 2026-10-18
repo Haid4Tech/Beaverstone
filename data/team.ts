@@ -5,6 +5,13 @@ export type TeamMember = {
   bio?: string[];
 };
 
+// URL slug from a member's name, e.g. "Engr. Jane Doe" -> "engr-jane-doe".
+export const memberSlug = (m: TeamMember) =>
+  m.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
 // Placeholder names/photos — not the real Beaverstone board or management team.
 export const boardOfDirectors: TeamMember[] = [
   {
@@ -68,7 +75,7 @@ export const managementTeam: TeamMember[] = [
   {
     name: 'Engr. Ocheja Samuel Ebiojo',
     role: 'Director of Projects & Development',
-    image: '/staff/samuel.jpeg',
+    image: '/staff/samuel.png',
     bio: [
       'Engr. Samuel Ebiojo Ocheja is a Civil Engineer who graduated with distinction from Ahmadu Bello University, Zaria, with a B.Eng. in Civil Engineering. He holds professional certifications in Construction Project Management from Columbia University and Google Project Management.',
       'With experience in construction, site supervision, project coordination, and property development, he brings a strategic and quality-driven approach to every project. At Beaverstone, he oversees project execution and development initiatives, ensuring efficiency, structural quality, and lasting value.',
@@ -87,7 +94,7 @@ export const managementTeam: TeamMember[] = [
   {
     name: 'Nwajiobi Nkechinyere Faith',
     role: 'Human Resource Manager',
-    image: '/staff/faith.jpeg',
+    image: '/staff/faith.png',
     bio: [
       'Nwajiobi Faith holds a B.Agric. in Soil Science and Land Resources Management from the University of Nigeria, Nsukka. With skills in human resource management, administration, communication, and organisational coordination, she contributes to fostering a productive work environment and supporting the company’s operational objectives.',
       'At Beaverstone Realty Ltd, she is responsible for human resource functions, staff coordination, and administrative support, helping to promote organisational efficiency and maintain a professional workplace culture.',
@@ -96,7 +103,7 @@ export const managementTeam: TeamMember[] = [
   {
     name: 'Brightstar Oluchi Emmanuella',
     role: 'Social Media Strategist',
-    image: '/staff/brightstar.jpeg',
+    image: '/staff/brightstar.png',
     bio: [
       'Brightstar Oluchi Emmanuella is a Creative Professional who graduated with a 2:1 in History and International Studies Education from the University of Benin. She holds additional studies in Foreign Languages, with focus on French and Japanese.',
       'With experience in video editing, social media management, and content creation, she brings a creative, strategic, and globally-informed approach to every project. Combining strong research, storytelling, and cross-cultural communication skills, she builds compelling visual narratives and drives meaningful audience engagement.',
@@ -105,7 +112,7 @@ export const managementTeam: TeamMember[] = [
   {
     name: 'Delight Onyewuchi',
     role: 'Multimedia Producer | Graphic Designer',
-    image: '/staff/delight.jpeg',
+    image: '/staff/delight.png',
     bio: [
       'Delight Onyewuchi is a creative multimedia producer skilled in graphic design, video editing, videography, and print production. He is currently studying Science Laboratory Technology (SLT) at Nasarawa State University, Keffi.',
       'Proficient in Adobe Photoshop, CorelDRAW, and Canva, he is committed to delivering quality visual designs and multimedia content.',

@@ -20,6 +20,8 @@ export const document = {
 };
 
 export const roceilli = {
+  buildingconstruction: '/projects/roceilli/1.png',
+  buildingconstructionx: '/projects/roceilli/2.png',
   exteriorGate: '/projects/roceilli/exterior-gate.jpeg',
   livingRoom: '/projects/roceilli/living-room.jpg',
   kitchen: '/projects/roceilli/kitchen.jpg',
@@ -29,6 +31,19 @@ export const roceilli = {
   aerialView: '/projects/roceilli/aerial_view.png',
   homefront: '/projects/roceilli/homefront.png',
   sideView: '/projects/roceilli/side_view.png',
+};
+
+export const nok = {
+  livingRoom: '/projects/beaverstone-nok/01_living_room.png',
+  dining: '/projects/beaverstone-nok/02_dining_area.png',
+  kitchen: '/projects/beaverstone-nok/03_kitchen.png',
+  masterBedroom: '/projects/beaverstone-nok/04_master_bedroom.png',
+  walkInCloset: '/projects/beaverstone-nok/05_walk_in_closet.png',
+  masterBathroom: '/projects/beaverstone-nok/06_master_bathroom_ensuite.png',
+  bedroom2: '/projects/beaverstone-nok/07_bedroom_2.png',
+  bedroom3: '/projects/beaverstone-nok/08_bedroom_3.png',
+  commonBathroom: '/projects/beaverstone-nok/09_common_bathroom.png',
+  balcony: '/projects/beaverstone-nok/10_balcony.png',
 };
 
 export const brooksville = {

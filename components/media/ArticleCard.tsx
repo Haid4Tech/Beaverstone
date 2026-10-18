@@ -19,6 +19,7 @@ export default function ArticleCard({
             alt={`${article.title} — placeholder image`}
             className="aspect-[16/9] w-full"
             sizes="(max-width: 1024px) 100vw, 66vw"
+            objectPosition={article.imagePosition ?? 'top'}
             imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
           />
         </Link>

@@ -7,7 +7,7 @@ import { projects } from '@/data/projects';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Explore the Beaverstone portfolio of luxury residential developments across Lagos and Abuja.',
+    'Explore the Beaverstone portfolio of luxury residential developments across Africa.',
   alternates: { canonical: '/projects' },
 };
 

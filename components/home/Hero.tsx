@@ -14,7 +14,7 @@ import { projects } from '@/data/projects';
 const stats = [
   { value: '50+', label: 'Residential units in development' },
   { value: '7+', label: 'Strategic development locations' },
-  { value: '₦11bn+', label: 'Development portfolio value' },
+  { value: '₦11B+', label: 'Development portfolio value' },
 ];
 
 const socials = [
@@ -100,9 +100,16 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-1 items-center px-6 lg:px-12">
-        <h1 className="font-display text-5xl font-bold text-white sm:text-7xl lg:text-8xl">
-          Build. Beyond. Better.
-        </h1>
+        <div>
+          <h1 className="font-display text-5xl font-bold text-white sm:text-7xl lg:text-8xl">
+            Build.
+            <br />
+            Beyond. Better.
+          </h1>
+          <p className="mt-6 max-w-xl text-base text-white/80 lg:text-lg">
+            Real Estate development with sustainable and functional architecture
+          </p>
+        </div>
       </div>
 
       <div className="relative z-10 w-full border-t border-white/10 bg-ink/90 backdrop-blur-sm">
@@ -110,12 +117,12 @@ export default function Hero() {
           {stats.map((stat) => (
             <StaggerItem
               key={stat.label}
-              className="py-5 sm:px-8 sm:py-8 sm:first:pl-0 lg:py-10"
+              className="flex items-center gap-4 py-3 sm:px-8 sm:py-5 sm:first:pl-0 lg:py-6"
             >
-              <p className="font-display text-3xl font-light text-white lg:text-5xl">
+              <p className="shrink-0 font-display text-2xl leading-none font-light text-white lg:text-3xl">
                 {stat.value}
               </p>
-              <p className="mt-2 text-[11px] tracking-widest text-white/60 uppercase">
+              <p className="text-[10px] tracking-widest text-white/60 uppercase">
                 {stat.label}
               </p>
             </StaggerItem>

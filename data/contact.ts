@@ -1,5 +1,5 @@
 export const contactDetails = {
-  email: 'ochejaebi@gmail.com',
+  email: 'info@thebeaverstone.com',
   phone: '+234 806 072 5726',
   phoneHref: '+2348060725726',
   address: 'House 54, Laropa Suites, 21 Road, 2nd Avenue, Gwarimpa, Abuja',

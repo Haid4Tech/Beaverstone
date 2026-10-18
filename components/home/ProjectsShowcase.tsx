@@ -9,6 +9,8 @@ const featuredSlugs = [
   'brooksville',
   'beaverton-heights',
   'eden-crown-estates',
+  'beaverstone-nok-residence',
+  'nelmond-metropolis',
 ];
 const featured = featuredSlugs.flatMap((slug) =>
   projects.filter((p) => p.slug === slug)
@@ -42,7 +44,7 @@ export default function ProjectsShowcase() {
           </Reveal>
         </div>
 
-        <div className="grid gap-x-8 gap-y-16 md:grid-cols-2">
+        <div className="grid gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
           {featured.map((project, i) => (
             <ShowcaseCard
               key={project.slug}

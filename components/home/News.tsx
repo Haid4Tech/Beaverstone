@@ -38,6 +38,7 @@ export default function News() {
                 src={article.image}
                 alt={`${article.title} — placeholder image`}
                 className="aspect-[4/3] w-full"
+                objectPosition={article.imagePosition ?? 'top'}
                 imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <p className="mt-4 text-[11px] font-medium tracking-widest text-body uppercase">

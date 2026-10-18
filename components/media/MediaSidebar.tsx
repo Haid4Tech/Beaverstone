@@ -61,6 +61,7 @@ export default function MediaSidebar({
                     fill
                     sizes="80px"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={{ objectPosition: article.imagePosition ?? 'top' }}
                   />
                 </span>
                 <span className="min-w-0">

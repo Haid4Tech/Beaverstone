@@ -103,15 +103,3 @@ button:not(:disabled),
     animation: none;
   }
 }
-
-/* Team profile dialog */
-@keyframes profile-in {
-  from {
-    opacity: 0;
-    transform: translateY(16px) scale(0.98);
-  }
-}
-
-html:has(dialog[open]) {
-  overflow: hidden;
-}

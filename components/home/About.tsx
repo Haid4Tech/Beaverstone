@@ -25,7 +25,7 @@ export default function About() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-6 text-[15px] leading-relaxed text-body">
+            <p className="mt-6 text-lg leading-relaxed text-body lg:text-xl">
               Beaverstone is a forward-thinking real estate development and
               construction company committed to creating exceptional spaces that
               inspire confidence, comfort, and long-term value. Guided by its
@@ -33,12 +33,6 @@ export default function About() {
               constructing buildings- it develops throughtfully designed
               communities and investment opportunities that enhance the way
               people live and grow
-            </p>
-            <p className="mt-4 text-[15px] leading-relaxed text-body">
-              At Beaverstone, we deliver quality developments through
-              transparent transactions, innovative designs, timely project
-              delivery, and a customer-first approach — creating lasting value
-              you can trust.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s | Beaverstone',
   },
   description:
-    'Beaverstone is a luxury real estate company in Nigeria, creating exceptional living spaces across Lagos and Abuja.',
+    'Beaverstone is a luxury real estate company in Nigeria, creating exceptional living spaces across Africa.',
   metadataBase: new URL('https://example.com'),
   icons: {
     // Single SVG that recolours itself; Safari ignores `media` on icon links.

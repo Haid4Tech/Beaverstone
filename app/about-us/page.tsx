@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
 import ImageReveal from '@/components/animation/ImageReveal';
@@ -81,10 +82,17 @@ export default function AboutPage() {
                 every business.
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-body">
-                Today the group operates across Lagos and Abuja, with a
-                portfolio spanning gated estates, waterfront towers and serviced
-                plots.
+                Today the firm operates across Africa, with a portfolio spanning
+                gated estates, waterfront towers and serviced plots.
               </p>
+            </Reveal>
+            <Reveal delay={0.3}>
+              <Link
+                href="/about-us/management-team"
+                className="btn-wipe mt-8 inline-flex items-center gap-2 rounded-sm bg-ink px-8 py-3.5 text-[13px] font-medium tracking-wide text-white hover:text-ink"
+              >
+                View Our Management Team <span aria-hidden>&rarr;</span>
+              </Link>
             </Reveal>
           </div>
           <ImageReveal
@@ -168,7 +176,7 @@ export default function AboutPage() {
 
       <Expertise />
 
-      {/* Our Values — centred, stacked rows with display initials */}
+      {/* Our Values — hidden for now.
       <section className="bg-cream py-24 lg:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <Reveal className="text-center">
@@ -214,6 +222,7 @@ export default function AboutPage() {
           </Stagger>
         </div>
       </section>
+      */}
 
       {/* Our Commitment — centred statement */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 text-center lg:px-12 lg:py-32">

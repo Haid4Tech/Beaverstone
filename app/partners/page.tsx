@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import PageHero from '@/components/ui/PageHero';
 import Reveal from '@/components/animation/Reveal';
 import { Stagger, StaggerItem } from '@/components/animation/Stagger';
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
 };
 
 const partners = [
-  'Nelmond Properties',
-  'Jemehomes',
-  'Supreme Homes and Properties',
-  'BaseTrust Consultants',
-  'Sondheid',
-  'Big Uncle',
+  { name: 'Nelmond Group Ltd', logo: '/partners/3.png' },
+  { name: 'Nelmond Homes & Properties', logo: '/partners/2.png' },
+  { name: 'Jemehomes', logo: '/partners/4.png' },
+  { name: 'Superior Homes and Properties', logo: '/partners/1.png' },
+  { name: 'Sondheid', logo: '/partners/5.png' },
+  { name: 'Big Uncle', logo: '/partners/6.png' },
 ];
 
 export default function PartnersPage() {
@@ -66,20 +67,23 @@ export default function PartnersPage() {
           </Reveal>
 
           <Stagger className="mt-12 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
-            {partners.map((name, i) => (
+            {partners.map(({ name, logo }, i) => (
               <StaggerItem
                 key={name}
-                className="group relative flex min-h-[220px] flex-col justify-between overflow-hidden bg-white p-8 transition-colors duration-500 hover:bg-ink"
+                className="group relative flex min-h-[260px] flex-col justify-between overflow-hidden bg-white p-8 transition-colors duration-500 hover:bg-ink"
               >
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute -right-2 -bottom-10 font-display text-[11rem] leading-none font-light text-cream transition-colors duration-500 group-hover:text-white/5"
-                >
-                  {name.charAt(0)}
-                </span>
-                <span className="relative text-[11px] tracking-widest text-body transition-colors duration-500 group-hover:text-mist">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
+                <div className="relative flex items-start justify-between gap-4">
+                  <span className="text-[11px] tracking-widest text-body transition-colors duration-500 group-hover:text-mist">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <Image
+                    src={logo}
+                    alt={`${name} logo`}
+                    width={112}
+                    height={112}
+                    className="h-28 w-28 rounded-full object-contain"
+                  />
+                </div>
                 <h3 className="relative max-w-[80%] font-display text-2xl leading-snug font-light text-ink-warm transition-colors duration-500 group-hover:text-white">
                   {name}
                 </h3>
