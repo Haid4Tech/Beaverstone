@@ -53,7 +53,7 @@ export const boardOfDirectors: TeamMember[] = [
 
 export const managementTeam: TeamMember[] = [
   {
-    name: 'Eng. Izuchukwu Joseph',
+    name: 'Engr. Izuchukwu Joseph',
     email: 'jay@thebeaverstone.com',
     role: 'Managing Director/ CEO',
     image: '/staff/eng_joseph.jpeg',
@@ -65,7 +65,7 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Eng. Emmanuel Asomugha',
+    name: 'Engr. Emmanuel Asomugha',
     email: 'shoms@thebeaverstone.com',
     role: 'Executive Director/ COO',
     image: '/staff/eng_emmanuel.jpeg',
@@ -76,7 +76,7 @@ export const managementTeam: TeamMember[] = [
     ],
   },
   {
-    name: 'Eng. Samuel Ocheja',
+    name: 'Engr. Samuel Ocheja',
     email: 'sam@thebeaverstone.com',
     role: 'Director of Projects & Development',
     image: '/staff/samuel.png',
