@@ -38,6 +38,9 @@ export const nok = {
   buildingtwo: '/projects/beaverstone-nok/nok_03.png',
   buildingthree: '/projects/beaverstone-nok/nok_05.png',
   buildingone: '/projects/beaverstone-nok/nok_02.jpg',
+  layout: '/projects/beaverstone-nok/nok_01.png',
+  aerialview: '/projects/beaverstone-nok/nok_04.png',
+  masterplan: '/projects/beaverstone-nok/nok_06.jpeg',
   livingRoom: '/projects/beaverstone-nok/01_living_room.png',
   dining: '/projects/beaverstone-nok/02_dining_area.png',
   kitchen: '/projects/beaverstone-nok/03_kitchen.png',
@@ -48,9 +51,6 @@ export const nok = {
   bedroom3: '/projects/beaverstone-nok/08_bedroom_3.png',
   commonBathroom: '/projects/beaverstone-nok/09_common_bathroom.png',
   balcony: '/projects/beaverstone-nok/10_balcony.png',
-  layout: '/projects/beaverstone-nok/nok_01.png',
-  aerialview: '/projects/beaverstone-nok/nok_04.png',
-  masterplan: '/projects/beaverstone-nok/nok_06.jpeg',
 };
 
 export const brooksville = {
