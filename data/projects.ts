@@ -254,8 +254,8 @@ export const projects: Project[] = [
     startingPrice: 'From ₦250,000,000',
     availableUnits: '20 Units',
     unitTypes: ['2 Bedroom Condos', '3 Bedroom Condos', '4 Bedroom Condos'],
-    heroImage: nok.livingRoom,
-    thumbImage: nok.livingRoom,
+    heroImage: nok.buildingtwo,
+    thumbImage: nok.buildingtwo,
     gallery: Object.values(nok),
     amenities: [
       '6-floor luxury condominium complex',
