@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/ui/PageHero';
 import ArticleListing from '@/components/media/ArticleListing';
 import { articlesByCategory } from '@/data/news';
-import { searchArticles } from '@/lib/media';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -11,10 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/media/blogs' },
 };
 
-export default async function BlogsPage(props: PageProps<'/media/blogs'>) {
-  const { q } = await props.searchParams;
-  const query = typeof q === 'string' ? q : '';
-  const list = searchArticles(articlesByCategory('Blogs'), query);
+export default function BlogsPage() {
+  const list = articlesByCategory('Blogs');
 
   return (
     <>
@@ -28,7 +25,7 @@ export default async function BlogsPage(props: PageProps<'/media/blogs'>) {
           { label: 'Blog' },
         ]}
       />
-      <ArticleListing articles={list} basePath="/media/blogs" query={query} />
+      <ArticleListing articles={list} basePath="/media/blogs" />
     </>
   );
 }
