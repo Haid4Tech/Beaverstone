@@ -88,7 +88,7 @@ export const articles: Article[] = [
     ],
     date: '2026-05-12',
     author: 'Beaverstone',
-    image: '/other_images/13.png',
+    image: '/other_images/13.webp',
   },
   {
     slug: 'property-title-documents-nigeria',
@@ -339,7 +339,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-05',
     author: 'Beaverstone',
-    image: '/other_images/4.png',
+    image: '/other_images/4.webp',
     imagePosition: 'center 10%',
   },
   {
@@ -411,7 +411,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-06',
     author: 'Beaverstone',
-    image: '/projects/brooksville/sunset-portrait.png',
+    image: '/projects/brooksville/sunset-portrait.webp',
   },
   {
     slug: 'complete-journey-building-house-nigeria',
@@ -447,7 +447,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-07',
     author: 'Beaverstone',
-    image: '/projects/roceilli/homefront.png',
+    image: '/projects/roceilli/homefront.webp',
   },
   {
     slug: 'what-happens-before-construction-begins',
@@ -498,7 +498,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-08',
     author: 'Beaverstone',
-    image: '/projects/brooksville/site-gateway.png',
+    image: '/projects/brooksville/site-gateway.webp',
     imagePosition: 'center',
   },
   {
@@ -556,7 +556,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-09',
     author: 'Beaverstone',
-    image: '/projects/brooksville/sunset-landscape.png',
+    image: '/projects/brooksville/sunset-landscape.webp',
   },
   {
     slug: 'common-construction-mistakes',
@@ -588,7 +588,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-10',
     author: 'Beaverstone',
-    image: '/other_images/8.png',
+    image: '/other_images/8.webp',
   },
   {
     slug: 'poor-foundation-work-effects',
@@ -645,7 +645,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-11',
     author: 'Beaverstone',
-    image: '/other_images/15.png',
+    image: '/other_images/15.webp',
   },
   {
     slug: 'understanding-building-foundations',
@@ -695,7 +695,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-12',
     author: 'Beaverstone',
-    image: '/other_images/5.png',
+    image: '/other_images/5.webp',
   },
   {
     slug: 'quality-materials-property-development',
@@ -740,7 +740,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-13',
     author: 'Beaverstone',
-    image: '/projects/roceilli/kitchen.jpg',
+    image: '/projects/roceilli/kitchen.webp',
   },
   {
     slug: 'identify-poor-construction-work',
@@ -790,7 +790,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-14',
     author: 'Beaverstone',
-    image: '/other_images/7.png',
+    image: '/other_images/7.webp',
   },
   {
     slug: 'importance-professional-project-supervision',
@@ -839,7 +839,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-15',
     author: 'Beaverstone',
-    image: '/other_images/12.png',
+    image: '/other_images/12.webp',
     imagePosition: 'center 20%',
   },
   {
@@ -874,7 +874,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-16',
     author: 'Beaverstone',
-    image: '/projects/gardenia_court/4.png',
+    image: '/projects/gardenia_court/4.webp',
   },
   {
     slug: 'what-makes-well-designed-home',
@@ -915,7 +915,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-17',
     author: 'Beaverstone',
-    image: '/other_images/9.png',
+    image: '/other_images/9.webp',
   },
   {
     slug: 'inspect-property-before-buying',
@@ -965,7 +965,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-18',
     author: 'Beaverstone',
-    image: '/other_images/1.png',
+    image: '/other_images/1.webp',
   },
   {
     slug: 'architectural-design-to-construction-process',
@@ -1002,7 +1002,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-19',
     author: 'Beaverstone',
-    image: '/projects/beaverton-heights/aerial-top-down.jpeg',
+    image: '/projects/beaverton-heights/aerial-top-down.webp',
   },
   {
     slug: 'beaverstone-builds-behind-the-scenes',
@@ -1062,7 +1062,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-20',
     author: 'Beaverstone',
-    image: '/other_images/14.png',
+    image: '/other_images/14.webp',
     imagePosition: 'center 15%',
   },
   {
@@ -1112,7 +1112,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-21',
     author: 'Beaverstone',
-    image: '/projects/eden_crown_estate/5.png',
+    image: '/projects/eden_crown_estate/5.webp',
   },
   {
     slug: 'emerging-areas-real-estate-investment-abuja',
@@ -1154,7 +1154,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-22',
     author: 'Beaverstone',
-    image: '/projects/nelmond_metropolis/2.png',
+    image: '/projects/nelmond_metropolis/2.webp',
   },
   {
     slug: 'abuja-kubwa-corridor-property-investors',
@@ -1197,7 +1197,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-23',
     author: 'Beaverstone',
-    image: '/projects/nelmond_metropolis/5.png',
+    image: '/projects/nelmond_metropolis/5.webp',
   },
   {
     slug: 'dei-dei-kubwa-lugbe-gwarinpa-comparison',
@@ -1257,7 +1257,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-24',
     author: 'Beaverstone',
-    image: '/projects/eden_crown_estate/4.png',
+    image: '/projects/eden_crown_estate/4.webp',
   },
   {
     slug: 'roads-infrastructure-property-values-abuja',
@@ -1307,7 +1307,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-25',
     author: 'Beaverstone',
-    image: '/projects/nelmond_metropolis/3.png',
+    image: '/projects/nelmond_metropolis/3.webp',
   },
   {
     slug: 'future-residential-development-abuja',
@@ -1354,7 +1354,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-26',
     author: 'Beaverstone',
-    image: '/projects/nelmond_metropolis/1.png',
+    image: '/projects/nelmond_metropolis/1.webp',
   },
   {
     slug: 'what-makes-location-premium-abuja',
@@ -1385,7 +1385,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-27',
     author: 'Beaverstone',
-    image: '/projects/nelmond_court/5.png',
+    image: '/projects/nelmond_court/5.webp',
   },
   {
     slug: 'buying-property-abuja-diaspora-nigerians',
@@ -1419,7 +1419,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-28',
     author: 'Beaverstone',
-    image: '/other_images/3.jpeg',
+    image: '/other_images/3.webp',
     imagePosition: 'center',
   },
   {
@@ -1466,7 +1466,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-29',
     author: 'Beaverstone',
-    image: '/projects/gardenia_court/2.png',
+    image: '/projects/gardenia_court/2.webp',
   },
   {
     slug: 'buying-land-developing-estate-checklist',
@@ -1496,7 +1496,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-30',
     author: 'Beaverstone',
-    image: '/other_images/11.png',
+    image: '/other_images/11.webp',
     imagePosition: 'center 30%',
   },
   {
@@ -1546,7 +1546,7 @@ export const articles: Article[] = [
     ],
     date: '2026-08-31',
     author: 'Beaverstone',
-    image: '/other_images/10.png',
+    image: '/other_images/10.webp',
   },
 ];
 

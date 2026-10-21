@@ -56,7 +56,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Engr. Izuchukwu Joseph',
     email: 'jay@thebeaverstone.com',
     role: 'Managing Director/ CEO',
-    image: '/staff/eng_joseph.jpeg',
+    image: '/staff/eng_joseph.webp',
     bio: [
       'Engr. Izuchukwu Joseph is the Managing Director and Chief Executive Officer of Beaverstone Realty Ltd. He is an engineering graduate of Purdue University in West Lafayette, Indiana, USA and University of West Georgia in Carrollton, Georgia, USA.',
       'His experience spans real estate investment analysis, property acquisition, project development, contractor coordination, deal structuring, joint venture planning, and luxury property market positioning.',
@@ -68,7 +68,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Engr. Emmanuel Asomugha',
     email: 'shoms@thebeaverstone.com',
     role: 'Executive Director/ COO',
-    image: '/staff/eng_emmanuel.jpeg',
+    image: '/staff/eng_emmanuel.webp',
     bio: [
       'Engr. Emmanuel Asomugha is an engineering graduate of University of Texas at Arlington, Texas, USA.',
       'He is a real estate and venture capital investor who transitioned into a strategic leadership role as a board-level partner in the company. Bringing a strong investment-oriented perspective to the business, his expertise centers on risk assessment, asset positioning, and identifying opportunities that enhance property value and long-term investment performance.',
@@ -79,7 +79,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Engr. Samuel Ocheja',
     email: 'sam@thebeaverstone.com',
     role: 'Director of Projects & Development',
-    image: '/staff/samuel.png',
+    image: '/staff/samuel.webp',
     bio: [
       'Engr. Samuel Ebiojo Ocheja is a Civil Engineer who graduated with distinction from Ahmadu Bello University, Zaria, with a B.Eng. in Civil Engineering. He holds professional certifications in Construction Project Management from Columbia University and Google Project Management.',
       'With experience in construction, site supervision, project coordination, and property development, he brings a strategic and quality-driven approach to every project. At Beaverstone, he oversees project execution and development initiatives, ensuring efficiency, structural quality, and lasting value.',
@@ -89,7 +89,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Delight Olusegun',
     email: 'kehinde@thebeaverstone.com',
     role: 'Operations Manager',
-    image: '/staff/delight_o.jpeg',
+    image: '/staff/delight_o.webp',
     bio: [
       'Delight Kehinde Olusegun is a real estate professional, entrepreneur, and Head of Operations at Beaverstone Realty, bringing a blend of strategic thinking, operational leadership, and a passion for excellence to the real estate industry. He studied Public Health at the prestigious School of Health, Kaduna, an educational background that has contributed to his detail-oriented approach, analytical thinking, and appreciation for structure and effective management.',
       'Having been involved in various building projects, Delight has developed a practical appreciation for the processes, coordination, and attention to detail required to bring development projects to life. His broader experience in business operations, strategy, and project coordination informs his approach to real estate, where he values professionalism, efficiency, and the delivery of quality results.',
@@ -100,7 +100,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Faith Nwajiobi',
     email: 'faith@thebeaverstone.com',
     role: 'Human Resource Manager',
-    image: '/staff/faith.png',
+    image: '/staff/faith.webp',
     bio: [
       'Nwajiobi Faith holds a B.Agric. in Soil Science and Land Resources Management from the University of Nigeria, Nsukka. With skills in human resource management, administration, communication, and organisational coordination, she contributes to fostering a productive work environment and supporting the company’s operational objectives.',
       'At Beaverstone Realty Ltd, she is responsible for human resource functions, staff coordination, and administrative support, helping to promote organisational efficiency and maintain a professional workplace culture.',
@@ -110,7 +110,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Brightstar Oluchi',
     email: 'oluchi@thebeaverstone.com',
     role: 'Social Media Strategist',
-    image: '/staff/brightstar.png',
+    image: '/staff/brightstar.webp',
     bio: [
       'Brightstar Oluchi Emmanuella is a Creative Professional who graduated with a 2:1 in History and International Studies Education from the University of Benin. She holds additional studies in Foreign Languages, with focus on French and Japanese.',
       'With experience in video editing, social media management, and content creation, she brings a creative, strategic, and globally-informed approach to every project. Combining strong research, storytelling, and cross-cultural communication skills, she builds compelling visual narratives and drives meaningful audience engagement.',
@@ -120,7 +120,7 @@ export const managementTeam: TeamMember[] = [
     name: 'Delight Onyewuchi',
     email: 'delight@thebeaverstone.com',
     role: 'Multimedia Producer | Graphic Designer',
-    image: '/staff/delight.png',
+    image: '/staff/delight.webp',
     bio: [
       'Delight Onyewuchi is a creative multimedia producer skilled in graphic design, video editing, videography, and print production. He is currently studying Science Laboratory Technology (SLT) at Nasarawa State University, Keffi.',
       'Proficient in Adobe Photoshop, CorelDRAW, and Canva, he is committed to delivering quality visual designs and multimedia content.',

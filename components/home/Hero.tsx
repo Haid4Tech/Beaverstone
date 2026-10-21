@@ -42,7 +42,7 @@ const socials = [
 const slides = [
   {
     slug: 'hero-1',
-    heroImage: '/projects/roceilli/1.png',
+    heroImage: '/projects/roceilli/1.webp',
     name: 'Beaverstone',
     location: 'Abuja',
   },

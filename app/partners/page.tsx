@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 };
 
 const partners = [
-  { name: 'Nelmond Group Ltd', logo: '/partners/3.png' },
-  { name: 'Nelmond Homes & Properties', logo: '/partners/2.png' },
-  { name: 'Jemehomes', logo: '/partners/4.png' },
-  { name: 'Superior Homes and Properties', logo: '/partners/1.png' },
-  { name: 'Sondheid', logo: '/partners/5.png' },
-  { name: 'Big Uncle', logo: '/partners/6.png' },
+  { name: 'Nelmond Group Ltd', logo: '/partners/3.webp' },
+  { name: 'Nelmond Homes & Properties', logo: '/partners/2.webp' },
+  { name: 'Jemehomes', logo: '/partners/4.webp' },
+  { name: 'Superior Homes and Properties', logo: '/partners/1.webp' },
+  { name: 'Sondheid', logo: '/partners/5.webp' },
+  { name: 'Big Uncle', logo: '/partners/6.webp' },
 ];
 
 export default function PartnersPage() {
